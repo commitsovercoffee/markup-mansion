@@ -2,11 +2,9 @@
 	import Info from '$lib/components/Info.svelte';
 </script>
 
-<div>
-	<h1>
-		<span class="text-red-400">Yet another</span> <br /> personal website.
-	</h1>
-</div>
+<h1>
+	<span class="text-red-400">Yet another</span> <br /> personal website.
+</h1>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 	<Info

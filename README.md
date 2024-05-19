@@ -1,2 +1,5 @@
-# markup-mansion
-my home on the internet built with markup not bricks.
+# Markup Mansion
+
+Sourav's personal website for lovers, haters & everyone in between.
+
+You are welcome to play with my messy code! Fork it, remix it, make it a mansion of your own.

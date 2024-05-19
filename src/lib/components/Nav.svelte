@@ -18,8 +18,8 @@
 	});
 </script>
 
-<div class="flex justify-between items-center w-full mt-16 mb-16">
-	<div class="h-16 w-16">
+<div class="flex justify-between items-center w-full py-8 mb-16">
+	<div class="h-12 w-12">
 		{#if hidden}
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@
 				stroke-width="1"
 				stroke-linecap="round"
 				stroke-linejoin="round"
-				class="lucide lucide-coffee stroke-red-400"
+				class="lucide lucide-coffee"
 			>
 				<path transition:draw={{ duration: 1500, easing: quintOut }} d="M10 2v2" />
 				<path transition:draw={{ duration: 1500, easing: quintOut }} d="M14 2v2" />
@@ -51,7 +51,7 @@
 					class="{currentURL === '/' && link === 'home'
 						? 'text-red-400'
 						: currentURL.slice(1) === link &&
-							'text-red-400'} no-underline hover:text-red-400 group transition-all duration-200 delay-75"
+							'text-red-400'} prose-neutral prose-invert no-underline hover:text-red-400 group transition-all duration-200 delay-75"
 					transition:fly={{ delay: 1000, duration: 1500, easing: quintOut }}
 				>
 					{link}

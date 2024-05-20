@@ -7,7 +7,7 @@
 
 	import { onMount } from 'svelte';
 
-	const links = ['home', 'writing', 'apps'];
+	const links = ['home', 'writings', 'apps'];
 
 	export let hidden = false;
 

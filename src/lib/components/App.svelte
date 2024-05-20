@@ -5,7 +5,7 @@
 		'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.';
 </script>
 
-<div class="my-6 rounded-xl bg-[#202127] flex justify-center items-start">
+<div class="my-6 rounded-xl bg-[#202127] flex justify-start items-start">
 	<div class="rounded-lg m-4 p-4 bg-[#1b1b1f] hidden md:block">
 		<slot />
 	</div>

@@ -31,7 +31,7 @@
 <h2>What next ?</h2>
 <ul>
 	<li>
-		You can checkout my <a href="/writing">writings</a> or <a href="/apps">apps</a> I've built.
+		You can checkout my <a href="/writings">writings</a> or <a href="/apps">apps</a> I've built.
 	</li>
 	<li>Feel free to reach out.</li>
 </ul>

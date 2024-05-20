@@ -5,3 +5,24 @@
 a {
 	@apply underline-offset-8 hover:no-underline prose-teal;
 }
+
+:where(h2, h3, h4, h5, h6) {
+	.icon-link {
+		position: relative;
+
+		&::before {
+			content: '#';
+			color: #f87171;
+			position: absolute;
+			left: -2ch;
+			top: 0;
+			opacity: 0;
+			line-height: 1.2;
+			text-decoration: none;
+		}
+	}
+
+	&:hover .icon-link::before {
+		opacity: 1;
+	}
+}

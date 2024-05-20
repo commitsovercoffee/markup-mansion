@@ -20,9 +20,14 @@
 	}
 </script>
 
-<h1>
-	<span class="text-red-400">Lost thoughts,</span> <br />Found here.
+<svelte:head>
+	<title>Writings - CommitsOverCoffee</title>
+</svelte:head>
+
+<h1 class="mb-0">
+	<span class="text-red-400">Lost Thoughts,</span> <br />Found here.
 </h1>
+<p class="mt-0">Making sense of the world, one blog post at a time.</p>
 
 <div class="my-16 flex gap-4">
 	{#each [...new Set(data.posts.flatMap((p) => p.meta.tags))] as tag}

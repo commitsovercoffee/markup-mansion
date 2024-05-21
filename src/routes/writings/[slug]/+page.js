@@ -4,12 +4,13 @@
 
 export async function load({ params }) {
 	const post = await import(`../${params.slug}.md`);
-	const { title, date } = post.metadata; // .metadata contains all the post’s frontmatter props
+	const { title, date, desc } = post.metadata; // .metadata contains all the post’s frontmatter props
 	const content = post.default; // .default contains the content itself.
 
 	return {
 		content,
 		title,
+		desc,
 		date
 	};
 }

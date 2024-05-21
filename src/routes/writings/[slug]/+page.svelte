@@ -12,7 +12,12 @@
 
 <article>
 	<div class="py-16">
-		<h1>{data.title}</h1>
+		<h1
+			class="select-none text-transparent bg-gradient-to-r from-purple-600 to-red-600 bg-clip-text text-6xl"
+		>
+			{data.title}
+		</h1>
+		<p class="text-2xl align-middle">{data.desc}</p>
 		<svelte:component this={data.content} />
 	</div>
 </article>

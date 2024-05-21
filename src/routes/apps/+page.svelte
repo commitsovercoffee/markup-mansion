@@ -1,5 +1,5 @@
 <script>
-	import { Flower, LayoutPanelTop, NotepadText, Radio } from 'lucide-svelte';
+	import { Flower, LayoutPanelTop, NotepadText } from 'lucide-svelte';
 	import App from '$lib/components/App.svelte';
 </script>
 

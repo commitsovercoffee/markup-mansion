@@ -47,7 +47,7 @@
 		{#each links as link}
 			{#if hidden}
 				<a
-					href={link === 'home' ? '/' : link}
+					href={link === 'home' ? '/' : '/' + link}
 					class="{currentURL === '/' && link === 'home'
 						? 'text-red-400'
 						: currentURL.slice(1) === link &&

@@ -5,6 +5,10 @@
 
 <svelte:head>
 	<title>Apps - CommitsOverCoffee</title>
+	<meta
+		name="description"
+		content="See what Sourav builds! Check out his latest projects and apps."
+	/>
 </svelte:head>
 
 <h1 class="mb-0">

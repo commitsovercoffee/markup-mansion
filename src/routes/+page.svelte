@@ -4,6 +4,7 @@
 
 <svelte:head>
 	<title>CommitsOverCoffee - Sourav's website</title>
+	<meta name="description" content="Personal website of Sourav Singh ~ Developer/Designer." />
 </svelte:head>
 
 <h1 class="mb-0">

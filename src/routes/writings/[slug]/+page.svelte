@@ -7,7 +7,7 @@
 
 <svelte:head>
 	<title>Writings ~ {data.title}</title>
-	<meta property="og:title" content={data.title} />
+	<meta name="description" content={data.desc} />
 </svelte:head>
 
 <article>

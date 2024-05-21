@@ -22,6 +22,10 @@
 
 <svelte:head>
 	<title>Writings - CommitsOverCoffee</title>
+	<meta
+		name="description"
+		content="Dive into Sourav's thoughts! Explore his blog posts, notes, opinions, reviews, and more."
+	/>
 </svelte:head>
 
 <h1 class="mb-0">

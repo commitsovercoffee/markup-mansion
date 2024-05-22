@@ -6,6 +6,7 @@
 	import Nav from '$lib/components/Nav.svelte';
 
 	import { fade } from 'svelte/transition';
+	import Footer from '$lib/components/Footer.svelte';
 
 	export let data;
 </script>
@@ -16,3 +17,4 @@
 		<slot />
 	</main>
 {/key}
+<Footer />

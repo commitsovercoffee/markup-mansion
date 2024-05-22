@@ -39,5 +39,5 @@
 	<li>
 		You can checkout my <a href="/writings">writings</a> or <a href="/apps">apps</a> I've built.
 	</li>
-	<li>Feel free to reach out.</li>
+	<li>Feel free to reach out. ✨</li>
 </ul>

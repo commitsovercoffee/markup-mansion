@@ -29,7 +29,7 @@
 </svelte:head>
 
 <h1 class="mb-0">
-	<span class="text-red-400">Lost Thoughts,</span> <br />Found here.
+	<span class="text-red-400">Lost thoughts,</span> <br />Found here.
 </h1>
 <p class="mt-0">Making sense of the world, one blog post at a time.</p>
 

@@ -33,7 +33,7 @@
 </h1>
 <p class="mt-0">Making sense of the world, one blog post at a time.</p>
 
-<div class="my-16 flex gap-4">
+<div class="my-16 flex flex-wrap gap-4">
 	{#each [...new Set(data.posts.flatMap((p) => p.meta.tags))] as tag}
 		<button
 			class="rounded-xl px-4 py-1 active:translate-y-1 transition-all duration-200 ease-out {selectedTags.has(
@@ -50,7 +50,7 @@
 	{/each}
 </div>
 
-<ul>
+<ul class="mb-32">
 	{#each filteredPosts as post}
 		<li transition:fade={{ duration: 300 }}>
 			<a
@@ -62,7 +62,7 @@
 					class="block max-w-16 group-hover:max-w-sm transition-all duration-500 h-0.5 bg-red-400"
 				></span>
 			</a>
-			<p class="ml-12 text-neutral-500">{post.meta.desc}</p>
+			<p class="md:ml-12 text-neutral-500">{post.meta.desc}</p>
 		</li>
 	{/each}
 </ul>

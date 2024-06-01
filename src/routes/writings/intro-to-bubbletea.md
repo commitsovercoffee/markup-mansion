@@ -1,10 +1,8 @@
 ---
 title: Intro to Bubble Tea
-desc: A guide to brewing interactive CLI applications in Go.
+desc: A guide to building interactive CLI applications in Go.
 date: '2022-03-12'
 tags:
-  - go
-  - cli
   - tutorial
 published: true
 ---

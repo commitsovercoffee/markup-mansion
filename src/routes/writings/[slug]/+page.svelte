@@ -18,6 +18,7 @@
 			{data.title}
 		</h1>
 		<p class="text-2xl italic align-middle">{data.desc}</p>
+		<hr />
 		<svelte:component this={data.content} />
 	</div>
 </article>

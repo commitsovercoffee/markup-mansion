@@ -11,10 +11,12 @@
 	/>
 </svelte:head>
 
-<h1 class="mb-0">
-	<span class="text-red-400">My</span> Projects.
-</h1>
-<p class="mt-0">Apps built with more coffee than sense.</p>
+<div>
+	<h1 class="mb-0">
+		<span class="text-red-400">My</span> Projects.
+	</h1>
+	<p>Apps built with more coffee than sense.</p>
+</div>
 
 <div class="my-16">
 	<App repo="minima-nvim" title="Minima Nvim" desc="my neovim config."

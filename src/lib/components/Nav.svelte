@@ -21,7 +21,7 @@
 <div class="flex justify-between items-center w-full py-8 mb-16">
 	<div class="h-12 w-12">
 		{#if hidden}
-			<a href="/">
+			<a href="/" aria-label="home page">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="100%"

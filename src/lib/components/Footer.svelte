@@ -3,7 +3,7 @@
 </script>
 
 <footer class="flex mx-auto my-4 px-4 rounded-lg justify-center w-min items-center">
-	<a target="_blank" href="mailto:commitsovercoffee@gmail.com" class="p-2">
+	<a aria-label="Mail" target="_blank" href="mailto:commitsovercoffee@gmail.com" class="p-2">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="24"
@@ -20,7 +20,7 @@
 			/></svg
 		>
 	</a>
-	<a target="_blank" href="https://github.com/commitsovercoffee" class="p-2">
+	<a aria-label="Github" target="_blank" href="https://github.com/commitsovercoffee" class="p-2">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="24"
@@ -37,7 +37,12 @@
 			/><path d="M9 18c-4.51 2-5-2-7-2" /></svg
 		>
 	</a>
-	<a target="_blank" href="https://www.youtube.com/@commitsovercoffee" class="p-2">
+	<a
+		aria-label="Youtube"
+		target="_blank"
+		href="https://www.youtube.com/@commitsovercoffee"
+		class="p-2"
+	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="24"
@@ -54,7 +59,7 @@
 			/><path d="m10 15 5-3-5-3z" /></svg
 		>
 	</a>
-	<a target="_blank" href="/rss.xml" class="p-2">
+	<a aria-label="RSS" target="_blank" href="/rss.xml" class="p-2">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="24"

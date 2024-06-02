@@ -28,10 +28,13 @@
 	/>
 </svelte:head>
 
-<h1 class="mb-0">
-	<span class="text-red-400">My</span> Writings.
-</h1>
-<p class="mt-0">Blogs, Tutorials, Notes & Questionable advice.</p>
+<div>
+	<h1 class="mb-0">
+		<span class="text-red-400">My</span> Writings.
+	</h1>
+	<p>Blogs, Tutorials, Notes & Questionable Advice.</p>
+</div>
+
 <div class="my-16 flex flex-wrap gap-4">
 	{#each [...new Set(data.posts.flatMap((p) => p.meta.tags))] as tag}
 		<button

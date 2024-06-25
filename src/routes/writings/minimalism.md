@@ -1,9 +1,10 @@
 ---
-title: Wisdom from a Stoic
-desc: What minimalism isn't.
+title: Minimalism ~ My Life Philosophy
+desc: Ideas that guide my life.
 date: '2024-06-01'
 tags:
-  - personal
+  - about
+  - philosophy
 published: true
 ---
 

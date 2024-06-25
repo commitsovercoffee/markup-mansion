@@ -1,13 +1,11 @@
 ---
-title: Favorite podcast
-desc: Podcast I really really liked
+title: Favorite Podcasts
+desc: Earbuds in, World Out
 date: '2024-06-01'
 tags:
   - list
 published: true
 ---
-
-# Podcasts
 
 - The Changelog : Master Feed
   Weekly shows about software development, developer culture, open source,

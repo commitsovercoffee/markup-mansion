@@ -3,8 +3,8 @@ title: website design
 desc: html html html
 date: '2024-06-01'
 tags:
-  - personal
-published: false
+  - checklist
+published: true
 ---
 
 # Building satisfying websites.

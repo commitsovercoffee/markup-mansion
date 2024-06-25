@@ -3,7 +3,8 @@ title: List 100
 desc: Mild inconveniences I'd like to experience before I become worm food.
 date: '2021-08-05'
 tags:
-  - personal
+  - about
+  - philosophy
 published: true
 ---
 

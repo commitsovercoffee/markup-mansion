@@ -10,9 +10,7 @@ published: true
 Before we begin with the list, please note that the items listed below are ones that I personally use. And thus it is only a matter of personal preference.
 
 People on the internet seem to make a big deal about what os or editor you use but at the end of the day, it's about what you create, not the tools you use.
-Like the saying goes, whatever floats your ⛵.
-
-So don't let anything new you see overwhelm you or give you imposter syndrome. 😉
+Like the saying goes, whatever floats your boat. ⛵
 
 ---
 

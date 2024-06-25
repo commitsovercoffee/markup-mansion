@@ -32,7 +32,7 @@
 	<h1 class="mb-0">
 		<span class="text-red-400">My</span> Writings.
 	</h1>
-	<p>Blogs, Tutorials, Notes & Questionable Advice.</p>
+	<p>You can find pretty much all my throughts here (even stupid ones).</p>
 </div>
 
 <div class="my-16 flex flex-wrap gap-4">

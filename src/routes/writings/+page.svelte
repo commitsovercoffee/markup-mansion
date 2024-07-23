@@ -74,11 +74,11 @@
 
 <ul class="my-16">
 	{#each filteredPosts as post, index}
-		{#if $appState.writingsTransition}
-			<a
-				href={post.path}
-				class="no-underline font-normal text-accent hover:text-primary transition-all duration-200"
-			>
+		<a
+			href={post.path}
+			class="no-underline font-normal text-accent hover:text-primary transition-all duration-200"
+		>
+			{#if $appState.writingsTransition}
 				<li
 					transition:fly={{
 						x: 10 + index * 10,
@@ -89,7 +89,7 @@
 				>
 					{post.meta.title}
 				</li>
-			</a>
-		{/if}
+			{/if}
+		</a>
 	{/each}
 </ul>

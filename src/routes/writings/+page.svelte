@@ -1,4 +1,5 @@
 <script>
+	import Banner from '$lib/components/Banner.svelte';
 	import { fade } from 'svelte/transition';
 	export let data;
 
@@ -28,18 +29,16 @@
 	/>
 </svelte:head>
 
-<div>
-	<h1 class="mb-0">
-		<span class="text-primary">My</span>
-		Writings.
-	</h1>
-	<p class="italic">Blogs, notes, thoughts, reviews ... basically me blabbering.</p>
-</div>
+<Banner
+	highlight="My"
+	title="Writings"
+	desc="Blogs, notes, thoughts, reviews ... basically me blabbering"
+/>
 
-<div class="flex flex-wrap gap-4">
+<div class="my-16 flex flex-wrap gap-4">
 	{#each [...new Set(data.posts.flatMap((p) => p.meta.tags))] as tag}
 		<button
-			class="rounded-xl px-4 py-1 active:translate-y-1 transition-all duration-200 ease-out {selectedTags.has(
+			class="rounded-xl px-4 py-1 hover:bg-accent active:translate-y-1 transition-all duration-200 ease-out {selectedTags.has(
 				tag
 			)
 				? 'bg-primary text-background'
@@ -53,7 +52,7 @@
 	{/each}
 </div>
 
-<ol class="my-16">
+<ul class="my-16">
 	{#each filteredPosts as post}
 		<a
 			transition:fade={{ duration: 300 }}
@@ -63,4 +62,4 @@
 			<li>{post.meta.title}</li>
 		</a>
 	{/each}
-</ol>
+</ul>

@@ -1,5 +1,8 @@
 <script>
-	import Info from '$lib/components/Info.svelte';
+	import Banner from '$lib/components/Banner.svelte';
+
+	const cardStyle = 'm-2 p-2 bg-secondary rounded-xl';
+	const labelStyle = 'ml-8 text-accent';
 </script>
 
 <svelte:head>
@@ -8,39 +11,49 @@
 </svelte:head>
 
 <div class="flex flex-wrap-reverse justify-evenly items-center">
-	<div>
-		<h1 class="mb-0">
-			<span class="text-primary">Hello,</span>
-			<br /> I'm Sourav.
-		</h1>
-		<p class="italic">Welcome to my corner of the internet.</p>
-	</div>
+	<Banner highlight="Hello," title="I'm Sourav" desc="Welcome to my corner of the internet." />
 
 	<img
 		class="rounded-full border-8 border-white object-cover h-60 w-60"
-		src="https://picsum.photos/192"
+		src="/profile.jpg"
 		alt=""
 	/>
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-2">
-	<Info
-		title="Who am I ?"
-		lines={['Self taught developer. 📚', 'Weekend cyclist/gamer. 🕹️', 'Everyday minimalist. ⚫']}
-	/>
+	<div class={cardStyle}>
+		<p class={labelStyle}>who am I</p>
+		<ul>
+			<li>Self taught developer. 📚</li>
+			<li>Weekend cyclist/gamer. 🕹️</li>
+			<li>Everyday minimalist. ⚫</li>
+		</ul>
+	</div>
 
-	<Info
-		title="What do I do ..."
-		lines={['Software Contracting. 💬', 'Design/Development. 🎨', 'Solutioning/Support. 🧩']}
-	/>
+	<div class={cardStyle}>
+		<p class={labelStyle}>what do I do</p>
+		<ul>
+			<li>Software Contracting. 💬</li>
+			<li>Design/Development. 🎨</li>
+			<li>Solutioning/Support. 🧩</li>
+		</ul>
+	</div>
 
-	<Info
-		title="Where am I ?"
-		lines={['Mostly Ranchi. 🍃', 'Sometimes Bengaluru. 🧭', 'Otherwise Neovim. 📍']}
-	/>
+	<div class={cardStyle}>
+		<p class={labelStyle}>where am I</p>
+		<ul>
+			<li>Mostly Ranchi. 🍃</li>
+			<li>Sometimes Bengaluru. 🧭</li>
+			<li>Otherwise Neovim. 📍</li>
+		</ul>
+	</div>
 
-	<Info
-		title="What's up ?"
-		lines={['Working in edtech. 📏', 'Craving for biryani. 🍗', 'Yak shaving. 🦬']}
-	/>
+	<div class={cardStyle}>
+		<p class={labelStyle}>what's up ?</p>
+		<ul>
+			<li>Working in edtech. 📏</li>
+			<li>Craving for biryani. 🍗</li>
+			<li><a href=""></a> Yak shaving. 🦬</li>
+		</ul>
+	</div>
 </div>

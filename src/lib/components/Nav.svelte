@@ -19,7 +19,7 @@
 </script>
 
 <div class="flex justify-between items-center w-full py-8 mb-16">
-	<div class="h-12 w-12">
+	<div class="h-14 w-14">
 		{#if hidden}
 			<a href="/" aria-label="home page">
 				<svg
@@ -53,8 +53,8 @@
 					class="{currentURL === '/' && link === 'home'
 						? 'text-primary'
 						: currentURL.slice(1) === link &&
-							'text-primary'} no-underline italic hover:text-primary group transition-all duration-200"
-					transition:fly={{ delay: 1000, duration: 1500, easing: quintOut }}
+							'text-primary'} no-underline font-normal hover:text-primary group transition-all duration-200"
+					transition:fly={{ delay: 0, duration: 1500, easing: quintOut }}
 				>
 					{link}
 					<span

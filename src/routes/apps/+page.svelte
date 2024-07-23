@@ -1,4 +1,5 @@
 <script>
+	import Banner from '$lib/components/Banner.svelte';
 	import { fade } from 'svelte/transition';
 
 	const apps = [
@@ -15,13 +16,7 @@
 	/>
 </svelte:head>
 
-<div>
-	<h1 class="mb-0">
-		<span class="text-primary">My</span>
-		Projects.
-	</h1>
-	<p class="italic">Apps built with more coffee than sense.</p>
-</div>
+<Banner highlight="My" title="Projects" desc="Apps built with more coffee than sense." />
 
 <div class="my-16">
 	<ul>
@@ -33,9 +28,9 @@
 				class="no-underline font-normal hover:text-primary transition-all duration-200"
 			>
 				<li>
-					{app.repo} :
+					{app.repo}
 					<span class="text-accent">
-						{app.desc}
+						: {app.desc}
 					</span>
 				</li>
 			</a>

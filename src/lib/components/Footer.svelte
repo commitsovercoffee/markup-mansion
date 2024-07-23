@@ -1,5 +1,5 @@
 <script>
-	const style = 'stroke-white hover:stroke-primary transition-all duration-200 ease-in-out';
+	const style = 'stroke-accent hover:stroke-primary transition-all duration-200 ease-in-out';
 </script>
 
 <footer class="p-4 mx-auto flex gap-4 rounded-lg justify-center w-min items-center">

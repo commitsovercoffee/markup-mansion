@@ -27,8 +27,7 @@
 	onMount(() => {
 		setTimeout(() => {
 			$appState.writingsTransition = true;
-			$appState.edgeTransition = true;
-		}, 1000);
+		}, 500);
 	});
 </script>
 
@@ -41,13 +40,11 @@
 </svelte:head>
 
 {#if $appState.writingsTransition}
-	<div transition:fly={{ y: -20, delay: 1000, duration: 1500, easing: quintOut }}>
-		<Banner
-			highlight="My"
-			title="Writings"
-			desc="Blogs, notes, thoughts, reviews ... basically me blabbering"
-		/>
-	</div>
+	<Banner
+		highlight="My"
+		title="Writings"
+		desc="Blogs, notes, thoughts, reviews ... basically me blabbering"
+	/>
 {/if}
 
 <div class="my-16 flex flex-wrap gap-4">
@@ -85,8 +82,8 @@
 				<li
 					transition:fly={{
 						x: 10 + index * 10,
-						delay: 1000 + index * 100,
-						duration: 200 + index * 200,
+						delay: 2000 + index * 200,
+						duration: 400 + index * 200,
 						easing: quintOut
 					}}
 				>

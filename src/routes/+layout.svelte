@@ -12,6 +12,16 @@
 
 	export let data;
 
+	import { onMount } from 'svelte';
+	import { appState } from '$lib/stores';
+
+	onMount(() => {
+		setTimeout(() => {
+			$appState.edgeTransition = true;
+			$appState.edgeDelay = 0;
+		}, 1000);
+	});
+
 	let isLoading = false;
 	beforeNavigate(() => (isLoading = true));
 	afterNavigate(() => (isLoading = false));

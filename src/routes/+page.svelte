@@ -12,8 +12,7 @@
 	onMount(() => {
 		setTimeout(() => {
 			$appState.homeTransition = true;
-			$appState.edgeTransition = true;
-		}, 1000);
+		}, 500);
 	});
 </script>
 
@@ -27,9 +26,9 @@
 		<Banner highlight="Hello," title="I'm Sourav" desc="Welcome to my corner of the internet." />
 
 		<img
-			transition:fly={{ y: -20, delay: 1500, duration: 1500, easing: quintOut }}
+			transition:fly={{ y: -20, delay: $appState.edgeDelay, duration: 1500, easing: quintOut }}
 			class="rounded-full border-8 border-white object-cover h-60 w-60"
-			src="/profile.jpg"
+			src="/profile.webp"
 			alt=""
 		/>
 	</div>
@@ -38,7 +37,13 @@
 {#if $appState.homeTransition}
 	<div class="grid grid-cols-1 md:grid-cols-2">
 		<div
-			transition:fly={{ delay: 2000, x: -20, y: -20, duration: 1500, easing: quintOut }}
+			transition:fly={{
+				delay: $appState.edgeDelay + 500,
+				x: -20,
+				y: -20,
+				duration: 1500,
+				easing: quintOut
+			}}
 			class={cardStyle}
 		>
 			<p class={labelStyle}>who am I</p>
@@ -50,7 +55,13 @@
 		</div>
 
 		<div
-			transition:fly={{ delay: 3000, x: 20, y: -20, duration: 1500, easing: quintOut }}
+			transition:fly={{
+				delay: $appState.edgeDelay + 1000,
+				x: 20,
+				y: -20,
+				duration: 1500,
+				easing: quintOut
+			}}
 			class={cardStyle}
 		>
 			<p class={labelStyle}>what do I do</p>
@@ -62,7 +73,13 @@
 		</div>
 
 		<div
-			transition:fly={{ delay: 4000, x: -20, y: 20, duration: 1500, easing: quintOut }}
+			transition:fly={{
+				delay: $appState.edgeDelay + 1500,
+				x: -20,
+				y: 20,
+				duration: 1500,
+				easing: quintOut
+			}}
 			class={cardStyle}
 		>
 			<p class={labelStyle}>where am I</p>
@@ -74,7 +91,13 @@
 		</div>
 
 		<div
-			transition:fly={{ delay: 5000, x: 20, y: 20, duration: 1500, easing: quintOut }}
+			transition:fly={{
+				delay: $appState.edgeDelay + 2000,
+				x: 20,
+				y: 20,
+				duration: 1500,
+				easing: quintOut
+			}}
 			class={cardStyle}
 		>
 			<p class={labelStyle}>what's up ?</p>

@@ -4,5 +4,6 @@ export const appState = writable({
 	homeTransition: false,
 	writingsTransition: false,
 	appsTransition: false,
-	edgeTransition: false
+	edgeTransition: false,
+	edgeDelay: 1500
 });

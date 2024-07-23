@@ -1,26 +1,17 @@
 <script>
+	import { page } from '$app/stores';
 	import { draw, fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
-	import { page } from '$app/stores';
+
+	import { appState } from '$lib/stores';
 
 	$: currentURL = $page.url.pathname;
-
-	import { onMount } from 'svelte';
-
 	const links = ['home', 'writings', 'apps'];
-
-	export let hidden = false;
-
-	onMount(() => {
-		setTimeout(() => {
-			hidden = true;
-		}, 1500);
-	});
 </script>
 
 <div class="flex justify-between items-center w-full py-8 mb-16">
 	<div class="h-14 w-14">
-		{#if hidden}
+		{#if $appState.edgeTransition}
 			<a href="/" aria-label="home page">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -47,14 +38,14 @@
 	</div>
 	<div class="list-none flex gap-6">
 		{#each links as link}
-			{#if hidden}
+			{#if $appState.edgeTransition}
 				<a
 					href={link === 'home' ? '/' : '/' + link}
 					class="{currentURL === '/' && link === 'home'
 						? 'text-primary'
 						: currentURL.slice(1) === link &&
 							'text-primary'} no-underline font-normal hover:text-primary group transition-all duration-200"
-					transition:fly={{ delay: 0, duration: 1500, easing: quintOut }}
+					transition:fly={{ delay: 500, y: -50, duration: 1500, easing: quintOut }}
 				>
 					{link}
 					<span

@@ -6,6 +6,16 @@
 		{ repo: 'hope', desc: 'arch installation script.' },
 		{ repo: 'minima-nvim', desc: 'config for my personal development environment.' }
 	];
+
+	import { onMount } from 'svelte';
+	import { appState } from '$lib/stores';
+
+	onMount(() => {
+		setTimeout(() => {
+			$appState.writingsTransition = true;
+			$appState.edgeTransition = true;
+		}, 1000);
+	});
 </script>
 
 <svelte:head>

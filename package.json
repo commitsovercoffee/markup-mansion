@@ -36,7 +36,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource-variable/overpass": "^5.0.19",
 		"feed": "^4.2.2",
 		"lucide-svelte": "^0.378.0",
 		"rehype-autolink-headings": "^7.1.0",

@@ -4,7 +4,7 @@
 </script>
 
 <div class="rounded-xl bg-[#202127] p-4">
-	<p class="m-0 font-bold">{title}</p>
+	<h3 class="mt-0 text-[#32363f]">{title}</h3>
 	<ul>
 		{#each lines as line}
 			<li>{line}</li>

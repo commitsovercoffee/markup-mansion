@@ -4,10 +4,10 @@
 </script>
 
 <div class="m-2 p-2 bg-secondary rounded-xl">
-	<p class="italic text-accent ml-8">{title}</p>
+	<p class="ml-8">{title}</p>
 	<ul>
 		{#each lines as line}
-			<li>{line}</li>
+			<li class="text-accent">{line}</li>
 		{/each}
 	</ul>
 </div>

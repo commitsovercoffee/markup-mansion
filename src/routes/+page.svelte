@@ -9,7 +9,7 @@
 
 <div class="flex flex-wrap-reverse justify-evenly items-center">
 	<div>
-		<h1>
+		<h1 class="mb-0">
 			<span class="text-primary">Hello,</span>
 			<br /> I'm Sourav.
 		</h1>
@@ -23,7 +23,7 @@
 	/>
 </div>
 
-<div class="my-16 grid grid-cols-1 md:grid-cols-2">
+<div class="grid grid-cols-1 md:grid-cols-2">
 	<Info
 		title="Who am I ?"
 		lines={['Self taught developer. 📚', 'Weekend cyclist/gamer. 🕹️', 'Everyday minimalist. ⚫']}

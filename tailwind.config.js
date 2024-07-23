@@ -7,7 +7,8 @@ export default {
 				background: '#1b1b1f',
 				primary: '#EF5A6F',
 				secondary: '#161618',
-				accent: '#686D76'
+				accent: '#686D76',
+				highlight: '#32363f'
 			}
 		}
 	},

@@ -2,7 +2,7 @@
 	const style = 'stroke-white hover:stroke-primary transition-all duration-200 ease-in-out';
 </script>
 
-<footer class="flex mx-auto my-4 px-4 rounded-lg justify-center w-min items-center">
+<footer class="p-4 mx-auto flex gap-4 rounded-lg justify-center w-min items-center">
 	<a aria-label="Mail" target="_blank" href="mailto:commitsovercoffee@gmail.com" class="p-2">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

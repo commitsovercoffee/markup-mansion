@@ -1,6 +1,10 @@
 <script>
-	import { Flower, LayoutPanelTop, NotepadText } from 'lucide-svelte';
-	import App from '$lib/components/App.svelte';
+	import { fade } from 'svelte/transition';
+
+	const apps = [
+		{ repo: 'hope', desc: 'arch installation script.' },
+		{ repo: 'minima-nvim', desc: 'config for my personal development environment.' }
+	];
 </script>
 
 <svelte:head>
@@ -13,19 +17,28 @@
 
 <div>
 	<h1 class="mb-0">
-		<span class="text-red-400">My</span> Projects.
+		<span class="text-primary">My</span>
+		Projects.
 	</h1>
-	<p>Apps built with more coffee than sense.</p>
+	<p class="italic">Apps built with more coffee than sense.</p>
 </div>
 
 <div class="my-16">
-	<App repo="minima-nvim" title="Minima Nvim" desc="my neovim config."
-		><NotepadText size="64" strokeWidth={0.8} /></App
-	>
-	<App repo="suckless" title="suckless" desc="pre-patched suckless apps."
-		><LayoutPanelTop size="64" strokeWidth={0.8} /></App
-	>
-	<App repo="hope" title="hope" desc="my arch installation script."
-		><Flower size="64" strokeWidth={0.8} /></App
-	>
+	<ul>
+		{#each apps as app}
+			<a
+				transition:fade={{ duration: 300 }}
+				target="_blank"
+				href={'https://www.github.com/commitsovercoffee/' + app.repo}
+				class="no-underline font-normal hover:text-primary transition-all duration-200"
+			>
+				<li>
+					{app.repo} :
+					<span class="text-accent">
+						{app.desc}
+					</span>
+				</li>
+			</a>
+		{/each}
+	</ul>
 </div>

@@ -30,19 +30,20 @@
 
 <div>
 	<h1 class="mb-0">
-		<span class="text-red-400">My</span> Writings.
+		<span class="text-primary">My</span>
+		Writings.
 	</h1>
-	<p>You can find pretty much all my throughts here (even stupid ones).</p>
+	<p class="italic">Blogs, notes, thoughts, reviews ... basically me blabbering.</p>
 </div>
 
-<div class="my-16 flex flex-wrap gap-4">
+<div class="flex flex-wrap gap-4">
 	{#each [...new Set(data.posts.flatMap((p) => p.meta.tags))] as tag}
 		<button
 			class="rounded-xl px-4 py-1 active:translate-y-1 transition-all duration-200 ease-out {selectedTags.has(
 				tag
 			)
-				? 'bg-red-400 text-[#1b1b1f]'
-				: 'bg-[#32363f]'}"
+				? 'bg-primary text-background'
+				: 'bg-highlight'}"
 			on:click={() => {
 				updateFilterPosts(tag);
 			}}
@@ -52,19 +53,14 @@
 	{/each}
 </div>
 
-<ul class="mb-32">
+<ol class="my-16">
 	{#each filteredPosts as post}
-		<li transition:fade={{ duration: 300 }}>
-			<a
-				href={post.path}
-				class="prose-neutral prose-invert no-underline font-bold group transition-all duration-200"
-			>
-				{post.meta.title}
-				<span
-					class="block max-w-16 group-hover:max-w-sm transition-all duration-500 h-0.5 bg-red-400"
-				></span>
-			</a>
-			<p class="md:ml-12 text-neutral-500">{post.meta.desc}</p>
-		</li>
+		<a
+			transition:fade={{ duration: 300 }}
+			href={post.path}
+			class="no-underline font-normal text-accent hover:text-primary transition-all duration-200"
+		>
+			<li>{post.meta.title}</li>
+		</a>
 	{/each}
-</ul>
+</ol>

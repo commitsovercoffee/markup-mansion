@@ -1,17 +1,17 @@
 <script>
-	const style = 'stroke-[#636363] hover:stroke-gray-200 transition-all duration-200 ease-in-out';
+	const style = 'stroke-primary hover:stroke-white transition-all duration-200 ease-in-out';
 </script>
 
 <footer class="flex mx-auto my-4 px-4 rounded-lg justify-center w-min items-center">
 	<a aria-label="Mail" target="_blank" href="mailto:commitsovercoffee@gmail.com" class="p-2">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
+			width="32"
+			height="32"
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
-			stroke-width="2"
+			stroke-width="1.2"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 			class="lucide lucide-mail {style}"
@@ -23,12 +23,12 @@
 	<a aria-label="Github" target="_blank" href="https://github.com/commitsovercoffee" class="p-2">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
+			width="32"
+			height="32"
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
-			stroke-width="2"
+			stroke-width="1.2"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 			class="lucide lucide-github {style}"
@@ -45,12 +45,12 @@
 	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
+			width="32"
+			height="32"
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
-			stroke-width="2"
+			stroke-width="1.2"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 			class="lucide lucide-youtube {style}"
@@ -62,12 +62,12 @@
 	<a aria-label="RSS" target="_blank" href="/rss.xml" class="p-2">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
+			width="32"
+			height="32"
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
-			stroke-width="2"
+			stroke-width="1.2"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 			class="lucide lucide-rss {style}"

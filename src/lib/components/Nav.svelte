@@ -45,20 +45,20 @@
 			</a>
 		{/if}
 	</div>
-	<div class="list-none flex gap-4">
+	<div class="list-none flex gap-6">
 		{#each links as link}
 			{#if hidden}
 				<a
 					href={link === 'home' ? '/' : '/' + link}
 					class="{currentURL === '/' && link === 'home'
-						? 'text-red-400'
+						? 'text-primary'
 						: currentURL.slice(1) === link &&
-							'text-red-400'} prose-neutral prose-invert no-underline hover:text-red-400 group transition-all duration-200 delay-75"
+							'text-primary'} no-underline italic hover:text-primary group transition-all duration-200"
 					transition:fly={{ delay: 1000, duration: 1500, easing: quintOut }}
 				>
 					{link}
 					<span
-						class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-400"
+						class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-primary"
 					></span>
 				</a>
 			{/if}

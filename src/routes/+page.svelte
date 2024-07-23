@@ -3,20 +3,21 @@
 </script>
 
 <svelte:head>
-	<title>CommitsOverCoffee - Sourav's website</title>
-	<meta name="description" content="Personal website of Sourav Singh ~ Developer/Designer." />
+	<title>Commits Over Coffee - Sourav's website</title>
+	<meta name="description" content="Personal website of Sourav Singh." />
 </svelte:head>
 
 <div class="flex flex-wrap-reverse justify-evenly items-center">
 	<div>
-		<h1 class="mb-0">
-			<span class="text-red-400">Hello,</span> <br />I'm Sourav.
+		<h1>
+			<span class="text-primary">Hello,</span>
+			<br /> I'm Sourav.
 		</h1>
-		<p>Welcome to my corner of the internet.</p>
+		<p class="italic">Welcome to my corner of the internet.</p>
 	</div>
 
 	<img
-		class="m-0 rounded-full border-8 border-white w-48 h-48 aspect-square bg-[#202127] object-cover"
+		class="rounded-full border-8 border-white object-cover h-60 w-60"
 		src="https://picsum.photos/192"
 		alt=""
 	/>

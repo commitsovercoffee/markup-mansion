@@ -3,9 +3,11 @@
 	export let lines = ['line 1 ... ', 'line 2 ...', 'line 3 ...'];
 </script>
 
-<ul class="bg-secondary rounded-xl">
-	<p>{title}</p>
-	{#each lines as line}
-		<li>{line}</li>
-	{/each}
-</ul>
+<div class="m-2 p-2 bg-secondary rounded-xl">
+	<p class="italic text-accent ml-8">{title}</p>
+	<ul>
+		{#each lines as line}
+			<li>{line}</li>
+		{/each}
+	</ul>
+</div>

@@ -23,7 +23,7 @@
 	/>
 </div>
 
-<div class="my-16 grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="my-16 grid grid-cols-1 md:grid-cols-2">
 	<Info
 		title="Who am I ?"
 		lines={['Self taught developer. 📚', 'Weekend cyclist/gamer. 🕹️', 'Everyday minimalist. ⚫']}

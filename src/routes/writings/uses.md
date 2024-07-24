@@ -3,7 +3,7 @@ title: What I Use
 desc: Get the inside scoop on the tools that make my life easier.
 date: '2024-06-01'
 tags:
-  - personal
+  - about
 published: true
 ---
 

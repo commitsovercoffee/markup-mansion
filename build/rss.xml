@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>CommitsOverCoffee</title>
+        <link>https://commitsovercoffee.com</link>
+        <description>Sourav's personal website</description>
+        <lastBuildDate>Wed, 24 Jul 2024 11:27:51 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>🌻</generator>
+        <language>en</language>
+        <ttl>60</ttl>
+        <copyright>Copyright 2024, commitsovercoffee</copyright>
+        <atom:link href="https://commitsovercoffee.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Building Content Driven Apps]]></title>
+            <link>https://commitsovercoffee.com/writings/building-for-content</link>
+            <guid>https://commitsovercoffee.com/writings/building-for-content</guid>
+            <pubDate>Wed, 31 Jul 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Ideas to bridge the gap between content creators & software developers.]]></description>
+            <content:encoded><![CDATA[<p>Ideas to bridge the gap between content creators & software developers.</p>]]></content:encoded>
+            <author>commitsovercoffee@gmail.com (Sourav Singh)</author>
+        </item>
+        <item>
+            <title><![CDATA[Intro to Bubble Tea]]></title>
+            <link>https://commitsovercoffee.com/writings/intro-to-bubbletea</link>
+            <guid>https://commitsovercoffee.com/writings/intro-to-bubbletea</guid>
+            <pubDate>Sat, 12 Mar 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[A guide to building interactive CLI applications in Go.]]></description>
+            <content:encoded><![CDATA[<p>A guide to building interactive CLI applications in Go.</p>]]></content:encoded>
+            <author>commitsovercoffee@gmail.com (Sourav Singh)</author>
+        </item>
+        <item>
+            <title><![CDATA[List 100]]></title>
+            <link>https://commitsovercoffee.com/writings/list-100</link>
+            <guid>https://commitsovercoffee.com/writings/list-100</guid>
+            <pubDate>Thu, 05 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Mild inconveniences I'd like to experience before I become worm food.]]></description>
+            <content:encoded><![CDATA[<p>Mild inconveniences I'd like to experience before I become worm food.</p>]]></content:encoded>
+            <author>commitsovercoffee@gmail.com (Sourav Singh)</author>
+        </item>
+        <item>
+            <title><![CDATA[What I Use]]></title>
+            <link>https://commitsovercoffee.com/writings/uses</link>
+            <guid>https://commitsovercoffee.com/writings/uses</guid>
+            <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Get the inside scoop on the tools that make my life easier.]]></description>
+            <content:encoded><![CDATA[<p>Get the inside scoop on the tools that make my life easier.</p>]]></content:encoded>
+            <author>commitsovercoffee@gmail.com (Sourav Singh)</author>
+        </item>
+    </channel>
+</rss>

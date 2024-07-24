@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💾</text></svg>"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/0.DF39OQuT.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.CRZw5Btx.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.X4z9cDLE.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.CzUhcx96.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.BszXJJMo.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.BRHWt-Zq.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.D6kgxu3v.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.CXakmfnz.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.DvxK-ruz.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.BcUT3LQs.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/each.D6YF6ztN.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.CVYpF37O.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/5.bneT0QNX.js"><title>Writings ~ Building Content Driven Apps</title><!-- HEAD_svelte-nbewnf_START --><meta name="description" content="Ideas to bridge the gap between content creators &amp; software developers."><!-- HEAD_svelte-nbewnf_END -->
+	</head>
+	<body
+		data-sveltekit-preload-data="hover"
+		class="mx-auto px-4 prose prose-gray prose-xl prose-invert bg-background selection:bg-background selection:text-accent prose-headings:font-light"
+		style="font-family: Overpass"
+	>
+		<div style="display: contents">  <div class="flex justify-between items-center w-full py-8 mb-16"><div class="h-14 w-14"></div> <div class="list-none flex gap-6"></div></div> <main> <article><h1 class="bg-gradient-to-r from-purple-600 to-red-600 bg-clip-text text-transparent">Building Content Driven Apps</h1> <p>Ideas to bridge the gap between content creators &amp; software developers.</p> <hr> <h2 id="introduction" data-svelte-h="svelte-11vins8"><a aria-hidden="true" tabindex="-1" href="#introduction"><span class="icon icon-link"></span></a>Introduction</h2> <p data-svelte-h="svelte-gmxh33">I have spent the last 3 year working on content rich products including a chatbot,
+a learning management system and few static websites. While working on these,
+I got the chance to work with content creators from diverse backgrounds,
+who were trying to solve something specific.</p> <p data-svelte-h="svelte-1pec1uf">Interestingly, despite niche requirements, some patterns and anti-patterns
+were common across projects and teams. As a developer, I have often experienced
+push back from content creators on certain approaches/practices. And while we
+are able to come to a resolution later, we often miss to discuss the approach in
+detail due to :</p> <ul data-svelte-h="svelte-1o2bfjs"><li>Time constraint.</li> <li>Technical jargon.</li></ul> <p data-svelte-h="svelte-1w8wcvq">Knowing why something worked (patterns) is as important as knowing why something
+didn’t or won’t (anti-patterns). Hence, this blog is my attempt in the same direction.</p> <p data-svelte-h="svelte-nc8nb2">I have tried to keep the techno-blabber to a minimum &amp; included examples.
+Since this is a blog, you can read it <em>later</em> &amp; can’t avoid the discussion anymore. Haha, gotcha !</p> <p data-svelte-h="svelte-wvkfdk">P.S Most of these patterns are just (not so) common sense.</p> <hr> <h2 id="writing-content" data-svelte-h="svelte-158smj3"><a aria-hidden="true" tabindex="-1" href="#writing-content"><span class="icon icon-link"></span></a>Writing Content</h2> <p data-svelte-h="svelte-hpbs20">Let’s start at the basics. Why ? Because more people tend to overlook these than you’d expect.
+If you know these, skim through or have a quick read or use this as a checklist.</p> <p data-svelte-h="svelte-1pua0qb">Unlike writing novels or books, when you are writing content for an app or website,
+there needs to be some structure, which may not be clear initially, but you need to
+arrive at one at some point. Until that time, I think starting off with the basics isn’t a bad idea.</p> <p data-svelte-h="svelte-1qi3a1">Writing is subjective. My attempt here is not to impose my style or approach on you,
+but ensure that the content meets a baseline standard of quality.</p> <h3 id="structure--emphasis" data-svelte-h="svelte-1nllp9r"><a aria-hidden="true" tabindex="-1" href="#structure--emphasis"><span class="icon icon-link"></span></a>Structure &amp; Emphasis</h3> <p data-svelte-h="svelte-gbj8d4">Adding structure and emphasis in content writing is crucial for clarity, coherence,
+and effective communication. Without these the content would be incomplete.</p> <ol data-svelte-h="svelte-a98r8m"><li><p>Structure : Create a structure for your document.</p> <p>A well-structured document guides readers through the content. Headings, subheadings,
+bullet points etc help readers understand the flow of information. Such a structured
+document is also easier to collaborate on.</p> <ul><li><p>Consider structure of this blog as an example. Do you think it’d be as easy
+to navigate through this blog without headings, bullet points and rules ?</p></li> <li><p>Do you use google docs ? Do you use the formattng options ? Why not !</p></li></ul> <p>Without the desired formatting, the structure maybe obvious to you as the author,
+but it isn’t to others and without an obvious flow, working on someone else’s doc
+becomes inefficient and thus tedious. And this in-efficiency compounds. Collaborating</p> <p>There’s even a book dedicated to the principle of
+”<a href="https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515" rel="nofollow">Don’t make me think</a>”,
+aimed at designing web interfaces, yet its principles are equally applicable in this context.</p></li> <li><p>Emphasize : This is more <strong>art</strong> than <em>science</em>. (See what I did there?)</p> <p>A well-placed emphasis, like bolding or italics, draws attention to crucial information.
+This helps readers distinguish the main takeaways from supporting details.</p> <ul><li>The <strong>sales figures for Q3</strong> were significantly lower than expected.</li> <li>The sales figures for Q3 were significantly lower than expected.</li></ul></li></ol> <h3 id="adding-tone" data-svelte-h="svelte-38wm27"><a aria-hidden="true" tabindex="-1" href="#adding-tone"><span class="icon icon-link"></span></a>Adding Tone</h3> <p data-svelte-h="svelte-8jezs2">Adding tone in content writing is essential for conveying the intended attitude,
+emotion, and personality to engage and connect with the audience effectively.</p> <p data-svelte-h="svelte-1nif5jn"><em>The tone in writing depends on the style chosen, making it optional.</em></p> <ol data-svelte-h="svelte-j9qc1"><li><p>Emoticons</p> <p>A strategically placed emoticon can highlight a specific point, but it’s important
+to be mindful of their limitations as they may be open to misinterpretation.</p> <ul><li>I’m really sorry to hear about your loss.</li> <li>I’m really sorry to hear about your loss. 😔</li></ul></li> <li><p>Figures of Speech</p> <p>Humor, metaphors, similes, and other figures of speech can add personality, tone, and clarity to your writing.</p> <ul><li>✅ The runners zipped past like cheetahs.</li> <li>❌ The race was fast.</li></ul></li> <li><p>Word Choice</p> <p>Strong verbs, vivid adjectives, and powerful nouns can effectively convey emotions and emphasis.</p> <ul><li>✅ The tired old dog <strong>dragged</strong> its paws slowly down the street.</li> <li>❌ The tired old dog walked slowly down the street.</li></ul></li></ol> <hr> <h2 id="content-handover" data-svelte-h="svelte-j5qomm"><a aria-hidden="true" tabindex="-1" href="#content-handover"><span class="icon icon-link"></span></a>Content Handover</h2></article></main>  
+			
+			<script>
+				{
+					__sveltekit_n1qhox = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.CRZw5Btx.js"),
+						import("../_app/immutable/entry/app.BRHWt-Zq.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 5],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

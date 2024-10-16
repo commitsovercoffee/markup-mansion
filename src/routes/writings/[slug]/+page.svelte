@@ -11,7 +11,7 @@
 </svelte:head>
 
 <article>
-	<h1 class="bg-gradient-to-r from-purple-600 to-red-600 bg-clip-text text-transparent">
+	<h1 class="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
 		{data.title}
 	</h1>
 	<p>

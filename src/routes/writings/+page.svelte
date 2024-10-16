@@ -18,17 +18,6 @@
 			return selectedTags.size === 0 || post.meta.tags.some((t) => selectedTags.has(t));
 		});
 	}
-
-	import { fly } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
-	import { onMount } from 'svelte';
-	import { appState } from '$lib/stores';
-
-	onMount(() => {
-		setTimeout(() => {
-			$appState.writingsTransition = true;
-		}, 500);
-	});
 </script>
 
 <svelte:head>
@@ -39,57 +28,38 @@
 	/>
 </svelte:head>
 
-{#if $appState.writingsTransition}
-	<Banner
-		highlight="My"
-		title="Writings"
-		desc="Blogs, notes, thoughts, reviews ... basically me blabbering"
-	/>
-{/if}
+<Banner
+	highlight="My"
+	title="Writings"
+	desc="Blogs, notes, thoughts, reviews ... basically me blabbering"
+/>
 
-<div class="my-16 flex flex-wrap gap-4">
-	{#each [...new Set(data.posts.flatMap((p) => p.meta.tags))] as tag, index}
-		{#if $appState.writingsTransition}
-			<button
-				transition:fly={{
-					delay: 1500 + index * 200,
-					y: 50,
-					duration: 400 + index * 200,
-					easing: quintOut
-				}}
-				class="rounded-xl px-4 py-1 hover:bg-accent active:translate-y-1 transition-all duration-200 ease-out {selectedTags.has(
-					tag
-				)
-					? 'bg-primary text-background'
-					: 'bg-highlight'}"
-				on:click={() => {
-					updateFilterPosts(tag);
-				}}
-			>
-				{tag}
-			</button>
-		{/if}
+<div class="my-8 flex flex-wrap gap-4">
+	{#each [...new Set(data.posts.flatMap((p) => p.meta.tags))] as tag}
+		<button
+			class="rounded-xl px-4 py-1 hover:bg-primary hover:text-background active:translate-y-1 transition-all duration-200 ease-out {selectedTags.has(
+				tag
+			)
+				? 'bg-primary text-background'
+				: 'bg-highlight'}"
+			on:click={() => {
+				updateFilterPosts(tag);
+			}}
+		>
+			{tag}
+		</button>
 	{/each}
 </div>
 
-<ul class="my-16">
-	{#each filteredPosts as post, index}
+<ul class="my-8">
+	{#each filteredPosts as post}
 		<a
 			href={post.path}
 			class="no-underline font-normal text-accent hover:text-primary transition-all duration-200"
 		>
-			{#if $appState.writingsTransition}
-				<li
-					transition:fly={{
-						x: 10 + index * 10,
-						delay: 2000 + index * 200,
-						duration: 400 + index * 200,
-						easing: quintOut
-					}}
-				>
-					{post.meta.title}
-				</li>
-			{/if}
+			<li>
+				{post.meta.title}
+			</li>
 		</a>
 	{/each}
 </ul>

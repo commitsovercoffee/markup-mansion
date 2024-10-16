@@ -4,7 +4,8 @@
 
 	import { appState } from '$lib/stores';
 
-	const style = 'stroke-accent hover:stroke-primary transition-all duration-200 ease-in-out';
+	const style =
+		'p-1 stroke-accent hover:stroke-primary transition-all duration-200 ease-in-out stroke-primary';
 </script>
 
 {#if $appState.edgeTransition}
@@ -20,7 +21,7 @@
 				viewBox="0 0 24 24"
 				fill="none"
 				stroke="currentColor"
-				stroke-width="1.2"
+				stroke-width="1"
 				stroke-linecap="round"
 				stroke-linejoin="round"
 				class="lucide lucide-mail {style}"
@@ -37,7 +38,7 @@
 				viewBox="0 0 24 24"
 				fill="none"
 				stroke="currentColor"
-				stroke-width="1.2"
+				stroke-width="1"
 				stroke-linecap="round"
 				stroke-linejoin="round"
 				class="lucide lucide-github {style}"
@@ -59,7 +60,7 @@
 				viewBox="0 0 24 24"
 				fill="none"
 				stroke="currentColor"
-				stroke-width="1.2"
+				stroke-width="1"
 				stroke-linecap="round"
 				stroke-linejoin="round"
 				class="lucide lucide-youtube {style}"
@@ -76,7 +77,7 @@
 				viewBox="0 0 24 24"
 				fill="none"
 				stroke="currentColor"
-				stroke-width="1.2"
+				stroke-width="1"
 				stroke-linecap="round"
 				stroke-linejoin="round"
 				class="lucide lucide-rss {style}"

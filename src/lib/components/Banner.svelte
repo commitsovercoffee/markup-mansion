@@ -8,7 +8,10 @@
 	export let desc = 'Insert description here.';
 </script>
 
-<div transition:fly={{ y: -20, delay: $appState.edgeDelay, duration: 1500, easing: quintOut }}>
+<div
+	class="flex-grow"
+	transition:fly={{ y: -20, delay: $appState.edgeDelay, duration: 1500, easing: quintOut }}
+>
 	<h1 class="mb-0 text-pretty">
 		<span class="text-primary">
 			{highlight}

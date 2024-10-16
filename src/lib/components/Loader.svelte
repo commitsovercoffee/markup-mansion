@@ -9,10 +9,10 @@
 		stroke-width="1"
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class="lucide lucide-loader-pinwheel animate-spin stroke-[#b95a53]"
+		class="lucide lucide-loader-pinwheel animate-spin stroke-primary"
 		><path d="M2 12c0-2.8 2.2-5 5-5s5 2.2 5 5 2.2 5 5 5 5-2.2 5-5" /><path
 			d="M7 20.7a1 1 0 1 1 5-8.7 1 1 0 1 0 5-8.6"
 		/><path d="M7 3.3a1 1 0 1 1 5 8.6 1 1 0 1 0 5 8.6" /><circle cx="12" cy="12" r="10" /></svg
 	>
-	<p class="mx-2 text-[#b95a53]">Loading ...</p>
+	<p class="mx-2 text-primary">Loading ...</p>
 </div>

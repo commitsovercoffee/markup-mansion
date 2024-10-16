@@ -55,7 +55,7 @@
 	{#each filteredPosts as post}
 		<a
 			href={post.path}
-			class="no-underline font-normal text-accent hover:text-primary transition-all duration-200"
+			class="no-underline font-normal hover:text-primary transition-all duration-200"
 		>
 			<li>
 				{post.meta.title}

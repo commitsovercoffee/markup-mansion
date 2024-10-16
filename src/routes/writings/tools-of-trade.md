@@ -1,18 +1,16 @@
 ---
-title: What I Use
-desc: Get the inside scoop on the tools that make my life easier.
-date: '2024-06-01'
+title: Tools of Trade
+desc:
+date: '2022-08-05'
 tags:
-  - about
+  - lifestyle
 published: true
 ---
 
-Before we begin with the list, please note that the items listed below are ones that I personally use. And thus it is only a matter of personal preference.
+Alright, before we dive into the list, let me make one thing clear. These are the
+tools I personally use. This is all just a matter of preference, nothing more.
 
-People on the internet seem to make a big deal about what os or editor you use but at the end of the day, it's about what you create, not the tools you use.
-Like the saying goes, whatever floats your boat. ⛵
-
----
+People online seem to lose their minds over what OS or editor you’re rocking, but honestly, who cares? At the end of the day, it’s about what you build, not what you use to get there. Like they say, whatever floats your ⛵.
 
 ## Software
 
@@ -59,8 +57,8 @@ Audio :
 Input :
 
 - Mouse : Logitech [G304](https://www.amazon.in/Computer-Camera-Reduction-80-Degree-Conferencing/dp/B092ZHLGC9)/[G502](https://www.logitechg.com/en-in/products/gaming-mice/g502-hero-gaming-mouse.910-005472.html)
-- Mousepad : [XPG Battleground XL Mousepad]()
-- Keyboard : [Redragon Fizz K617](https://redragon.in/products/fizz-k617-60-wired-mechanical-keyboard-white-and-grey-red-switches) (Red Switches)
+- Mousepad : [XPG Battleground XL Mousepad](https://www.flipkart.com/xpg-battleground-xl-mousepad/p/itm9e4d6f48eb512)
+- Keyboard : [Royal Kludge R75](https://meckeys.com/shop/keyboard/75-keyboard/royal-kludge-rk-r75/)
 - Gamepad : [Evofox Elite X](https://www.amkette.com/products/evofox-elite-x-wireless-gamepad-for-pc)
 
 When I'm out and about, my laptop [Acer Swift Go 14](https://www.acer.com/in-en/laptops/swift/swift-go-14-amd/pdp/NX.KG3SI.005) comes along for the ride. Sure, it doesn't have a fancy gpu, but for everyday tasks, it's plenty powerful and amazingly light.

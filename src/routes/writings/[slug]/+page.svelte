@@ -14,9 +14,11 @@
 	<h1 class="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
 		{data.title}
 	</h1>
-	<p>
-		{data.desc}
-	</p>
+	{#if data.desc != null}
+		<p>
+			{data.desc}
+		</p>
+	{/if}
 	<hr />
 	<svelte:component this={data.content} />
 </article>

@@ -11,5 +11,7 @@
 		</span>
 		{title}
 	</h1>
-	<p>{desc}</p>
+	{#if desc != null}
+		<p>{desc}</p>
+	{/if}
 </div>

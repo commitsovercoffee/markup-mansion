@@ -41,7 +41,7 @@
 				tag
 			)
 				? 'bg-primary text-background'
-				: 'bg-highlight'}"
+				: 'bg-secondary'}"
 			on:click={() => {
 				updateFilterPosts(tag);
 			}}

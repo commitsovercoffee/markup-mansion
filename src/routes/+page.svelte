@@ -40,9 +40,9 @@
 <hr />
 <h2>Highlights</h2>
 
-<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 	<ul class="">
-		<span class="text-primary">Who am I</span>
+		<span class="text-primary">Where am I</span>
 		<li>Self taught developer</li>
 		<li>Weekend cyclist/gamer</li>
 		<li>Everyday minimalist</li>

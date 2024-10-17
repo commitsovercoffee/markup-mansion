@@ -3,22 +3,24 @@
 
 	const apps = [
 		{
-			repo: 'Billie',
+			repo: 'billie',
 			desc: 'Invoice Generator',
-			logo: 'billie.png'
+			logo: 'billie.png',
+			demo: 'billie'
 		},
 		{
-			repo: 'Jason',
+			repo: 'jason',
 			desc: 'Resume Builder',
-			logo: 'jason.png'
+			logo: 'jason.png',
+			demo: 'jason'
 		},
 		{
-			repo: 'Hope',
+			repo: 'hope',
 			desc: 'Arch Installation Script',
 			logo: 'hope.png'
 		},
 		{
-			repo: 'Markup Mansion',
+			repo: 'markup-mansion',
 			desc: 'Source of this website',
 			logo: 'markup-mansion.png'
 		}
@@ -47,20 +49,22 @@
 			<img class="m-2 h-24" src={app.logo} alt="{app.repo} logo" />
 			<div class="m-2">
 				<p class="m-0">
-					<span class="text-xl font-bold">{app.repo}</span>
+					<span class="text-xl font-bold capitalize">{app.repo}</span>
 					<br />{app.desc}
 				</p>
-				<div class="m-1 flex flex-row gap-x-4">
+				<div class="m-1 flex flex-row gap-x-2">
 					<a
 						target="_blank"
 						class="no-underline rounded-xl bg-background hover:bg-primary hover:text-secondary px-2"
 						href="https://github.com/commitsovercoffee/{app.repo}">source</a
 					>
-					<a
-						target="_blank"
-						class="no-underline rounded-xl bg-background hover:bg-primary hover:text-secondary px-2"
-						href="https://{app.repo}.commitsovercoffee.com">demo</a
-					>
+					{#if app.demo != null}
+						<a
+							target="_blank"
+							class="no-underline rounded-xl bg-background hover:bg-primary hover:text-secondary px-2"
+							href="https://{app.repo}.commitsovercoffee.com">demo</a
+						>
+					{/if}
 				</div>
 			</div>
 		</div>

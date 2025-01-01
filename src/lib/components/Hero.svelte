@@ -18,6 +18,6 @@
 		<span style:color={themes[selected].secondary}>{second} </span>
 	{/if}
 </h1>
-<p style:color={themes[selected].foreground}>
+<p class="mb-0" style:color={themes[selected].foreground}>
 	{desc}
 </p>

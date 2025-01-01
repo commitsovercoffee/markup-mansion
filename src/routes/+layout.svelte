@@ -9,7 +9,7 @@
 </script>
 
 <article style:background-color={themes[selected].background} style:height="100vh">
-	<main class="font-overpass prose prose-invert mx-auto h-full">
+	<main class="prose prose-invert mx-auto h-full font-overpass">
 		<Nav />
 		{@render children()}
 	</main>

@@ -5,7 +5,11 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				overpass: "'Overpass Variable', sans-serif"
+			}
+		}
 	},
 
 	plugins: [typography]

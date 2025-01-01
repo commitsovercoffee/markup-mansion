@@ -6,8 +6,8 @@ export const themes = $state({
 		foreground: '#EDECEE',
 
 		primary: '#FF6767',
-		secondary: '#61FFCA',
-		highlight: '#FFCA85',
+		secondary: '#FFCA85',
+		highlight: '#61FFCA',
 		desc: '#6D6D6D',
 		link: '#A277FF'
 	},

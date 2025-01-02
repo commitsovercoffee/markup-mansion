@@ -2,8 +2,9 @@ export const selected = $state('aura');
 export const themes = $state({
 	aura: {
 		// aura
-		background: '#15141B',
+		background: '#110F18',
 		foreground: '#EDECEE',
+		panel: '#1f2430',
 
 		primary: '#FF6767',
 		secondary: '#FFCA85',

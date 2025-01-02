@@ -15,9 +15,9 @@
 		<br />
 	{/if}
 	{#if second != ''}
-		<span style:color={themes[selected].secondary}>{second} </span>
+		<span style:color={themes[selected].foreground}>{second} </span>
 	{/if}
 </h1>
-<p class="mb-0" style:color={themes[selected].foreground}>
+<p style:color={themes[selected].desc}>
 	{desc}
 </p>

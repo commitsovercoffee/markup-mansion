@@ -20,14 +20,15 @@
 	setInterval(cycleMessages, 7000);
 </script>
 
-{#key i}
-	<p
-		in:fly={{ duration: 1000, delay: 100, x: -100, easing: elasticInOut }}
-		out:fly={{ duration: 1000, x: 100, easing: elasticInOut }}
-		style:position="absolute"
-		style:color={themes[selected].highlight}
-		class="mt-0"
-	>
-		{thoughts[i]}
-	</p>
-{/key}
+<div class="h-16">
+	{#key i}
+		<p
+			in:fly={{ duration: 1000, delay: 100, x: -100, easing: elasticInOut }}
+			out:fly={{ duration: 1000, x: 100, easing: elasticInOut }}
+			style:color={themes[selected].highlight}
+			class="absolute my-auto mt-0 text-pretty break-all"
+		>
+			{thoughts[i]}
+		</p>
+	{/key}
+</div>

@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Tiling Window Managers
 desc: Tired of alt-tabbing to the right window instance ? Not anymore.
 date: '2017-03-14'

@@ -59,7 +59,7 @@
 						? themes[selected].foreground
 						: themes[selected].desc}
 				class="p-2 no-underline"
-				href={link}
+				href="/{link}"
 			>
 				{link}</a
 			>

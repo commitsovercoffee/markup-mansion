@@ -15,26 +15,26 @@
 <div class=" grid grid-cols-1 gap-4 text-pretty break-words md:grid-cols-2">
 	{#each projects as project}
 		<article
-			class="rounded-lg p-4 shadow-md"
+			class="flex flex-col items-start justify-start rounded-xl p-4 shadow-md"
 			style:background-color={themes[selected].panel}
 			style:--border-base={themes[selected].panel}
-			style:--border-decor={themes[selected].foreground}
+			style:--border-decor={themes[selected].secondary}
 		>
-			<h4>{project.name}</h4>
+			<h4 style:color={themes[selected].highlight} class="m0">{project.name}</h4>
 			<p>{project.desc}</p>
 			<div class="flex flex-row gap-2">
 				<a
-					style:background-color={themes[selected].highlight}
-					style:color={themes[selected].panel}
-					style:--shadow-decor={themes[selected].highlight}
+					style:background-color={themes[selected].background}
+					style:color={themes[selected].foreground}
+					style:--shadow-decor={themes[selected].link}
 					class="rounded-lg px-2 py-1 no-underline"
 					href="https:github.com/commitsovercoffee/{project.name}">source</a
 				>
 				{#if project.demo}
 					<a
-						style:background-color={themes[selected].secondary}
-						style:color={themes[selected].panel}
-						style:--shadow-decor={themes[selected].secondary}
+						style:background-color={themes[selected].background}
+						style:color={themes[selected].foreground}
+						style:--shadow-decor={themes[selected].primary}
 						class="rounded-lg px-2 py-1 no-underline"
 						href="https:{project.name}.commitsovercoffee.com">demo</a
 					>
@@ -46,16 +46,16 @@
 
 <style>
 	article {
-		border: 2px solid var(--border-base);
+		border: 3px solid var(--border-base);
 		transition: border-color 1s ease;
 	}
 
 	article:hover {
-		border: 2px solid var(--border-decor);
+		border: 3px solid var(--border-decor);
 	}
 
 	a {
-		transition: box-shadow 1s ease;
+		transition: box-shadow 0.5s ease;
 	}
 
 	a:hover {

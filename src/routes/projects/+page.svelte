@@ -1,1 +1,3 @@
-<h1>This is the projects page.</h1>
+<h1>Projects</h1>
+
+<p>This is where the magic happens ... when it happens ...</p>

@@ -1,11 +1,18 @@
 <script>
+	import Nav from '$lib/Nav.svelte';
+	import '@fontsource-variable/overpass'; // 100-900
 	let { children } = $props();
 </script>
 
-<nav>
-	<a href="/">home</a>
-	<a href="/writings">writings</a>
-	<a href="/projects">projects</a>
-</nav>
+<main>
+	<Nav />
 
-{@render children()}
+	{@render children()}
+</main>
+
+<style>
+	main {
+		width: 80ch;
+		margin: auto;
+	}
+</style>

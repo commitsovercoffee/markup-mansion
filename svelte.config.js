@@ -8,13 +8,13 @@ const config = {
 		adapter: adapter()
 	},
 
-	extensions: ['.svelte', '.svx', '.md'],
 	preprocess: [
 		vitePreprocess(),
 		mdsvex({
 			extensions: ['.md']
 		})
-	]
+	],
+	extensions: ['.svelte', '.svx', '.md']
 };
 
 export default config;

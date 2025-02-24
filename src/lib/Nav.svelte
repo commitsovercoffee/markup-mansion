@@ -9,8 +9,6 @@
 		{ link: '/writings', label: 'Writings' },
 		{ link: '/projects', label: 'Projects' }
 	];
-
-	$inspect(page.url.pathname);
 </script>
 
 <nav class="flex justify-between py-16">

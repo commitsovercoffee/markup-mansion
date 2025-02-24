@@ -2,7 +2,8 @@
 title: Claire's Day
 desc: A chaotic morning in the Dunphy household.
 date: 2025-02-23
-tags: [Claire Dunphy, family, humor, daily life]
+tags:
+  - alpha
 published: true
 ---
 

@@ -4,7 +4,7 @@
 </script>
 
 <article style:--normal-para={shades.desc} style:--hover-para={shades.foreground}>
-	<h1 style:color={shades.primary}>
+	<h1 class="mb-0" style:color={shades.primary}>
 		Hello Folks, <div style:color={shades.foreground}>I am Sourav.</div>
 	</h1>
 

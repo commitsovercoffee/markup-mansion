@@ -36,6 +36,7 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
-		"@fontsource-variable/overpass": "^5.1.2"
+		"@fontsource-variable/overpass": "^5.1.2",
+		"feed": "^4.2.2"
 	}
 }

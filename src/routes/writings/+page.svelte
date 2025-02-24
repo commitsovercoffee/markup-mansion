@@ -11,8 +11,6 @@
 	let selectedTags = new SvelteSet();
 
 	let filteredPosts = $state(data.posts);
-
-	$inspect(selectedTags);
 </script>
 
 <svelte:head>

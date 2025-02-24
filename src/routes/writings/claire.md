@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Claire's Day
 desc: A chaotic morning in the Dunphy household.
 date: 2025-02-23

@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Phil's Perfect Day
 desc: Phil Dunphy tries to navigate a day full of family adventures.
 date: 2025-02-23

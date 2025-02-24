@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Alex’s Genius Struggle
 desc: Alex Dunphy gives her sarcastic take on being the only "smart" one in the family.
 date: 2025-02-23
@@ -9,6 +10,8 @@ published: true
 ---
 
 # Alex's Genius Struggle
+
+![alt text](https://picsum.photos/200/300)
 
 ## Introduction
 

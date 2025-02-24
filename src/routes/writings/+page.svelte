@@ -17,7 +17,7 @@
 
 <article>
 	<h1 class="mb-0" style:color={shades.primary}>
-		Side <div style:color={shades.foreground}>Projects</div>
+		Mind <div style:color={shades.foreground}>Palace</div>
 	</h1>
 
 	<p style:color={shades.highlight}>

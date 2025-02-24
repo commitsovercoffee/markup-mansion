@@ -44,8 +44,8 @@
 		</div>
 	{:else}
 		<div
-			in:fly={{ easing: cubicOut, y: 10, duration: 300, delay: 300 }}
-			out:fly={{ easing: cubicIn, y: -10, duration: 300 }}
+			in:fly={{ easing: cubicOut, y: 30, duration: 300, delay: 100 }}
+			out:fly={{ easing: cubicIn, y: -30, duration: 300 }}
 		>
 			{@render children()}
 		</div>

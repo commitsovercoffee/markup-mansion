@@ -10,6 +10,11 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Projects - Commits Over Coffee</title>
+	<meta name="description" content="Projects - what I've built, learned and tinkered with." />
+</svelte:head>
+
 <article>
 	<h1 class="mb-0" style:color={shades.primary}>
 		Side <div style:color={shades.foreground}>Projects</div>

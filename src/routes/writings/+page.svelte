@@ -15,6 +15,14 @@
 	$inspect(selectedTags);
 </script>
 
+<svelte:head>
+	<title>Writings - Commits Over Coffee</title>
+	<meta
+		name="description"
+		content="Writings - notes, blogs and random thoughts I've tried to make sense of."
+	/>
+</svelte:head>
+
 <article>
 	<h1 class="mb-0" style:color={shades.primary}>
 		Mind <div style:color={shades.foreground}>Palace</div>

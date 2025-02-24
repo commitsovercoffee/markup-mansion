@@ -1,6 +1,8 @@
 <script>
-	import { theme, palette } from '$lib/theme.svelte';
 	import { page } from '$app/state';
+
+	import { theme, palette } from '$lib/theme.svelte';
+	const shades = palette[theme];
 
 	const items = [
 		{ link: '/', label: 'CommitsOverCoffee' },
@@ -17,12 +19,12 @@
 			<a
 				style:--normal-link={item.link == '/'
 					? page.url.pathname == item.link
-						? palette[theme].foreground
-						: palette[theme].desc
+						? shades.foreground
+						: shades.desc
 					: page.url.pathname.startsWith(item.link)
-						? palette[theme].foreground
-						: palette[theme].desc}
-				style:--hover-link={palette[theme].foreground}
+						? shades.foreground
+						: shades.desc}
+				style:--hover-link={shades.foreground}
 				class="group p-2 transition-colors duration-300"
 				href={item.link}
 			>
@@ -50,8 +52,8 @@
 		{/each}
 	</div>
 	<div
-		style:--normal-fill={palette[theme].desc}
-		style:--hover-fill={palette[theme].foreground}
+		style:--normal-fill={shades.desc}
+		style:--hover-fill={shades.foreground}
 		class="flex items-center justify-center gap-x-4"
 	>
 		<a

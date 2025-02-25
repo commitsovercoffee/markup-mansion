@@ -49,17 +49,17 @@
 	</div>
 
 	{#each filteredPosts as post}
-		<dl class="group cursor-pointer" transition:fade={{ duration: 300 }}>
-			<dt>
-				<a class="font-bold no-underline" href={post.path}
-					>{post.meta.title}
+		<a class="font-bold no-underline" href={post.path}>
+			<dl class="group cursor-pointer" transition:fade={{ duration: 300 }}>
+				<dt>
+					{post.meta.title}
 					<span
 						style:background-color={shades.secondary}
 						class="block h-0.5 max-w-16 transition-all duration-500 group-hover:max-w-sm"
 					></span>
-				</a>
-			</dt>
-			<dd style:color={shades.desc}>{post.meta.desc}</dd>
-		</dl>
+				</dt>
+				<dd style:color={shades.desc}>{post.meta.desc}</dd>
+			</dl>
+		</a>
 	{/each}
 </article>

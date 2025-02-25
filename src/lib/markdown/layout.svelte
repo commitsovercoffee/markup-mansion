@@ -1,6 +1,6 @@
 <script context="module">
-	import { img } from './components';
-	export { img };
+	import { img, h1, h2, p, li, code, strong } from './components';
+	export { img, h1, h2, p, li, code, strong };
 </script>
 
 <slot />

@@ -22,36 +22,38 @@
 </svelte:head>
 
 <article>
-	<h1 class="mb-0" style:color={shades.primary}>
-		Mind <div style:color={shades.foreground}>Palace</div>
-	</h1>
+	<div class="mb-16">
+		<h1 class="mb-0" style:color={shades.primary}>
+			Mind <div style:color={shades.foreground}>Palace</div>
+		</h1>
 
-	<p style:color={shades.highlight}>
-		This is where I share my thoughts, musings, and creative bursts ...
-	</p>
+		<p style:color={shades.highlight}>
+			This is where I share my thoughts, musings, and creative bursts ...
+		</p>
 
-	<div class="my-12 flex gap-2">
-		{#each tags as tag}
-			<button
-				class="rounded-xl px-2 transition-all duration-200 active:translate-y-2"
-				style:color={selectedTags.has(tag) ? shades.panel : shades.foreground}
-				style:background-color={selectedTags.has(tag) ? shades.foreground : shades.panel}
-				onclick={() => {
-					selectedTags.has(tag) ? selectedTags.delete(tag) : selectedTags.add(tag);
-					filteredPosts = data.posts.filter((post) => {
-						return selectedTags.size === 0 || post.meta.tags.some((t) => selectedTags.has(t));
-					});
-				}}
-			>
-				{tag}
-			</button>
-		{/each}
+		<div class="flex gap-2">
+			{#each tags as tag}
+				<button
+					class="rounded-xl px-4 py-1 transition-all duration-200 active:translate-y-2"
+					style:color={selectedTags.has(tag) ? shades.panel : shades.foreground}
+					style:background-color={selectedTags.has(tag) ? shades.foreground : shades.panel}
+					onclick={() => {
+						selectedTags.has(tag) ? selectedTags.delete(tag) : selectedTags.add(tag);
+						filteredPosts = data.posts.filter((post) => {
+							return selectedTags.size === 0 || post.meta.tags.some((t) => selectedTags.has(t));
+						});
+					}}
+				>
+					{tag}
+				</button>
+			{/each}
+		</div>
 	</div>
 
 	{#each filteredPosts as post}
-		<a class="font-bold no-underline" href={post.path}>
-			<dl class="group cursor-pointer" transition:fade={{ duration: 300 }}>
-				<dt>
+		<a class="group no-underline" href={post.path}>
+			<dl transition:fade={{ duration: 300 }}>
+				<dt class="font-bold">
 					{post.meta.title}
 					<span
 						style:background-color={shades.secondary}

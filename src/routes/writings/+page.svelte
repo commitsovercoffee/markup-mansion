@@ -27,14 +27,14 @@
 			Mind <div style:color={shades.foreground}>Palace</div>
 		</h1>
 
-		<p style:color={shades.highlight}>
+		<p style:color={shades.desc}>
 			This is where I share my thoughts, musings, and creative bursts ...
 		</p>
 
 		<div class="flex gap-2">
 			{#each tags as tag}
 				<button
-					class="rounded-xl px-4 py-1 transition-all duration-200 active:translate-y-2"
+					class="cursor-pointer rounded-xl px-4 py-1 transition-all duration-200 active:translate-y-2"
 					style:color={selectedTags.has(tag) ? shades.panel : shades.foreground}
 					style:background-color={selectedTags.has(tag) ? shades.foreground : shades.panel}
 					onclick={() => {
@@ -53,7 +53,7 @@
 	{#each filteredPosts as post}
 		<a class="group no-underline" href={post.path}>
 			<dl transition:fade={{ duration: 300 }}>
-				<dt class="font-bold">
+				<dt style:color={shades.foreground} class="font-bold">
 					{post.meta.title}
 					<span
 						style:background-color={shades.secondary}

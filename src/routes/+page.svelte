@@ -8,18 +8,18 @@
 	<meta name="description" content="Personal website of Sourav Singh." />
 </svelte:head>
 
-<article style:--normal-para={shades.desc} style:--hover-para={shades.foreground}>
+<article style:color={shades.desc}>
 	<div class="mb-16">
 		<h1 class="mb-0" style:color={shades.primary}>
 			Hello Folks, <div style:color={shades.foreground}>I am Sourav.</div>
 		</h1>
 
-		<p style:color={shades.highlight}>Welcome to my corner of the internet.</p>
+		<p style:color={shades.desc}>Welcome to my corner of the internet.</p>
 	</div>
 
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
 		<div class="row-span-2">
-			<h3 class="mt-0" style:color={shades.primary}>About</h3>
+			<h3 class="mt-0" style:color={shades.link}>About</h3>
 			<p>
 				I'm a software developer. I design and build things for the web. I’m based in Ranchi and
 				work remotely as a consultant. 💼
@@ -53,7 +53,7 @@
 			</p>
 		</div>
 		<div>
-			<h3 class="mt-0" style:color={shades.link}>Favorites</h3>
+			<h3 class="mt-0" style:color={shades.highlight}>Favorites</h3>
 			<p>
 				Book : Crime & Punishment. 🪓 <br />
 				Game : God of War Ragnarok. 💥 <br />
@@ -64,23 +64,3 @@
 		</div>
 	</div>
 </article>
-
-<style>
-	p {
-		color: var(--normal-para);
-		transition: color 0.3s ease;
-	}
-
-	p:hover {
-		color: var(--hover-para);
-	}
-
-	a {
-		color: var(--normal-para);
-		transition: color 0.3s ease;
-	}
-
-	a:hover {
-		color: var(--hover-para);
-	}
-</style>

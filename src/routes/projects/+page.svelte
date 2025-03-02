@@ -22,10 +22,11 @@
 <article>
 	<div class="mb-16">
 		<h1 class="mb-0" style:color={shades.primary}>
-			Side <div style:color={shades.foreground}>Projects</div>
+			Maker's
+			<div style:color={shades.foreground}>Sanctuary</div>
 		</h1>
 
-		<p style:color={shades.desc}>This is where the magic happens ... when it happens ...</p>
+		<p style:color={shades.desc}>... built one project at a time.</p>
 	</div>
 
 	<div class="grid grid-cols-1 gap-4 text-pretty break-words md:grid-cols-2">

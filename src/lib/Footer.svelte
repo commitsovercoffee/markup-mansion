@@ -25,13 +25,13 @@
 </script>
 
 <footer
-	class="flex flex-row items-center justify-center gap-4 p-4"
+	class="flex flex-row items-center justify-center gap-4 p-2"
 	style:--normal-fill={shades.desc}
 	style:--hover-fill={shades.foreground}
 >
 	{#each socials as social}
 		<a target="_blank" href={social.href} aria-label={social.aria}>
-			<svg width="32px" height="32px" viewBox="0 {social.label == 'youtube' ? '-4' : '0'} 24 24">
+			<svg width="24px" height="24px" viewBox="0 {social.label == 'youtube' ? '-4' : '0'} 24 24">
 				<g>
 					<path d={social.d} />
 				</g>

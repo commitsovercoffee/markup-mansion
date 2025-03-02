@@ -24,12 +24,11 @@
 <article>
 	<div class="mb-16">
 		<h1 class="mb-0" style:color={shades.primary}>
-			Mind <div style:color={shades.foreground}>Palace</div>
+			Thought
+			<div style:color={shades.foreground}>Reservoir</div>
 		</h1>
 
-		<p style:color={shades.desc}>
-			This is where I share my thoughts, musings, and creative bursts ...
-		</p>
+		<p style:color={shades.desc}>Plunge into my thoughts ~ part blog, part wiki.</p>
 
 		<div class="flex gap-2">
 			{#each tags as tag}

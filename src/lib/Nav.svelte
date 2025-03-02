@@ -24,18 +24,16 @@
 			style:--normal-color={page.url.pathname.startsWith('/writings')
 				? shades.foreground
 				: shades.desc}
-			href="/writings">Writings</a
+			href="/writings">/writings</a
 		>
-		<span style:color={shades.desc}> | </span>
 		<a
 			style:--normal-color={page.url.pathname == '/projects' ? shades.foreground : shades.desc}
-			href="/projects">Projects</a
+			href="/projects">/projects</a
 		>
-		<span style:color={shades.desc}> | </span>
 		<a
 			style:--normal-color={page.url.pathname == '/rss.xml' ? shades.foreground : shades.desc}
 			target="_blank"
-			href="/rss.xml">RSS</a
+			href="/rss.xml">/rss</a
 		>
 	</div>
 </nav>

@@ -20,7 +20,10 @@
 	});
 </script>
 
-<main class="prose prose-invert mx-auto flex min-h-screen flex-col justify-between px-4">
+<main
+	style:--selection-color={shades.foreground}
+	class="prose prose-invert mx-auto flex min-h-screen flex-col justify-between px-4"
+>
 	<div>
 		<Nav />
 		{#if navigating.to}

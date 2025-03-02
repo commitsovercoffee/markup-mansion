@@ -17,27 +17,27 @@
 		<p style:color={shades.desc}>Welcome to my corner of the internet.</p>
 	</div>
 
-	<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+	<div class="grid grid-cols-1 gap-4 text-pretty md:grid-cols-2">
 		<div class="row-span-2">
 			<h3 class="mt-0" style:color={shades.link}>About</h3>
+
 			<p>
-				I'm a software developer. I design and build things for the web. I’m based in Ranchi and
-				work remotely as a consultant. 💼
+				I'm a software developer. I design and build things for the web. I’m based in Ranchi, India
+				& work remotely as a consultant. 💼
 			</p>
 
 			<p>
-				I’m self-taught, learning mostly through a hands-on approach ~ building, breaking, and
-				figuring things out as I go. ✨
+				I kicked off my career as a freelancer, working on a variety of projects, building frontend,
+				microservices, middleware and dashboards. ✨
+			</p>
+			<p>
+				Currently, I work as a technical consultant at Quest Alliance, where I mostly focus on
+				solutioning, development & support. 🎯
 			</p>
 
 			<p>
 				When I’m off the clock, you’ll find me cycling, shooting hoops, reading, writing, or
-				tinkering with side projects. 🧲
-			</p>
-
-			<p>
-				You can find me across the internet by the user name @commitsovercoffee. And reach out
-				either on blusky or shoot me a mail at commitsovercoffee@gmail.com. 💬
+				tinkering with side projects. 🧭
 			</p>
 		</div>
 		<div>
@@ -63,4 +63,5 @@
 			</p>
 		</div>
 	</div>
+	<p>Thanks for stopping by. Find me @commitsovercoffee on the web. 💬</p>
 </article>

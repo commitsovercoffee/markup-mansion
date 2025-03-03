@@ -1,25 +1,20 @@
-<script>
-	import { palette, theme } from '$lib/theme.svelte';
-	const shades = palette[theme];
-</script>
-
 <svelte:head>
 	<title>Commits Over Coffee</title>
 	<meta name="description" content="Personal website of Sourav Singh." />
 </svelte:head>
 
-<article style:color={shades.desc}>
+<article>
 	<div class="mb-16">
-		<h1 class="mb-0" style:color={shades.primary}>
-			Hello Folks, <div style:color={shades.foreground}>I am Sourav.</div>
+		<h1 class="text-primary mb-0">
+			Hello Folks, <div class="text-fg">I am Sourav.</div>
 		</h1>
 
-		<p style:color={shades.desc}>Welcome to my corner of the internet.</p>
+		<p>Welcome to my corner of the internet.</p>
 	</div>
 
 	<div class="grid grid-cols-1 gap-4 text-pretty md:grid-cols-2">
 		<div class="row-span-2">
-			<h3 class="mt-0" style:color={shades.link}>About</h3>
+			<h3 class="text-anchor mt-0">About</h3>
 
 			<p>
 				I'm a software developer. I design and build things for the web. I’m based in Ranchi, India
@@ -41,7 +36,7 @@
 			</p>
 		</div>
 		<div>
-			<h3 class="mt-0" style:color={shades.secondary}>Random Facts</h3>
+			<h3 class="text-secondary mt-0">Random Facts</h3>
 			<p>
 				I frown without dynamic window tiling. 😦 <br />
 				Bad carries cost me games in Dota 2. ⚔️ <br />
@@ -53,7 +48,7 @@
 			</p>
 		</div>
 		<div>
-			<h3 class="mt-0" style:color={shades.highlight}>Favorites</h3>
+			<h3 class="text-highlight mt-0">Favorites</h3>
 			<p>
 				Book : Crime & Punishment. 🪓 <br />
 				Game : God of War Ragnarok. 💥 <br />

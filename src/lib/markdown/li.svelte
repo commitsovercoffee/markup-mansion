@@ -1,8 +1,3 @@
-<script>
-	import { palette, theme } from '$lib/theme.svelte';
-	const shades = palette[theme];
-</script>
-
-<li style:color={shades.desc}>
+<li class="text-body">
 	<slot />
 </li>

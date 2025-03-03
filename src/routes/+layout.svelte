@@ -1,64 +1,96 @@
 <script>
-	import { navigating } from '$app/state';
+	// assets
 	import '../app.css';
 	import '@fontsource-variable/overpass'; // 100-900
+	import { Coffee, SunMedium } from 'lucide-svelte';
 
-	import Nav from '$lib/Nav.svelte';
+	// components
+	import Footer from '$lib/Footer.svelte';
+	import { LoaderPinwheel } from 'lucide-svelte';
 
-	let { children } = $props();
-
-	import { theme, palette } from '$lib/theme.svelte';
-	const shades = palette[theme];
-	import { onMount } from 'svelte';
+	// transitions
 	import { fly } from 'svelte/transition';
 	import { cubicIn, cubicOut } from 'svelte/easing';
-	import Footer from '$lib/Footer.svelte';
 
-	onMount(() => {
-		document.body.style.backgroundColor = palette[theme].background;
-		document.body.style.fontFamily = 'Overpass Variable';
-	});
+	// std lib
+	import { navigating } from '$app/state';
+	import { page } from '$app/state';
+
+	// runes
+	let { children } = $props();
+	let lightsoff = $state(true);
 </script>
 
 <main
-	style:--selection-color={shades.foreground}
-	class="prose prose-invert mx-auto flex min-h-screen flex-col justify-between px-4"
+	class="{lightsoff
+		? 'dark prose-invert'
+		: 'light'} bg-bg min-h-screen min-w-screen px-4 transition-colors duration-300 ease-in"
 >
-	<div>
-		<Nav />
-		{#if navigating.to}
-			<div class="flex flex-row items-center gap-2">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke={shades.secondary}
-					stroke-width="1.2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="lucide lucide-loader-pinwheel m-0 animate-spin"
-					><path d="M22 12a1 1 0 0 1-10 0 1 1 0 0 0-10 0" /><path
-						d="M7 20.7a1 1 0 1 1 5-8.7 1 1 0 1 0 5-8.6"
-					/><path d="M7 3.3a1 1 0 1 1 5 8.6 1 1 0 1 0 5 8.6" /><circle
-						cx="12"
-						cy="12"
-						r="10"
-					/></svg
+	<div class="prose text-body mx-auto flex min-h-screen flex-col justify-between">
+		<div>
+			<nav class="flex flex-col items-center gap-4 py-16 md:items-start">
+				<a href="/" class="group flex items-center no-underline">
+					<Coffee
+						size={28}
+						strokeWidth={1.8}
+						class="stroke-fg mx-2 -rotate-12 transition-all duration-200 ease-in group-hover:rotate-0"
+					/>
+
+					<span class="text-fg text-xl"> CommitsOverCoffee </span>
+				</a>
+				<div class="flex flex-row gap-4">
+					<a
+						class="hover:text-fg no-underline {page.url.pathname.startsWith('/writings')
+							? 'text-fg'
+							: 'text-body'}"
+						href="/writings">/writings</a
+					>
+
+					<a
+						class="hover:text-fg no-underline {page.url.pathname == '/projects'
+							? 'text-fg'
+							: 'text-body'}"
+						href="/projects">/projects</a
+					>
+					<a
+						class="hover:text-fg no-underline {page.url.pathname == '/rss.xml'
+							? 'text-fg'
+							: 'text-body'}"
+						target="_blank"
+						href="/rss.xml">/rss</a
+					>
+					<SunMedium
+						onclick={() => (lightsoff = !lightsoff)}
+						size={24}
+						strokeWidth={1.8}
+						class="stroke-secondary -rotate-12 transition-all duration-200 ease-in group-hover:rotate-0"
+					/>
+				</div>
+			</nav>
+
+			<!------------------------- page loader ------------------------------>
+			{#if navigating.to}
+				<div class="flex flex-row items-center gap-2">
+					<LoaderPinwheel size={24} strokeWidth={1.8} class="stroke-secondary m-0 animate-spin" />
+					<p class="m-0">
+						<span class="text-secondary">Good things come to those who wait ...</span>
+					</p>
+				</div>
+			{:else}
+				<div
+					in:fly={{ easing: cubicOut, y: 30, duration: 300, delay: 100 }}
+					out:fly={{ easing: cubicIn, y: -30, duration: 300 }}
 				>
-				<p class="m-0">
-					<span style:color={shades.secondary}>Good things come to those who wait ...</span>
-				</p>
-			</div>
-		{:else}
-			<div
-				in:fly={{ easing: cubicOut, y: 30, duration: 300, delay: 100 }}
-				out:fly={{ easing: cubicIn, y: -30, duration: 300 }}
-			>
-				{@render children()}
-			</div>
-		{/if}
+					{@render children()}
+				</div>
+			{/if}
+		</div>
+		<Footer />
 	</div>
-	<Footer />
 </main>
+
+<style>
+	main {
+		font-family: 'Overpass Variable', sans-serif;
+	}
+</style>

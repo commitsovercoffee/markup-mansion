@@ -1,23 +1,58 @@
 @import url(./styles/prism-one-dark.css);
+
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
-:where(h2, h3, h4, h5, h6) {
-	.icon-link {
-		position: relative;
+@theme inline {
+	--color-bg: var(--bg);
+	--color-fg: var(--fg);
+	--color-panel: var(--panel);
 
-		&::before {
-			content: '#';
-			position: absolute;
-			left: -1ch;
-			top: 0;
-			line-height: 1;
-			opacity: 0;
-			text-decoration: underline;
-		}
+	--color-body: var(--body);
+	--color-anchor: var(--anchor);
+
+	--color-primary: var(--primary);
+	--color-secondary: var(--secondary);
+	--color-highlight: var(--highlight);
+}
+
+@layer base {
+	:root {
+		--bg: #110f18;
+		--fg: #edecee;
+		--panel: #202127;
+
+		--body: #7f8487;
+		--anchor: #a277ff;
+
+		--primary: #ff6767;
+		--secondary: #ffca85;
+		--highlight: #61ffca;
 	}
 
-	&:hover .icon-link::before {
-		opacity: 1;
+	.dark {
+		--bg: #110f18;
+		--fg: #edecee;
+		--panel: #202127;
+
+		--body: #7f8487;
+		--anchor: #a277ff;
+
+		--primary: #ff6767;
+		--secondary: #ffca85;
+		--highlight: #61ffca;
+	}
+
+	.light {
+		--bg: #f8f2e5;
+		--fg: #464340;
+		--panel: #e7e3d7;
+
+		--body: #807d7c;
+		--anchor: #8050a7;
+
+		--primary: #b24000;
+		--secondary: #806000;
+		--highlight: #107410;
 	}
 }

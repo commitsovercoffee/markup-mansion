@@ -1,8 +1,3 @@
-<script>
-	import { palette, theme } from '$lib/theme.svelte';
-	const shades = palette[theme];
-</script>
-
-<h2 style:color={shades.highlight}>
+<h2 class="text-highlight">
 	<slot />
 </h2>

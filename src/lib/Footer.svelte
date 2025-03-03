@@ -1,7 +1,4 @@
 <script>
-	import { theme, palette } from '$lib/theme.svelte';
-	const shades = palette[theme];
-
 	const socials = [
 		{
 			label: 'youtube',
@@ -24,13 +21,9 @@
 	];
 </script>
 
-<footer
-	class="flex flex-row items-center justify-center gap-4 p-2"
-	style:--normal-fill={shades.desc}
-	style:--hover-fill={shades.foreground}
->
+<footer class="flex flex-row items-center justify-center gap-4 p-2">
 	{#each socials as social}
-		<a target="_blank" href={social.href} aria-label={social.aria}>
+		<a target="_blank" href={social.href} aria-label={social.aria} class="fill-body hover:fill-fg">
 			<svg width="24px" height="24px" viewBox="0 {social.label == 'youtube' ? '-4' : '0'} 24 24">
 				<g>
 					<path d={social.d} />
@@ -39,13 +32,3 @@
 		</a>
 	{/each}
 </footer>
-
-<style>
-	a {
-		fill: var(--normal-fill);
-	}
-
-	a:hover {
-		fill: var(--hover-fill);
-	}
-</style>

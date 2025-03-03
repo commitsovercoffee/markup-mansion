@@ -1,4 +1,6 @@
 <script>
+	import { Anchor } from 'lucide-svelte';
+
 	const projects = [
 		{ repo: 'Billie', desc: 'Billie ~ To create your bills & invoices.', demo: true },
 		{ repo: 'jason', desc: 'json goes in, resume comes out.', demo: true },
@@ -32,8 +34,11 @@
 				class="group bg-panel hover:bg-fg flex flex-col justify-between gap-4 rounded-lg p-4 transition-all duration-200 ease-out"
 			>
 				<dl class="not-prose">
-					<dt class="text-fg group-hover:text-bg mt-4 mb-2 font-bold">
-						{project.repo}
+					<dt class="text-fg group-hover:text-bg mt-4 mb-2 flex gap-x-2 font-bold">
+						<Anchor />
+						<span>
+							{project.repo}
+						</span>
 					</dt>
 					<dd class="text-body group-hover:text-bg">{project.desc}</dd>
 				</dl>

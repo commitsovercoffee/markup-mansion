@@ -2,7 +2,7 @@
 	// assets
 	import '../app.css';
 	import '@fontsource-variable/overpass'; // 100-900
-	import { Coffee, SunMedium } from 'lucide-svelte';
+	import { Coffee, Moon, SunMedium } from 'lucide-svelte';
 
 	// components
 	import Footer from '$lib/Footer.svelte';
@@ -24,10 +24,11 @@
 <main
 	class="{lightsoff
 		? 'dark prose-invert'
-		: 'light'} bg-bg min-h-screen min-w-screen px-4 transition-colors duration-300 ease-in"
+		: 'light'} bg-bg selection:bg-fg selection:text-bg min-h-screen min-w-screen px-4 transition-colors duration-200 ease-in"
 >
 	<div class="prose text-body mx-auto flex min-h-screen flex-col justify-between">
 		<div>
+			<!-- nav bar ----------------------------------------->
 			<nav class="flex flex-col items-center gap-4 py-16 md:items-start">
 				<a href="/" class="group flex items-center no-underline">
 					<Coffee
@@ -38,7 +39,7 @@
 
 					<span class="text-fg text-xl"> CommitsOverCoffee </span>
 				</a>
-				<div class="flex flex-row gap-4">
+				<div class="flex flex-row items-center gap-4">
 					<a
 						class="hover:text-fg no-underline {page.url.pathname.startsWith('/writings')
 							? 'text-fg'
@@ -59,16 +60,39 @@
 						target="_blank"
 						href="/rss.xml">/rss</a
 					>
-					<SunMedium
-						onclick={() => (lightsoff = !lightsoff)}
-						size={24}
-						strokeWidth={1.8}
-						class="stroke-secondary -rotate-12 transition-all duration-200 ease-in group-hover:rotate-0"
-					/>
+					<div class="h-[28px] w-[28px]">
+						{#if lightsoff}
+							<div
+								in:fly={{ easing: cubicOut, y: 20, duration: 200, delay: 200 }}
+								out:fly={{ easing: cubicIn, y: -20, duration: 200 }}
+								class="transition-all duration-300 ease-in active:translate-y-2"
+							>
+								<SunMedium
+									onclick={() => (lightsoff = !lightsoff)}
+									size={28}
+									strokeWidth={1.8}
+									class="stroke-secondary cursor-pointer"
+								/>
+							</div>
+						{:else}
+							<div
+								in:fly={{ easing: cubicOut, y: 20, duration: 200, delay: 200 }}
+								out:fly={{ easing: cubicIn, y: -20, duration: 200 }}
+								class="transition-all duration-300 ease-in active:translate-y-2"
+							>
+								<Moon
+									onclick={() => (lightsoff = !lightsoff)}
+									size={28}
+									strokeWidth={1.8}
+									class="stroke-fg fill-fg cursor-pointer"
+								/>
+							</div>
+						{/if}
+					</div>
 				</div>
 			</nav>
 
-			<!------------------------- page loader ------------------------------>
+			<!-- page loader ------------------------------------->
 			{#if navigating.to}
 				<div class="flex flex-row items-center gap-2">
 					<LoaderPinwheel size={24} strokeWidth={1.8} class="stroke-secondary m-0 animate-spin" />
@@ -85,6 +109,7 @@
 				</div>
 			{/if}
 		</div>
+		<!-- footer -------------------------------------------------->
 		<Footer />
 	</div>
 </main>

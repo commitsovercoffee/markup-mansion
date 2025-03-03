@@ -1,4 +1,5 @@
 import { json } from '@sveltejs/kit';
+export const prerender = true;
 
 async function fetchMarkdownPosts() {
 	const allPostFiles = import.meta.glob('/src/routes/writings/*.md'); // vite function

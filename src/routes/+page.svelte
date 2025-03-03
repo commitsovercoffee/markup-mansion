@@ -3,18 +3,17 @@
 	<meta name="description" content="Personal website of Sourav Singh." />
 </svelte:head>
 
-<article>
+<article class="prose-a:text-anchor prose-a:underline-offset-4 prose-a:decoration-1">
 	<div class="mb-16">
 		<h1 class="text-primary mb-0">
 			Hello Folks, <div class="text-fg">I am Sourav.</div>
 		</h1>
-
 		<p>Welcome to my corner of the internet.</p>
 	</div>
 
 	<div class="grid grid-cols-1 gap-4 text-pretty md:grid-cols-2">
 		<div class="row-span-2">
-			<h3 class="text-anchor mt-0">About</h3>
+			<h3 class="text-tertiary mt-0">About</h3>
 
 			<p>
 				I'm a software developer. I design and build things for the web. I’m based in Ranchi, India

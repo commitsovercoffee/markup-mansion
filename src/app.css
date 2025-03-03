@@ -1,5 +1,4 @@
 @import url(./styles/prism-one-dark.css);
-
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
@@ -10,10 +9,11 @@
 
 	--color-body: var(--body);
 	--color-anchor: var(--anchor);
+	--color-highlight: var(--highlight);
 
 	--color-primary: var(--primary);
 	--color-secondary: var(--secondary);
-	--color-highlight: var(--highlight);
+	--color-tertiary: var(--tertiary);
 }
 
 @layer base {
@@ -23,11 +23,12 @@
 		--panel: #202127;
 
 		--body: #7f8487;
-		--anchor: #a277ff;
+		--anchor: #01a0e4;
+		--highlight: #61ffca;
 
 		--primary: #ff6767;
 		--secondary: #ffca85;
-		--highlight: #61ffca;
+		--tertiary: #a277ff;
 	}
 
 	.dark {
@@ -36,11 +37,12 @@
 		--panel: #202127;
 
 		--body: #7f8487;
-		--anchor: #a277ff;
+		--anchor: #01a0e4;
+		--highlight: #61ffca;
 
 		--primary: #ff6767;
 		--secondary: #ffca85;
-		--highlight: #61ffca;
+		--tertiary: #a277ff;
 	}
 
 	.light {

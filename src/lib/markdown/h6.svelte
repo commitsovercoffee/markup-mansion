@@ -1,13 +1,13 @@
 <script>
-	import { Heading1 } from 'lucide-svelte';
+	import { Heading6 } from 'lucide-svelte';
 	let data;
 </script>
 
 <section id={data?.innerText.replaceAll(' ', '-')}>
-	<h1 bind:this={data} class="text-primary flex gap-2">
+	<h6 bind:this={data} class="text-body flex gap-2">
 		<a class="not-prose" href="#{data?.innerText.replaceAll(' ', '-')}">
-			<Heading1 class="stroke-body" />
+			<Heading6 class="stroke-body" />
 		</a>
 		<slot />
-	</h1>
+	</h6>
 </section>

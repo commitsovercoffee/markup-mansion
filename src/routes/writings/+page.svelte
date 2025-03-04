@@ -46,17 +46,15 @@
 
 	{#each filteredPosts as post}
 		<a class="group no-underline" href={post.path}>
-			<li class="text-fg list-disc pb-2 decoration-white">
-				<dl transition:fade={{ duration: 300 }}>
-					<dt class="text-fg font-bold">
-						{post.meta.title}
-						<span
-							class="bg-secondary block h-0.5 max-w-16 transition-all duration-500 group-hover:max-w-sm"
-						></span>
-					</dt>
-					<dd class="text-body">{post.meta.desc}</dd>
-				</dl>
-			</li>
+			<dl transition:fade={{ duration: 300 }}>
+				<dt class="text-fg font-bold">
+					{post.meta.title}
+					<span
+						class="bg-secondary block h-0.5 max-w-16 transition-all duration-500 group-hover:max-w-sm"
+					></span>
+				</dt>
+				<dd class="text-body">{post.meta.desc}</dd>
+			</dl>
 		</a>
 	{/each}
 </article>

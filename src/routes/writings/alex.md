@@ -11,6 +11,16 @@ published: true
 
 # Alex's Genius Struggle
 
+## Alex's Genius Struggle
+
+### Alex's Genius Struggle
+
+#### Alex's Genius Struggle
+
+##### Alex's Genius Struggle
+
+###### Alex's Genius Struggle
+
 ![alt text](https://picsum.photos/200/300)
 
 ## Introduction
@@ -20,6 +30,12 @@ Some days, I wonder what it’s like to be _normal_. You know, one of those peop
 ---
 
 ## The Daily Struggle
+
+## Table of Contents
+
+### asdasd
+
+#### asdasd
 
 Let’s start with **Mom** and **Dad**.
 

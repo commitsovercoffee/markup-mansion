@@ -1,6 +1,6 @@
+@import url(./styles/prism-one-dark.css);
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
-@import url(./styles/prism-one-dark.css);
 
 @theme inline {
 	--color-bg: var(--bg);

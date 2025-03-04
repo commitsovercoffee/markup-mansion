@@ -21,7 +21,7 @@
 	];
 </script>
 
-<footer class="flex flex-row items-center justify-center gap-4 p-2">
+<footer class="mt-auto flex w-full flex-row items-center justify-center gap-4 p-2">
 	{#each socials as social}
 		<a target="_blank" href={social.href} aria-label={social.aria} class="fill-body hover:fill-fg">
 			<svg width="24px" height="24px" viewBox="0 {social.label == 'youtube' ? '-4' : '0'} 24 24">

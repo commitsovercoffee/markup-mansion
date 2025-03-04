@@ -25,7 +25,7 @@
 			<div class="text-fg">Reservoir</div>
 		</h1>
 		<p>Plunge into my thoughts ~ part blog, part wiki.</p>
-		<div class="flex gap-2">
+		<div class="flex flex-wrap gap-2">
 			{#each tags as tag}
 				<button
 					class=" {selectedTags.has(tag)
@@ -46,15 +46,17 @@
 
 	{#each filteredPosts as post}
 		<a class="group no-underline" href={post.path}>
-			<dl transition:fade={{ duration: 300 }}>
-				<dt class="text-fg font-bold">
-					{post.meta.title}
-					<span
-						class="bg-secondary block h-0.5 max-w-16 transition-all duration-500 group-hover:max-w-sm"
-					></span>
-				</dt>
-				<dd class="text-body">{post.meta.desc}</dd>
-			</dl>
+			<li class="text-fg list-disc pb-2 decoration-white">
+				<dl transition:fade={{ duration: 300 }}>
+					<dt class="text-fg font-bold">
+						{post.meta.title}
+						<span
+							class="bg-secondary block h-0.5 max-w-16 transition-all duration-500 group-hover:max-w-sm"
+						></span>
+					</dt>
+					<dd class="text-body">{post.meta.desc}</dd>
+				</dl>
+			</li>
 		</a>
 	{/each}
 </article>

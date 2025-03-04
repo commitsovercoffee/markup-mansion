@@ -13,7 +13,7 @@
 
 	<div class="grid grid-cols-1 gap-4 text-pretty md:grid-cols-2">
 		<div class="row-span-2">
-			<h3 class="text-tertiary mt-0">About</h3>
+			<h2 class="text-tertiary mt-0">About</h2>
 
 			<p>
 				I'm a software developer. I design and build things for the web. I’m based in Ranchi, India
@@ -35,7 +35,7 @@
 			</p>
 		</div>
 		<div>
-			<h3 class="text-secondary mt-0">Random Facts</h3>
+			<h2 class="text-secondary mt-0">Random Facts</h2>
 			<p>
 				I frown without dynamic window tiling. 😦 <br />
 				Bad carries cost me games in Dota 2. ⚔️ <br />
@@ -47,7 +47,7 @@
 			</p>
 		</div>
 		<div>
-			<h3 class="text-highlight mt-0">Favorites</h3>
+			<h2 class="text-highlight mt-0">Favorites</h2>
 			<p>
 				Book : Crime & Punishment. 🪓 <br />
 				Game : God of War Ragnarok. 💥 <br />

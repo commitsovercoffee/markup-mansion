@@ -1,3 +1,3 @@
-<strong class="text-body">
+<strong class="text-tertiary">
 	<slot />
 </strong>

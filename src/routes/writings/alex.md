@@ -9,19 +9,88 @@ tags:
 published: true
 ---
 
-# Alex's Genius Struggle
+# Heading 1
 
-## Alex's Genius Struggle
+## Heading 2
 
-### Alex's Genius Struggle
+### Heading 3
 
-#### Alex's Genius Struggle
+#### Heading 4
 
-##### Alex's Genius Struggle
+##### Heading 5
 
-###### Alex's Genius Struggle
+###### Heading 6
+
+---
+
+I really like using `Markdown`.
+
+I think I'll use it to format all of my documents from now on.
+
+This is the first line.  
+And this is the second line because of a line break.
+
+---
+
+A _cat_ meow
+I just love **bold text**.
+
+---
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>   _Everything_ is going according to **plan**.
+
+---
+
+1. First item
+2. Second item
+3. Third item
+4. Fourth item
+
+- First item
+- Second item
+- Third item
+- Fourth item
+
+---
+
+```go
+package main
+
+import (
+    "github.com/charmbracelet/bubbletea"
+)
+```
+
+---
+
+3. Define a Model. The Model represents the state of your application:
+
+In Bubble Tea, a **Model** is a Go struct that encapsulates all the data and state information that your application needs to function and display its UI.
+It's where you store variables, flags, and any other data relevant to how your application behaves and appears at any given moment.
+
+```go
+type Model struct {
+    // Define your state here
+    count int
+}
+```
+
+---
 
 ![alt text](https://picsum.photos/200/300)
+
+[asd](google.com)
+
+---
+
+My favorite search engine is [Duck Duck Go](https://duckduckgo.com 'The best search engine for privacy').
 
 ## Introduction
 

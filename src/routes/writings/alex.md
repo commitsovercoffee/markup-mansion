@@ -86,8 +86,6 @@ type Model struct {
 
 ![alt text](https://picsum.photos/200/300)
 
-[asd](google.com)
-
 ---
 
 My favorite search engine is [Duck Duck Go](https://duckduckgo.com 'The best search engine for privacy').

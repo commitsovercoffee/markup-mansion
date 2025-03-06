@@ -27,8 +27,9 @@
 		: 'light'} bg-bg selection:bg-fg selection:text-bg min-h-screen min-w-screen px-4 transition-colors duration-200 ease-in"
 >
 	<div class="prose text-body mx-auto flex min-h-screen flex-col justify-between">
-		<!-- nav bar ----------------------------------------->
-		<nav class="flex flex-col items-start gap-4 py-16">
+		<!-- nav bar ------------------------------------------------->
+
+		<nav class="flex flex-col items-start gap-4 py-12">
 			<a href="/" class="group flex items-center no-underline">
 				<Coffee
 					size={28}
@@ -91,7 +92,8 @@
 			</div>
 		</nav>
 
-		<!-- page loader ------------------------------------->
+		<!-- page content & loader ----------------------------------->
+
 		{#if navigating.to}
 			<div class="flex flex-row items-center gap-2">
 				<LoaderPinwheel size={24} strokeWidth={1.8} class="stroke-secondary m-0 animate-spin" />
@@ -107,7 +109,9 @@
 				{@render children()}
 			</div>
 		{/if}
+
 		<!-- footer -------------------------------------------------->
+
 		<Footer />
 	</div>
 </main>

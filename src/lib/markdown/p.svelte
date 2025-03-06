@@ -1,3 +1,3 @@
-<p class="text-body">
+<p class="text-fg">
 	<slot />
 </p>

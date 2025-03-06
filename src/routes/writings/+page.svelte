@@ -1,4 +1,5 @@
 <script>
+	import Hero from '$lib/Hero.svelte';
 	import { SvelteSet } from 'svelte/reactivity';
 	import { fade } from 'svelte/transition';
 
@@ -19,29 +20,23 @@
 </svelte:head>
 
 <article>
-	<div class="mb-16">
-		<h1 class="text-primary mb-0">
-			Thought
-			<div class="text-fg">Reservoir</div>
-		</h1>
-		<p>Plunge into my thoughts ~ part blog, part wiki.</p>
-		<div class="flex flex-wrap gap-2">
-			{#each tags as tag}
-				<button
-					class=" {selectedTags.has(tag)
-						? 'text-panel bg-fg'
-						: 'text-fg bg-panel'} cursor-pointer rounded-xl px-4 py-1 transition-all duration-200 active:translate-y-2"
-					onclick={() => {
-						selectedTags.has(tag) ? selectedTags.delete(tag) : selectedTags.add(tag);
-						filteredPosts = data.posts.filter((post) => {
-							return selectedTags.size === 0 || post.meta.tags.some((t) => selectedTags.has(t));
-						});
-					}}
-				>
-					{tag}
-				</button>
-			{/each}
-		</div>
+	<Hero first="Thought" second="Reservoir" desc="Plunge into my thoughts ~ part blog, part wiki." />
+	<div class="mb-12 flex flex-wrap gap-2">
+		{#each tags as tag}
+			<button
+				class=" {selectedTags.has(tag)
+					? 'text-panel bg-secondary'
+					: 'text-fg bg-panel'} cursor-pointer rounded-xl px-4 py-1 transition-all duration-200 active:translate-y-2"
+				onclick={() => {
+					selectedTags.has(tag) ? selectedTags.delete(tag) : selectedTags.add(tag);
+					filteredPosts = data.posts.filter((post) => {
+						return selectedTags.size === 0 || post.meta.tags.some((t) => selectedTags.has(t));
+					});
+				}}
+			>
+				{tag}
+			</button>
+		{/each}
 	</div>
 
 	{#each filteredPosts as post}

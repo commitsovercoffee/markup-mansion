@@ -35,7 +35,6 @@
 			>
 				<dl class="not-prose">
 					<dt class="text-fg group-hover:text-bg mt-4 mb-2 flex gap-x-2 font-bold">
-						<Anchor />
 						<span>
 							{project.repo}
 						</span>

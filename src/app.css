@@ -16,6 +16,27 @@
 	--color-tertiary: var(--tertiary);
 }
 
+@utility prose {
+	code {
+
+		&::before,
+		&::after {
+			content: none;
+		}
+	}
+
+	blockquote>* {
+
+		&::before,
+		&::after {
+			content: none;
+		}
+
+		font-weight: 200;
+		font-style: normal;
+	}
+}
+
 @layer base {
 	:root {
 		--bg: #110f18;
@@ -51,10 +72,11 @@
 		--panel: #e7e3d7;
 
 		--body: #807d7c;
-		--anchor: #8050a7;
+		--anchor: #01a0e4;
+		--highlight: #107410;
 
 		--primary: #b24000;
 		--secondary: #806000;
-		--highlight: #107410;
+		--tertiary: #8050a7;
 	}
 }

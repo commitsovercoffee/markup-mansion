@@ -1,3 +1,3 @@
-<li class="text-body">
+<li class="text-fg">
 	<slot />
 </li>

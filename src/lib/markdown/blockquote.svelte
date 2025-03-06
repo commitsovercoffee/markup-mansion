@@ -1,8 +1,3 @@
-<script>
-	import { Quote } from 'lucide-svelte';
-</script>
-
-<blockquote class="border-primary border-l-2">
-	<Quote class="stroke-primary" />
+<blockquote class="border-fg bg-panel border-l-4 p-4">
 	<slot />
 </blockquote>

@@ -1,15 +1,14 @@
+<script>
+	import Hero from '$lib/Hero.svelte';
+</script>
+
 <svelte:head>
 	<title>Commits Over Coffee</title>
 	<meta name="description" content="Personal website of Sourav Singh." />
 </svelte:head>
 
 <article class="prose-a:text-anchor prose-a:underline-offset-4 prose-a:decoration-1">
-	<div class="mb-16">
-		<h1 class="text-primary mb-0">
-			Hello Folks, <div class="text-fg">I am Sourav.</div>
-		</h1>
-		<p>Welcome to my corner of the internet.</p>
-	</div>
+	<Hero first="Hello Folks," second="I am Sourav." desc="Welcome to my corner of the internet." />
 
 	<div class="grid grid-cols-1 gap-4 text-pretty md:grid-cols-2">
 		<div class="row-span-2">
@@ -38,10 +37,10 @@
 			<h2 class="text-secondary mt-0">Random Facts</h2>
 			<p>
 				I frown without dynamic window tiling. 😦 <br />
-				Bad carries cost me games in Dota 2. ⚔️ <br />
-				I am learning svelte & loving it. 💖<br />
-				I make youtube videos. 🎬 <br />
+				Solo drives are karaoke sessions. 🎤<br />
+				I despise short form content. <br />
 				I prefer 🦐 over 🐓. Sue me! <br />
+				I make youtube videos. 🎬 <br />
 				I journal in markdown. ✏️ <br />
 				I use arch btw. 🍹 <br />
 			</p>
@@ -57,5 +56,9 @@
 			</p>
 		</div>
 	</div>
-	<p>Thanks for stopping by. Find me @commitsovercoffee on the web. 💬</p>
+	<p>
+		🫂 Feel free to reach out. You can
+		<a href="https://bsky.app/profile/commitsovercoffee.com">text me on bsky</a> or
+		<a href="mailto:commitsovercoffee@gmail.com">shoot me a mail</a>.
+	</p>
 </article>

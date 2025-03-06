@@ -10,7 +10,7 @@ tags:
 published: true
 ---
 
-## Brewing Command-Line Apps : An Introduction to Bubble Tea
+# Brewing Command-Line Apps : An Introduction to Bubble Tea
 
 Bubble Tea is a Go library used for building interactive CLI (Command-Line Interface) applications. It's inspired by The Elm Architecture, a pattern for building web apps. Bubble Tea applications are structured around a central **Model** that represents the state of your application, and **Messages** that represent changes to that state.
 
@@ -29,7 +29,7 @@ Before you begin, ensure you have Go installed on your system. You can download 
 go mod init <module-name>
 ```
 
-### Step 3: Installing Bubble Tea
+## Step 3: Installing Bubble Tea
 
 In your project directory, install the Bubble Tea package using Go's package manager:
 

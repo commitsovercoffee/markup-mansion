@@ -1,6 +1,27 @@
-import { mdsvex } from 'mdsvex';
+import { mdsvex, escapeSvelte } from 'mdsvex';
+import { createHighlighter } from 'shiki';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import adapter from '@sveltejs/adapter-static';
+
+const theme = 'catppuccin-mocha';
+const highlighter = await createHighlighter({
+	themes: [theme],
+	langs: ['javascript', 'typescript', 'go', 'bash']
+});
+
+/** @type {import('mdsvex').MdsvexOptions} */
+const mdsvexOptions = {
+	extensions: ['.md'],
+	layout: {
+		default: './src/lib/markdown/layout.svelte'
+	},
+	highlight: {
+		highlighter: async (code, lang = 'text') => {
+			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme }));
+			return `{@html \`${html}\` }`;
+		}
+	}
+};
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -16,15 +37,7 @@ const config = {
 		})
 	},
 
-	preprocess: [
-		vitePreprocess(),
-		mdsvex({
-			extensions: ['.md'],
-			layout: {
-				default: './src/lib/markdown/layout.svelte'
-			}
-		})
-	],
+	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	extensions: ['.svelte', '.svx', '.md']
 };
 

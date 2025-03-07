@@ -1,14 +1,20 @@
 <script>
-	import { Anchor } from 'lucide-svelte';
+	import { Anchor, BookMarkedIcon, CircleIcon } from 'lucide-svelte';
 
 	const projects = [
-		{ repo: 'Billie', desc: 'Billie ~ To create your bills & invoices.', demo: true },
-		{ repo: 'jason', desc: 'json goes in, resume comes out.', demo: true },
-		{ repo: 'one', desc: 'one liner desc', demo: true },
 		{
-			repo: 'Hope',
-			desc: 'arch script.',
-			demo: true
+			repo: 'Billie',
+			desc: 'Billie ~ To create your bills & invoices.',
+			demo: true,
+			lang: 'Svelte',
+			color: 'stroke-[#ff3e00] fill-[#ff3e00]'
+		},
+		{
+			repo: 'Billie',
+			desc: 'Billie ~ To create your bills & invoices.',
+			demo: true,
+			lang: 'Svelte',
+			color: 'stroke-[#ff3e00] fill-[#ff3e00]'
 		}
 	];
 </script>
@@ -31,28 +37,36 @@
 	<div class="grid grid-cols-1 gap-4 text-pretty break-words md:grid-cols-2">
 		{#each projects as project}
 			<div
-				class="group bg-panel hover:bg-fg flex flex-col justify-between gap-4 rounded-lg p-4 transition-all duration-200 ease-out"
+				class="bg-panel flex flex-col justify-between gap-4 rounded-xl p-4 transition-all duration-200 ease-out"
 			>
 				<dl class="not-prose">
-					<dt class="text-fg group-hover:text-bg mt-4 mb-2 flex gap-x-2 font-bold">
-						<span>
-							{project.repo}
-						</span>
+					<dt class="textprimary mt-4 mb-2 flex gap-x-2 font-bold">
+						<a class="text-anchor flex items-center gap-x-1 decoration-1 hover:underline" href="">
+							<span>
+								{project.repo}
+							</span>
+						</a>
 					</dt>
-					<dd class="text-body group-hover:text-bg">{project.desc}</dd>
+					<dd class="text-fg">{project.desc}</dd>
 				</dl>
-				<div class="flex flex-row gap-2">
-					{#if project.demo}
-						<a
-							class="text-bg bg-fg rounded-xl px-2 py-1 no-underline"
-							href="https://{project.repo}.commitsovercoffee.com">demo</a
-						>
-					{/if}
+				<div class="flex items-center justify-between">
+					<div class="flex flex-row gap-2">
+						{#if project.demo}
+							<a
+								class="text-secondary bg-bg border-panel hover:border-secondary rounded-xl border-2 px-2 py-1 no-underline transition-all duration-200 ease-in"
+								href="https://{project.repo}.commitsovercoffee.com">demo</a
+							>
+						{/if}
 
-					<a
-						class="text-fg bg-bg rounded-xl px-2 py-1 no-underline transition-all"
-						href="https://github.com/commitsovercoffee/{project.repo}">source</a
-					>
+						<a
+							class="text-highlight bg-bg border-panel hover:border-highlight rounded-xl border-2 px-2 py-1 no-underline transition-all duration-200 ease-in"
+							href="https://github.com/commitsovercoffee/{project.repo}">source</a
+						>
+					</div>
+					<div class="flex items-center gap-x-1">
+						<CircleIcon size={16} class={project.color} />
+						<span class="text-sm">{project.lang}</span>
+					</div>
 				</div>
 			</div>
 		{/each}

@@ -15,33 +15,39 @@
 			<h2 class="text-secondary mt-0 font-medium">About</h2>
 
 			<p>
-				I'm a software developer. I design and build things for the web. I’m based in Ranchi, India
-				& work remotely as a consultant. 💼
+				I'm an independent software developer based in Ranchi, India. 🌏 I primarily design and
+				build things for the web. 💼
 			</p>
 
 			<p>
-				I kicked off my career as a freelancer, working on a variety of projects, building frontend,
-				microservices, middleware and dashboards. 🧑‍💻
-			</p>
-			<p>
-				Currently, I work as a technical consultant at Quest Alliance, where I mostly focus on
-				solutioning, development & support. 🎯
+				Currently, I work at Quest Alliance as a consultant where I focus on solutioning,
+				development and support. You can find my <a href="https://youtu.be/dQw4w9WgXcQ">resume</a>
+				here. 🎯
 			</p>
 
 			<p>
-				When I’m off the clock, you’ll find me cycling, shooting hoops, reading, writing, or
-				tinkering with side projects. ✨
+				When I’m not glued to the screen, I’m usually cycling around town, shooting hoops 🏀 (if the
+				stars align ✨ ), reading, <a href="/writings">writing</a> or tinkering with
+				<a href="/projects">side projects</a>. 🪛
+			</p>
+			<p>
+				What I'm upto <strong class="text-body">Now</strong> ?
+			</p>
+			<p>
+				- Learning <a href="https://svelte.dev/">svelte</a>. 💖<br />
+				- Convincing myself to do youtube. 🍰<br />
 			</p>
 		</div>
 		<div>
 			<h2 class="text-tertiary mt-0 font-medium">Random Facts</h2>
 			<p>
-				Solo drives are my karaoke session. 🎤<br />
-				I despise short-form content. 🤢<br />
-				I prefer 🍤 over 🍗. Sue me ! <br />
-				I make youtube videos. 🎬 <br />
-				I journal in markdown. ✏️ <br />
-				I use arch btw. 🍹 <br />
+				I work remotely from my batcave. 📍<br />
+				I use fast silver switches on my keeb. 🪶<br />
+				I prefer cargo pants over jeans. 🩳<br />
+				I’m a connoisseur of obscure snacks. 🍕<br />
+				I can quote The Office in my sleep. 💤<br />
+				I despise short form content. 🚮<br />
+				No. I can't fix your printer. 🖨️<br />
 			</p>
 		</div>
 		<div>
@@ -50,6 +56,7 @@
 				Book : Crime & Punishment. 🪓 <br />
 				Game : God of War Ragnarok. 💥 <br />
 				Movie : Mission Impossible. 🕵️‍♂️<br />
+				Music : Classic/Psychedelic Rock <br />
 				TV Show : Modern Family. 🏡 <br />
 				Food : Mutton Biryani. 🥩 <br />
 			</p>

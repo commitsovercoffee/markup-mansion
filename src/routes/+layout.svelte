@@ -41,27 +41,29 @@
 			</a>
 			<div class="flex flex-row items-center gap-4">
 				<a
-					class="hover:text-fg no-underline {page.url.pathname.startsWith('/writings')
-						? 'text-fg'
+					class="hover:text-secondary no-underline underline-offset-2 {page.url.pathname.startsWith(
+						'/writings'
+					)
+						? 'text-secondary underline underline-offset-8'
 						: 'text-body'}"
 					href="/writings">/writings</a
 				>
 
 				<a
-					class="hover:text-fg no-underline {page.url.pathname == '/projects'
-						? 'text-fg'
+					class="hover:text-secondary no-underline {page.url.pathname == '/projects'
+						? 'text-secondary underline underline-offset-8'
 						: 'text-body'}"
 					href="/projects">/projects</a
 				>
 				<a
-					class="hover:text-fg no-underline {page.url.pathname == '/rss.xml'
-						? 'text-fg'
+					class="hover:text-secondary no-underline {page.url.pathname == '/rss.xml'
+						? 'text-secondary underline underline-offset-8'
 						: 'text-body'}"
 					target="_blank"
 					href="/rss.xml">/rss</a
 				>
 				<div class="h-[28px] w-[28px]">
-					{#if lightsoff}
+					{#if !lightsoff}
 						<div
 							in:fly={{ easing: cubicOut, y: 20, duration: 200, delay: 200 }}
 							out:fly={{ easing: cubicIn, y: 20, duration: 200 }}
@@ -84,7 +86,7 @@
 								onclick={() => (lightsoff = !lightsoff)}
 								size={24}
 								strokeWidth={1.8}
-								class="stroke-fg fill-fg cursor-pointer"
+								class="stroke-primary fill-primary cursor-pointer"
 							/>
 						</div>
 					{/if}

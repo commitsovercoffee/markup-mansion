@@ -21,7 +21,10 @@
 
 			<p>
 				Currently, I work at Quest Alliance as a consultant where I focus on solutioning,
-				development and support. You can find my <a href="https://youtu.be/dQw4w9WgXcQ">resume</a>
+				development and support. You can find my <a
+					target="_blank"
+					href="https://youtu.be/dQw4w9WgXcQ">resume</a
+				>
 				here. 🎯
 			</p>
 
@@ -34,7 +37,7 @@
 				What I'm upto <strong class="text-body">Now</strong> ?
 			</p>
 			<p>
-				- Learning <a href="https://svelte.dev/">svelte</a>. 💖<br />
+				- Learning <a target="_blank" href="https://svelte.dev/">svelte</a>. 💖<br />
 				- Convincing myself to do youtube. 🍰<br />
 			</p>
 		</div>

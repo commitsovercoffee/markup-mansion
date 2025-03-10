@@ -24,7 +24,7 @@
 <main
 	class="{lightsoff
 		? 'dark prose-invert'
-		: 'light'} bg-bg selection:bg-fg selection:text-bg min-h-screen min-w-screen px-4 transition-colors duration-200 ease-in"
+		: 'light'} font-overpass bg-bg selection:bg-fg selection:text-bg min-h-screen min-w-screen px-4 transition-colors duration-200 ease-in"
 >
 	<div class="prose text-body mx-auto flex min-h-screen flex-col justify-between">
 		<!-- nav bar ------------------------------------------------->
@@ -115,9 +115,3 @@
 		<Footer />
 	</div>
 </main>
-
-<style>
-	main {
-		font-family: 'Overpass Variable', sans-serif;
-	}
-</style>

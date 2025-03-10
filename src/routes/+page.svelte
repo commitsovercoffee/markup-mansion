@@ -12,7 +12,7 @@
 
 	<div class="grid grid-cols-1 gap-4 text-pretty md:grid-cols-2">
 		<div class="row-span-2">
-			<h2 class="text-tertiary mt-0">About</h2>
+			<h2 class="text-secondary mt-0 font-medium">About</h2>
 
 			<p>
 				I'm a software developer. I design and build things for the web. I’m based in Ranchi, India
@@ -21,7 +21,7 @@
 
 			<p>
 				I kicked off my career as a freelancer, working on a variety of projects, building frontend,
-				microservices, middleware and dashboards. ✨
+				microservices, middleware and dashboards. 🧑‍💻
 			</p>
 			<p>
 				Currently, I work as a technical consultant at Quest Alliance, where I mostly focus on
@@ -30,23 +30,22 @@
 
 			<p>
 				When I’m off the clock, you’ll find me cycling, shooting hoops, reading, writing, or
-				tinkering with side projects. 🧭
+				tinkering with side projects. ✨
 			</p>
 		</div>
 		<div>
-			<h2 class="text-secondary mt-0">Random Facts</h2>
+			<h2 class="text-tertiary mt-0 font-medium">Random Facts</h2>
 			<p>
-				I frown without dynamic window tiling. 😦 <br />
-				Solo drives are karaoke sessions. 🎤<br />
-				I despise short form content. <br />
-				I prefer 🦐 over 🐓. Sue me! <br />
+				Solo drives are my karaoke session. 🎤<br />
+				I despise short-form content. 🤢<br />
+				I prefer 🍤 over 🍗. Sue me ! <br />
 				I make youtube videos. 🎬 <br />
 				I journal in markdown. ✏️ <br />
 				I use arch btw. 🍹 <br />
 			</p>
 		</div>
 		<div>
-			<h2 class="text-highlight mt-0">Favorites</h2>
+			<h2 class="text-highlight mt-0 font-medium">Favorites</h2>
 			<p>
 				Book : Crime & Punishment. 🪓 <br />
 				Game : God of War Ragnarok. 💥 <br />
@@ -57,8 +56,8 @@
 		</div>
 	</div>
 	<p>
-		🫂 Feel free to reach out. You can
-		<a href="https://bsky.app/profile/commitsovercoffee.com">text me on bsky</a> or
-		<a href="mailto:commitsovercoffee@gmail.com">shoot me a mail</a>.
+		🫂 Feel free to reach out. You can text me on
+		<a href="https://bsky.app/profile/commitsovercoffee.com">bsky </a> or shoot me a
+		<a href="mailto:commitsovercoffee@gmail.com">mail</a>.
 	</p>
 </article>

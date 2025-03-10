@@ -7,4 +7,10 @@
 	<meta name="description" content={data.desc} />
 </svelte:head>
 
-<data.content />
+<div class="py-16">
+	<h1 class="text-primary mb-0 font-medium">
+		{data.title}
+	</h1>
+	<p class="text-fg mt-0">{data.desc}</p>
+	<data.content />
+</div>

@@ -1,7 +1,10 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
+@import '@fontsource-variable/overpass';
 
 @theme inline {
+	--font-overpass: 'Overpass Variable', sans-serif;
+
 	--color-bg: var(--bg);
 	--color-fg: var(--fg);
 	--color-panel: var(--panel);
@@ -24,15 +27,20 @@
 		}
 	}
 
-	blockquote>* {
-
-		&::before,
-		&::after {
-			content: none;
-		}
-
-		font-weight: 200;
+	blockquote {
+		font-weight: 400;
 		font-style: normal;
+		border: solid 2px var(--secondary);
+
+		/* Disable adding quote marks to block-quotes: https://github.com/tailwindlabs/tailwindcss-typography/issues/66 */
+		p {
+			color: var(--secondary);
+
+			&:first-of-type::before,
+			&:last-of-type::after {
+				content: none;
+			}
+		}
 	}
 }
 
@@ -42,7 +50,7 @@
 		--fg: #edecee;
 		--panel: #202127;
 
-		--body: #7f8487;
+		--body: #cccccc;
 		--anchor: #01a0e4;
 		--highlight: #61ffca;
 
@@ -52,17 +60,17 @@
 	}
 
 	.dark {
-		--bg: #110f18;
+		--bg: #202127;
 		--fg: #edecee;
-		--panel: #202127;
+		--panel: #2c2e36;
 
-		--body: #7f8487;
+		--body: #81838f;
 		--anchor: #01a0e4;
 		--highlight: #61ffca;
 
-		--primary: #ff6767;
+		--primary: #ff7070;
 		--secondary: #ffca85;
-		--tertiary: #a277ff;
+		--tertiary: #a594f9;
 	}
 
 	.light {

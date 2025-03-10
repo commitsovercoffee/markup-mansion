@@ -54,9 +54,9 @@
 			<h2 class="text-highlight mt-0 font-medium">Favorites</h2>
 			<p>
 				Book : Crime & Punishment. 🪓 <br />
-				Game : God of War Ragnarok. 💥 <br />
-				Movie : Mission Impossible. 🕵️‍♂️<br />
-				Music : Classic/Psychedelic Rock <br />
+				Game : God of War Ragnarok. ❄️<br />
+				Movie : Mission Impossible. ⌚<br />
+				Music : Classic/Psychedelic Rock. 🥁<br />
 				TV Show : Modern Family. 🏡 <br />
 				Food : Mutton Biryani. 🥩 <br />
 			</p>

@@ -21,7 +21,7 @@
 	];
 </script>
 
-<footer class="items-between flex flex-row justify-center gap-x-4 py-4">
+<footer class="items-between flex flex-row flex-wrap justify-center gap-4 py-4">
 	<span>© {new Date().getFullYear()} commitsovercoffee </span>
 	<div class="flex gap-x-4">
 		{#each socials as social}

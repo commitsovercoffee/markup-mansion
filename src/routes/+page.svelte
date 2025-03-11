@@ -10,6 +10,18 @@
 <div
 	class="prose-a:text-anchor prose-a:underline-offset-4 prose-a:decoration-1 prose-a:hover:no-underline"
 >
+	<!--
+
+     /$$   /$$
+    | $$  | $$
+    | $$  | $$  /$$$$$$   /$$$$$$   /$$$$$$
+    | $$$$$$$$ /$$__  $$ /$$__  $$ /$$__  $$
+    | $$__  $$| $$$$$$$$| $$  \__/| $$  \ $$
+    | $$  | $$| $$_____/| $$      | $$  | $$
+    | $$  | $$|  $$$$$$$| $$      |  $$$$$$/
+    |__/  |__/ \_______/|__/       \______/
+
+ -->
 	<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
 		<div class="order-2 md:order-1">
 			<Hero
@@ -27,7 +39,7 @@
 		</div>
 	</div>
 
-	<div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+	<div class="grid grid-cols-1 gap-6 md:mt-6 md:grid-cols-2">
 		<div class="row-span-2">
 			<h2 class="text-secondary mt-0">About</h2>
 			<!--

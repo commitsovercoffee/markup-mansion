@@ -25,3 +25,5 @@ I stumbled upon a list like [this](https://huyenchip.com/list-100/) on Chip Huye
 13. ✗ Visit SEA.
 14. ✗ Read 100 books that I genuinely adore. (20% done)
 15. ✗ Learn to cook Mom’s recipes.
+
+[as](/projects)

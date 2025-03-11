@@ -54,7 +54,7 @@
 					</dt>
 					<dd class="text-fg">{project.desc}</dd>
 				</dl>
-				<div class="flex items-end justify-between">
+				<div class="flex flex-wrap items-end justify-between gap-4">
 					<div class="flex flex-row gap-2">
 						{#if project.demo}
 							<a

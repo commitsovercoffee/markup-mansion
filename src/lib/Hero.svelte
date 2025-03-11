@@ -2,7 +2,7 @@
 	let { first, second, desc } = $props();
 </script>
 
-<div class="mb-12">
+<div class="md:mb-12">
 	<h1 class="text-primary mb-0">
 		{first}
 	</h1>

@@ -18,13 +18,13 @@
 
 	// runes
 	let { children } = $props();
-	let theme = $state();
+	let theme = $state('dark');
 
 	// nav
 	const links = ['/writings', '/projects', '/rss'];
-
 	onMount(() => {
-		theme = localStorage.getItem('theme');
+		theme = localStorage.getItem('theme') === null ? 'dark' : localStorage.getItem('theme');
+		console.log(theme);
 	});
 </script>
 
@@ -75,8 +75,9 @@
 							>
 								<SunMedium
 									onclick={() => {
-										localStorage.setItem('theme', 'dark');
-										theme = localStorage.getItem('theme');
+										theme = 'dark';
+										localStorage.setItem('theme', theme);
+										console.log(theme);
 									}}
 									size={28}
 									strokeWidth={1.8}
@@ -91,8 +92,9 @@
 							>
 								<Moon
 									onclick={() => {
-										localStorage.setItem('theme', 'light');
-										theme = localStorage.getItem('theme');
+										theme = 'light';
+										localStorage.setItem('theme', theme);
+										console.log(theme);
 									}}
 									size={24}
 									strokeWidth={1.8}

@@ -10,9 +10,24 @@
 <div
 	class="prose-a:text-anchor prose-a:underline-offset-4 prose-a:decoration-1 prose-a:hover:no-underline"
 >
-	<Hero first="Hello Folks," second="I am Sourav." desc="Welcome to my corner of the internet." />
+	<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+		<div class="order-2 md:order-1">
+			<Hero
+				first="Hello Folks,"
+				second="I am Sourav."
+				desc="Welcome to my corner of the internet. I'm glad you're here. Would you like some tea ? "
+			/>
+		</div>
+		<div class="order-1 md:order-2">
+			<img
+				src="profile.webp"
+				class="not-prose border-fg border4 h-48 w-48 rounded-full object-cover"
+				alt=""
+			/>
+		</div>
+	</div>
 
-	<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+	<div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
 		<div class="row-span-2">
 			<h2 class="text-secondary mt-0">About</h2>
 			<!--

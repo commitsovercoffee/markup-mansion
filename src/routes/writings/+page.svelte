@@ -21,19 +21,19 @@
 
 <article>
 	<Hero first="Thought" second="Reservoir" desc="Plunge into my thoughts ~ part blog, part wiki." />
-	<!-- 
+	<!--
 
- /$$$$$$$$                           
-|__  $$__/                           
+ /$$$$$$$$
+|__  $$__/
    | $$  /$$$$$$   /$$$$$$   /$$$$$$$
    | $$ |____  $$ /$$__  $$ /$$_____/
-   | $$  /$$$$$$$| $$  \ $$|  $$$$$$ 
+   | $$  /$$$$$$$| $$  \ $$|  $$$$$$
    | $$ /$$__  $$| $$  | $$ \____  $$
    | $$|  $$$$$$$|  $$$$$$$ /$$$$$$$/
-   |__/ \_______/ \____  $$|_______/ 
-                  /$$  \ $$          
-                 |  $$$$$$/          
-                  \______/           
+   |__/ \_______/ \____  $$|_______/
+                  /$$  \ $$
+                 |  $$$$$$/
+                  \______/
 
 -->
 	<div class="mb-12 flex flex-wrap gap-2">
@@ -41,7 +41,7 @@
 			<button
 				class=" {selectedTags.has(tag)
 					? 'text-panel bg-primary'
-					: 'text-fg bg-panel'} border-panel hover:border-primary cursor-pointer rounded-xl border-b-2 px-4 py-1 transition-all duration-200 active:translate-y-2"
+					: 'text-fg bg-panel'} cursor-pointer rounded-xl px-4 py-1 transition-all duration-200 active:translate-y-2"
 				onclick={() => {
 					selectedTags.has(tag) ? selectedTags.delete(tag) : selectedTags.add(tag);
 					filteredPosts = data.posts.filter((post) => {
@@ -53,16 +53,16 @@
 			</button>
 		{/each}
 	</div>
-	<!-- 
+	<!--
 
- /$$$$$$$                       /$$             
-| $$__  $$                     | $$             
+ /$$$$$$$                       /$$
+| $$__  $$                     | $$
 | $$  \ $$ /$$$$$$   /$$$$$$$ /$$$$$$   /$$$$$$$
 | $$$$$$$//$$__  $$ /$$_____/|_  $$_/  /$$_____/
-| $$____/| $$  \ $$|  $$$$$$   | $$   |  $$$$$$ 
+| $$____/| $$  \ $$|  $$$$$$   | $$   |  $$$$$$
 | $$     | $$  | $$ \____  $$  | $$ /$$\____  $$
 | $$     |  $$$$$$/ /$$$$$$$/  |  $$$$//$$$$$$$/
-|__/      \______/ |_______/    \___/ |_______/ 
+|__/      \______/ |_______/    \___/ |_______/
 
 -->
 	{#each filteredPosts as post}

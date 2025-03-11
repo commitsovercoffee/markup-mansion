@@ -2,7 +2,7 @@
 	// assets
 	import '../app.css';
 	import '@fontsource-variable/overpass'; // 100-900
-	import { Coffee, Moon, SunMedium, LoaderPinwheel } from 'lucide-svelte';
+	import { Coffee, Moon, SunMedium, LoaderPinwheel, CoinsIcon } from 'lucide-svelte';
 
 	// components
 	import Footer from '$lib/Footer.svelte';
@@ -14,33 +14,36 @@
 	// std lib
 	import { navigating } from '$app/state';
 	import { page } from '$app/state';
+	import { onMount } from 'svelte';
 
 	// runes
 	let { children } = $props();
-	let lightsoff = $state(true);
+	let theme = $state();
 
 	// nav
 	const links = ['/writings', '/projects', '/rss'];
+
+	onMount(() => {
+		theme = localStorage.getItem('theme');
+	});
 </script>
 
 <div
-	class="{lightsoff
-		? 'dark prose-invert'
-		: 'light'} font-overpass bg-bg selection:bg-fg selection:text-bg min-h-screen px-4 transition-colors duration-200 ease-in"
+	class="bedrock {theme} font-overpass bg-bg selection:bg-primary selection:text-bg min-h-screen px-4 transition-colors duration-200 ease-in"
 >
 	<main
 		class="prose prose-h1:font-medium prose-h2:font-medium text-body mx-auto flex min-h-screen flex-col justify-between"
 	>
-		<!-- 
+		<!--
 
- /$$   /$$                            /$$$$$$$                     
-| $$$ | $$                           | $$__  $$                    
-| $$$$| $$  /$$$$$$  /$$    /$$      | $$  \ $$  /$$$$$$   /$$$$$$ 
+ /$$   /$$                            /$$$$$$$
+| $$$ | $$                           | $$__  $$
+| $$$$| $$  /$$$$$$  /$$    /$$      | $$  \ $$  /$$$$$$   /$$$$$$
 | $$ $$ $$ |____  $$|  $$  /$$/      | $$$$$$$  |____  $$ /$$__  $$
 | $$  $$$$  /$$$$$$$ \  $$/$$/       | $$__  $$  /$$$$$$$| $$  \__/
-| $$\  $$$ /$$__  $$  \  $$$/        | $$  \ $$ /$$__  $$| $$      
-| $$ \  $$|  $$$$$$$   \  $/         | $$$$$$$/|  $$$$$$$| $$      
-|__/  \__/ \_______/    \_/          |_______/  \_______/|__/      
+| $$\  $$$ /$$__  $$  \  $$$/        | $$  \ $$ /$$__  $$| $$
+| $$ \  $$|  $$$$$$$   \  $/         | $$$$$$$/|  $$$$$$$| $$
+|__/  \__/ \_______/    \_/          |_______/  \_______/|__/
 
 -->
 		<div>
@@ -64,27 +67,33 @@
 						>
 					{/each}
 					<div class="h-[28px] w-[28px]">
-						{#if !lightsoff}
+						{#if theme == 'light'}
 							<div
 								in:fly={{ easing: cubicOut, y: 20, duration: 200, delay: 200 }}
 								out:fly={{ easing: cubicIn, y: 20, duration: 200 }}
 								class="transition-all duration-300 ease-in active:translate-y-2"
 							>
 								<SunMedium
-									onclick={() => (lightsoff = !lightsoff)}
+									onclick={() => {
+										localStorage.setItem('theme', 'dark');
+										theme = localStorage.getItem('theme');
+									}}
 									size={28}
 									strokeWidth={1.8}
 									class="stroke-secondary cursor-pointer"
 								/>
 							</div>
-						{:else}
+						{:else if theme == 'dark'}
 							<div
 								in:fly={{ easing: cubicOut, y: 20, duration: 200, delay: 200 }}
 								out:fly={{ easing: cubicIn, y: 20, duration: 200 }}
 								class="transition-all duration-300 ease-in active:translate-y-2"
 							>
 								<Moon
-									onclick={() => (lightsoff = !lightsoff)}
+									onclick={() => {
+										localStorage.setItem('theme', 'light');
+										theme = localStorage.getItem('theme');
+									}}
 									size={24}
 									strokeWidth={1.8}
 									class="stroke-primary fill-primary cursor-pointer"
@@ -95,27 +104,27 @@
 				</div>
 			</nav>
 
-			<!-- 
+			<!--
 
- /$$$$$$$                                      /$$$         
-| $$__  $$                                    /$$ $$        
-| $$  \ $$ /$$$$$$   /$$$$$$   /$$$$$$       |  $$$         
-| $$$$$$$/|____  $$ /$$__  $$ /$$__  $$       /$$ $$/$$     
-| $$____/  /$$$$$$$| $$  \ $$| $$$$$$$$      | $$  $$_/     
-| $$      /$$__  $$| $$  | $$| $$_____/      | $$\  $$      
-| $$     |  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$/$$     
-|__/      \_______/ \____  $$ \_______/       \____/\_/     
-                    /$$  \ $$                               
-                   |  $$$$$$/                               
-                    \______/                                
- /$$                                 /$$                    
-| $$                                | $$                    
-| $$        /$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$   /$$$$$$ 
+ /$$$$$$$                                      /$$$
+| $$__  $$                                    /$$ $$
+| $$  \ $$ /$$$$$$   /$$$$$$   /$$$$$$       |  $$$
+| $$$$$$$/|____  $$ /$$__  $$ /$$__  $$       /$$ $$/$$
+| $$____/  /$$$$$$$| $$  \ $$| $$$$$$$$      | $$  $$_/
+| $$      /$$__  $$| $$  | $$| $$_____/      | $$\  $$
+| $$     |  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$/$$
+|__/      \_______/ \____  $$ \_______/       \____/\_/
+                    /$$  \ $$
+                   |  $$$$$$/
+                    \______/
+ /$$                                 /$$
+| $$                                | $$
+| $$        /$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$   /$$$$$$
 | $$       /$$__  $$ |____  $$ /$$__  $$ /$$__  $$ /$$__  $$
 | $$      | $$  \ $$  /$$$$$$$| $$  | $$| $$$$$$$$| $$  \__/
-| $$      | $$  | $$ /$$__  $$| $$  | $$| $$_____/| $$      
-| $$$$$$$$|  $$$$$$/|  $$$$$$$|  $$$$$$$|  $$$$$$$| $$      
-|________/ \______/  \_______/ \_______/ \_______/|__/      
+| $$      | $$  | $$ /$$__  $$| $$  | $$| $$_____/| $$
+| $$$$$$$$|  $$$$$$/|  $$$$$$$|  $$$$$$$|  $$$$$$$| $$
+|________/ \______/  \_______/ \_______/ \_______/|__/
 
 -->
 

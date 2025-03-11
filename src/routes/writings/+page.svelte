@@ -1,4 +1,5 @@
 <script>
+	import Hero from '$lib/Hero.svelte';
 	import { SvelteSet } from 'svelte/reactivity';
 	import { fade } from 'svelte/transition';
 
@@ -19,38 +20,58 @@
 </svelte:head>
 
 <article>
-	<div class="mb-16">
-		<h1 class="text-primary mb-0">
-			Thought
-			<div class="text-fg">Reservoir</div>
-		</h1>
-		<p>Plunge into my thoughts ~ part blog, part wiki.</p>
-		<div class="flex flex-wrap gap-2">
-			{#each tags as tag}
-				<button
-					class=" {selectedTags.has(tag)
-						? 'text-panel bg-fg'
-						: 'text-fg bg-panel'} cursor-pointer rounded-xl px-4 py-1 transition-all duration-200 active:translate-y-2"
-					onclick={() => {
-						selectedTags.has(tag) ? selectedTags.delete(tag) : selectedTags.add(tag);
-						filteredPosts = data.posts.filter((post) => {
-							return selectedTags.size === 0 || post.meta.tags.some((t) => selectedTags.has(t));
-						});
-					}}
-				>
-					{tag}
-				</button>
-			{/each}
-		</div>
-	</div>
+	<Hero first="Thought" second="Reservoir" desc="Plunge into my thoughts ~ part blog, part wiki." />
+	<!-- 
 
+ /$$$$$$$$                           
+|__  $$__/                           
+   | $$  /$$$$$$   /$$$$$$   /$$$$$$$
+   | $$ |____  $$ /$$__  $$ /$$_____/
+   | $$  /$$$$$$$| $$  \ $$|  $$$$$$ 
+   | $$ /$$__  $$| $$  | $$ \____  $$
+   | $$|  $$$$$$$|  $$$$$$$ /$$$$$$$/
+   |__/ \_______/ \____  $$|_______/ 
+                  /$$  \ $$          
+                 |  $$$$$$/          
+                  \______/           
+
+-->
+	<div class="mb-12 flex flex-wrap gap-2">
+		{#each tags as tag}
+			<button
+				class=" {selectedTags.has(tag)
+					? 'text-panel bg-primary'
+					: 'text-fg bg-panel'} border-panel hover:border-primary cursor-pointer rounded-xl border-b-2 px-4 py-1 transition-all duration-200 active:translate-y-2"
+				onclick={() => {
+					selectedTags.has(tag) ? selectedTags.delete(tag) : selectedTags.add(tag);
+					filteredPosts = data.posts.filter((post) => {
+						return selectedTags.size === 0 || post.meta.tags.some((t) => selectedTags.has(t));
+					});
+				}}
+			>
+				{tag}
+			</button>
+		{/each}
+	</div>
+	<!-- 
+
+ /$$$$$$$                       /$$             
+| $$__  $$                     | $$             
+| $$  \ $$ /$$$$$$   /$$$$$$$ /$$$$$$   /$$$$$$$
+| $$$$$$$//$$__  $$ /$$_____/|_  $$_/  /$$_____/
+| $$____/| $$  \ $$|  $$$$$$   | $$   |  $$$$$$ 
+| $$     | $$  | $$ \____  $$  | $$ /$$\____  $$
+| $$     |  $$$$$$/ /$$$$$$$/  |  $$$$//$$$$$$$/
+|__/      \______/ |_______/    \___/ |_______/ 
+
+-->
 	{#each filteredPosts as post}
 		<a class="group no-underline" href={post.path}>
 			<dl transition:fade={{ duration: 300 }}>
 				<dt class="text-fg font-bold">
 					{post.meta.title}
 					<span
-						class="bg-secondary block h-0.5 max-w-16 transition-all duration-500 group-hover:max-w-sm"
+						class="bg-primary block h-0.5 max-w-16 transition-all duration-300 group-hover:max-w-sm"
 					></span>
 				</dt>
 				<dd class="text-body">{post.meta.desc}</dd>

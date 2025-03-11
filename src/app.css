@@ -1,8 +1,10 @@
-@import url(./styles/prism-one-dark.css);
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
+@import '@fontsource-variable/overpass';
 
 @theme inline {
+	--font-overpass: 'Overpass Variable', sans-serif;
+
 	--color-bg: var(--bg);
 	--color-fg: var(--fg);
 	--color-panel: var(--panel);
@@ -16,13 +18,39 @@
 	--color-tertiary: var(--tertiary);
 }
 
+@utility prose {
+	code {
+
+		&::before,
+		&::after {
+			content: none;
+		}
+	}
+
+	blockquote {
+		font-weight: 400;
+		font-style: normal;
+		border: solid 2px var(--secondary);
+
+		/* Disable adding quote marks to block-quotes: https://github.com/tailwindlabs/tailwindcss-typography/issues/66 */
+		p {
+			color: var(--secondary);
+
+			&:first-of-type::before,
+			&:last-of-type::after {
+				content: none;
+			}
+		}
+	}
+}
+
 @layer base {
 	:root {
 		--bg: #110f18;
 		--fg: #edecee;
 		--panel: #202127;
 
-		--body: #7f8487;
+		--body: #cccccc;
 		--anchor: #01a0e4;
 		--highlight: #61ffca;
 
@@ -32,29 +60,45 @@
 	}
 
 	.dark {
-		--bg: #110f18;
+		--bg: #202127;
 		--fg: #edecee;
-		--panel: #202127;
+		--panel: #2c2e36;
 
-		--body: #7f8487;
-		--anchor: #01a0e4;
+		--body: #9b9eba;
+		--anchor: #08c2ff;
 		--highlight: #61ffca;
 
-		--primary: #ff6767;
-		--secondary: #ffca85;
-		--tertiary: #a277ff;
+		--primary: #ffca85;
+		--secondary: #ff7070;
+		--tertiary: #a594f9;
 	}
 
-	.light {
+	.light_bk {
 		--bg: #f8f2e5;
 		--fg: #464340;
 		--panel: #e7e3d7;
 
 		--body: #807d7c;
-		--anchor: #8050a7;
+		--anchor: #01a0e4;
+		--highlight: #107410;
 
 		--primary: #b24000;
 		--secondary: #806000;
+		--tertiary: #8050a7;
+	}
+
+	.light {
+		--bg: #faf3ea;
+		--fg: #202127;
+		--panel: #e7e3d7;
+
+		--body: #6b6255;
+
+		--anchor: #01a0e4;
 		--highlight: #107410;
+
+		--primary: #b24000;
+		--secondary: #806000;
+		--tertiary: #8050a7;
 	}
 }

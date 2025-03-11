@@ -3,4 +3,4 @@
 	export let alt = '';
 </script>
 
-<img class="border-4 border-red-50" {src} {alt} loading="lazy" />
+<img {src} {alt} loading="lazy" />

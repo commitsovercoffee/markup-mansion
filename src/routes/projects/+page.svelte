@@ -1,14 +1,32 @@
 <script>
-	import { Anchor } from 'lucide-svelte';
+	import Hero from '$lib/Hero.svelte';
+	import { CircleIcon } from 'lucide-svelte';
 
 	const projects = [
-		{ repo: 'Billie', desc: 'Billie ~ To create your bills & invoices.', demo: true },
-		{ repo: 'jason', desc: 'json goes in, resume comes out.', demo: true },
-		{ repo: 'one', desc: 'one liner desc', demo: true },
 		{
-			repo: 'Hope',
-			desc: 'arch script.',
-			demo: true
+			repo: 'markup-mansion',
+			desc: 'Source of this website.',
+			lang: 'Svelte',
+			color: 'stroke-[#ff3e00] fill-[#ff3e00]'
+		},
+		{
+			repo: 'suckless',
+			desc: 'Pre-patched suckless apps.',
+			lang: 'C',
+			color: 'stroke-[#555555] fill-[#555555]'
+		},
+		{
+			repo: 'hope',
+			desc: 'Arch installation script.',
+			lang: 'Bash',
+			color: 'stroke-[#89e051] fill-[#89e051]'
+		},
+		{
+			repo: 'jason',
+			desc: 'JSON based resume builder.',
+			demo: true,
+			lang: 'Svelte',
+			color: 'stroke-[#ff3e00] fill-[#ff3e00]'
 		}
 	];
 </script>
@@ -19,41 +37,43 @@
 </svelte:head>
 
 <article>
-	<div class="mb-16">
-		<h1 class="text-primary mb-0">
-			Maker's
-			<div class="text-fg">Sanctuary</div>
-		</h1>
-
-		<p>... built one project at a time.</p>
-	</div>
+	<Hero first="Maker's" second="Sanctuary" desc="... built one project at a time." />
 
 	<div class="grid grid-cols-1 gap-4 text-pretty break-words md:grid-cols-2">
 		{#each projects as project}
-			<div
-				class="group bg-panel hover:bg-fg flex flex-col justify-between gap-4 rounded-lg p-4 transition-all duration-200 ease-out"
-			>
+			<div class="bg-panel flex flex-col gap-4 rounded-lg p-4">
 				<dl class="not-prose">
-					<dt class="text-fg group-hover:text-bg mt-4 mb-2 flex gap-x-2 font-bold">
-						<Anchor />
-						<span>
-							{project.repo}
-						</span>
-					</dt>
-					<dd class="text-body group-hover:text-bg">{project.desc}</dd>
-				</dl>
-				<div class="flex flex-row gap-2">
-					{#if project.demo}
+					<dt class="my-2">
 						<a
-							class="text-bg bg-fg rounded-xl px-2 py-1 no-underline"
-							href="https://{project.repo}.commitsovercoffee.com">demo</a
+							target="_blank"
+							class="text-anchor font-bold hover:underline"
+							href="https://github.com/commitsovercoffee/{project.repo}"
 						>
-					{/if}
+							{project.repo}
+						</a>
+					</dt>
+					<dd class="text-fg">{project.desc}</dd>
+				</dl>
+				<div class="flex items-end justify-between">
+					<div class="flex flex-row gap-2">
+						{#if project.demo}
+							<a
+								target="_blank"
+								class="text-secondary bg-bg border-panel hover:border-secondary rounded-xl border-2 px-2 py-1 no-underline transition-all duration-200 ease-in"
+								href="https://{project.repo}.commitsovercoffee.com">demo</a
+							>
+						{/if}
 
-					<a
-						class="text-fg bg-bg rounded-xl px-2 py-1 no-underline transition-all"
-						href="https://github.com/commitsovercoffee/{project.repo}">source</a
-					>
+						<a
+							target="_blank"
+							class="text-highlight bg-bg border-panel hover:border-highlight rounded-xl border-2 px-2 py-1 no-underline transition-all duration-200 ease-in"
+							href="https://github.com/commitsovercoffee/{project.repo}">source</a
+						>
+					</div>
+					<div class="flex items-center gap-x-1">
+						<CircleIcon size={16} class={project.color} />
+						<span class="text-sm">{project.lang}</span>
+					</div>
 				</div>
 			</div>
 		{/each}

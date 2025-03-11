@@ -3,6 +3,7 @@ export async function load({ params }) {
 	return {
 		title: post.metadata.title,
 		desc: post.metadata.desc,
+		tags: post.metadata.tags,
 		date: post.metadata.date,
 		content: post.default
 	};

@@ -1,61 +1,112 @@
+<script>
+	import Hero from '$lib/Hero.svelte';
+</script>
+
 <svelte:head>
 	<title>Commits Over Coffee</title>
 	<meta name="description" content="Personal website of Sourav Singh." />
 </svelte:head>
 
-<article class="prose-a:text-anchor prose-a:underline-offset-4 prose-a:decoration-1">
-	<div class="mb-16">
-		<h1 class="text-primary mb-0">
-			Hello Folks, <div class="text-fg">I am Sourav.</div>
-		</h1>
-		<p>Welcome to my corner of the internet.</p>
-	</div>
+<div
+	class="prose-a:text-anchor prose-a:underline-offset-4 prose-a:decoration-1 prose-a:hover:no-underline"
+>
+	<Hero first="Hello Folks," second="I am Sourav." desc="Welcome to my corner of the internet." />
 
-	<div class="grid grid-cols-1 gap-4 text-pretty md:grid-cols-2">
+	<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
 		<div class="row-span-2">
-			<h2 class="text-tertiary mt-0">About</h2>
+			<h2 class="text-secondary mt-0">About</h2>
+			<!-- 
 
+  /$$$$$$  /$$                             /$$    
+ /$$__  $$| $$                            | $$    
+| $$  \ $$| $$$$$$$   /$$$$$$  /$$   /$$ /$$$$$$  
+| $$$$$$$$| $$__  $$ /$$__  $$| $$  | $$|_  $$_/  
+| $$__  $$| $$  \ $$| $$  \ $$| $$  | $$  | $$    
+| $$  | $$| $$  | $$| $$  | $$| $$  | $$  | $$ /$$
+| $$  | $$| $$$$$$$/|  $$$$$$/|  $$$$$$/  |  $$$$/
+|__/  |__/|_______/  \______/  \______/    \___/  
+
+-->
 			<p>
-				I'm a software developer. I design and build things for the web. I’m based in Ranchi, India
-				& work remotely as a consultant. 💼
+				I'm an independent software developer based in Ranchi, India. 🌏 I primarily design and
+				build things for the web. 💼
 			</p>
 
 			<p>
-				I kicked off my career as a freelancer, working on a variety of projects, building frontend,
-				microservices, middleware and dashboards. ✨
-			</p>
-			<p>
-				Currently, I work as a technical consultant at Quest Alliance, where I mostly focus on
-				solutioning, development & support. 🎯
+				Currently, I work at Quest Alliance as a consultant where I focus on solutioning,
+				development and support. You can find my <a
+					target="_blank"
+					href="https://youtu.be/dQw4w9WgXcQ">resume</a
+				>
+				here. 🎯
 			</p>
 
 			<p>
-				When I’m off the clock, you’ll find me cycling, shooting hoops, reading, writing, or
-				tinkering with side projects. 🧭
+				When I’m not glued to the screen, I’m usually cycling around town, shooting hoops 🏀 (if the
+				stars align ✨ ), reading, <a href="/writings">writing</a> or tinkering with
+				<a href="/projects">side projects</a>. 🪛
+			</p>
+
+			<p>
+				What I'm upto <strong class="text-body">Now</strong> ?
+			</p>
+
+			<p>
+				- Learning <a target="_blank" href="https://svelte.dev/">svelte</a>. 💖<br />
+				- Convincing myself to do youtube. 🍰<br />
 			</p>
 		</div>
+		<!-- 
+
+ /$$$$$$$$                   /$$             
+| $$_____/                  | $$             
+| $$    /$$$$$$   /$$$$$$$ /$$$$$$   /$$$$$$$
+| $$$$$|____  $$ /$$_____/|_  $$_/  /$$_____/
+| $$__/ /$$$$$$$| $$        | $$   |  $$$$$$ 
+| $$   /$$__  $$| $$        | $$ /$$\____  $$
+| $$  |  $$$$$$$|  $$$$$$$  |  $$$$//$$$$$$$/
+|__/   \_______/ \_______/   \___/ |_______/ 
+
+-->
 		<div>
-			<h2 class="text-secondary mt-0">Random Facts</h2>
+			<h2 class="text-tertiary mt-0">Random Facts</h2>
 			<p>
-				I frown without dynamic window tiling. 😦 <br />
-				Bad carries cost me games in Dota 2. ⚔️ <br />
-				I am learning svelte & loving it. 💖<br />
-				I make youtube videos. 🎬 <br />
-				I prefer 🦐 over 🐓. Sue me! <br />
-				I journal in markdown. ✏️ <br />
-				I use arch btw. 🍹 <br />
+				I work remotely from my batcave. 📍<br />
+				I use fast silver switches on my keeb. 🪶<br />
+				I prefer cargo pants over jeans. 🩳<br />
+				I’m a connoisseur of obscure snacks. 🍕<br />
+				I can quote The Office in my sleep. 💤<br />
+				I despise short form content. 🚮<br />
+				No. I can't fix your printer. 🖨️<br />
 			</p>
 		</div>
+		<!-- 
+
+ /$$$$$$$$                                /$$  /$$                      
+| $$_____/                               |__/ | $$                      
+| $$   /$$$$$$ /$$    /$$/$$$$$$  /$$$$$$ /$$/$$$$$$   /$$$$$$  /$$$$$$$
+| $$$$|____  $|  $$  /$$/$$__  $$/$$__  $| $|_  $$_/  /$$__  $$/$$_____/
+| $$__//$$$$$$$\  $$/$$| $$  \ $| $$  \__| $$ | $$   | $$$$$$$|  $$$$$$ 
+| $$  /$$__  $$ \  $$$/| $$  | $| $$     | $$ | $$ /$| $$_____/\____  $$
+| $$ |  $$$$$$$  \  $/ |  $$$$$$| $$     | $$ |  $$$$|  $$$$$$$/$$$$$$$/
+|__/  \_______/   \_/   \______/|__/     |__/  \___/  \_______|_______/ 
+
+-->
 		<div>
 			<h2 class="text-highlight mt-0">Favorites</h2>
 			<p>
 				Book : Crime & Punishment. 🪓 <br />
-				Game : God of War Ragnarok. 💥 <br />
-				Movie : Mission Impossible. 🕵️‍♂️<br />
+				Game : God of War Ragnarok. ❄️<br />
+				Movie : Mission Impossible. ⌚<br />
+				Music : Classic/Psychedelic Rock. 🥁<br />
 				TV Show : Modern Family. 🏡 <br />
 				Food : Mutton Biryani. 🥩 <br />
 			</p>
 		</div>
 	</div>
-	<p>Thanks for stopping by. Find me @commitsovercoffee on the web. 💬</p>
-</article>
+	<p class="mt-0">
+		🫂 Feel free to reach out. You can text me on
+		<a href="https://bsky.app/profile/commitsovercoffee.com">bsky </a> or shoot me a
+		<a href="mailto:commitsovercoffee@gmail.com">mail</a>.
+	</p>
+</div>

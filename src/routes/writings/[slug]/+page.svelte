@@ -7,4 +7,19 @@
 	<meta name="description" content={data.desc} />
 </svelte:head>
 
-<data.content />
+<div>
+	<div class="mb-16">
+		<h1 class="text-primary mb-0">
+			{data.title}
+		</h1>
+		<p class="mt-0">
+			{data.desc}
+		</p>
+		<div class="flex flex-row flex-wrap gap-x-2">
+			{#each data.tags as tag}
+				<span class="text-tertiary">#{tag}</span>
+			{/each}
+		</div>
+	</div>
+	<data.content />
+</div>

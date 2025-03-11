@@ -21,14 +21,22 @@
 	];
 </script>
 
-<footer class="mt-auto flex w-full flex-row items-center justify-center gap-4 p-2">
-	{#each socials as social}
-		<a target="_blank" href={social.href} aria-label={social.aria} class="fill-body hover:fill-fg">
-			<svg width="24px" height="24px" viewBox="0 {social.label == 'youtube' ? '-4' : '0'} 24 24">
-				<g>
-					<path d={social.d} />
-				</g>
-			</svg>
-		</a>
-	{/each}
+<footer class="items-between flex flex-row justify-center gap-x-4 py-4">
+	<span>© {new Date().getFullYear()} commitsovercoffee </span>
+	<div class="flex gap-x-4">
+		{#each socials as social}
+			<a
+				target="_blank"
+				href={social.href}
+				aria-label={social.aria}
+				class="fill-body hover:fill-fg transition-color duration-200 ease-in"
+			>
+				<svg width="24px" height="24px" viewBox="0 {social.label == 'youtube' ? '-4' : '0'} 24 24">
+					<g>
+						<path d={social.d} />
+					</g>
+				</svg>
+			</a>
+		{/each}
+	</div>
 </footer>

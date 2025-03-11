@@ -1,3 +1,3 @@
-<em class="text-secondary">
+<em class="text-body font-light">
 	<slot />
 </em>

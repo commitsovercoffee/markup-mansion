@@ -1,1 +1,1 @@
-<hr class="border-highlight" />
+<hr class="border-body" />

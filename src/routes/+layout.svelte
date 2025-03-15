@@ -32,7 +32,11 @@
 	class="bedrock {theme} font-overpass bg-bg selection:bg-primary selection:text-bg min-h-screen px-4 transition-colors duration-200 ease-in"
 >
 	<main
-		class="prose prose-h1:font-medium prose-h2:font-medium text-body mx-auto flex min-h-screen flex-col justify-between"
+		class="
+		prose
+		prose-a:text-anchor prose-a:no-underline prose-a:hover:underline prose-a:hover:underline-offset-8
+	    prose-h1:font-medium prose-h2:font-medium text-body
+	    mx-auto flex min-h-screen flex-col justify-between"
 	>
 		<!--
 
@@ -48,13 +52,13 @@
 -->
 		<div>
 			<nav class="flex flex-col items-start gap-4 py-10">
-				<a href="/" class="group flex items-center no-underline">
+				<a href="/" class="not-prose group flex items-center">
 					<Coffee
 						size={28}
 						strokeWidth={1.8}
 						class="stroke-fg rotate- mx-2 -rotate-12 transition-all duration-200 ease-in group-hover:rotate-0"
 					/>
-					<span class="text-fg text-xl"> CommitsOverCoffee </span>
+					<span class="text-fg decoration-none text-xl"> CommitsOverCoffee </span>
 				</a>
 
 				<div class="flex flex-row items-center gap-4">

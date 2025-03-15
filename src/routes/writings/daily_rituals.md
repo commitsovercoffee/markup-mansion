@@ -8,7 +8,7 @@ tags:
 published: true
 ---
 
-Some time `back` I read this book named _Daily Rituals_ by **Mason Curry**, which offers
+Some time back I read this book named _Daily Rituals_ by **Mason Curry**, which offers
 a glimpse into the daily routines of creatives from various fields and how these
 individuals structured their days to nuture creativity.
 
@@ -26,13 +26,13 @@ getting to know what reason or belief it is backed by is a delight in its own.
 
 The book will make you think, smile, compare, even judge sometimes as you traverse
 through the daily routines of varous individuals. Although it was a flat book,
-it was an interesting read as it made me think a certan way, and have constant
+it was an interesting read as it made me think a certain way, and have constant
 argument with myself about how certain folks spent their days and if I'd like
 to do the same.
 
 As a homeage to the book, I want to share my daily routine or as I like to call it
-now daily rituals ~ How I spend my days & nights. Hopefully this shareout will help
-someone correct their course, think of their habits or atleast give them a chuckle.
+now daily rituals. Hopefully this shareout will help someone correct their course,
+think of their habits or atleast give them a chuckle.
 
 But before that I'd like to share one quote :
 

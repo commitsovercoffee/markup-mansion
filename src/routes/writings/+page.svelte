@@ -66,15 +66,15 @@
 
 -->
 	{#each filteredPosts as post}
-		<a class="group no-underline" href={post.path}>
-			<dl transition:fade={{ duration: 300 }}>
-				<dt class="text-fg font-bold">
+		<a class="not-prose group" href={post.path}>
+			<dl class="" transition:fade={{ duration: 300 }}>
+				<dt class="text-fg py-2 font-bold">
 					{post.meta.title}
 					<span
 						class="bg-primary block h-0.5 max-w-16 transition-all duration-300 group-hover:max-w-sm"
 					></span>
 				</dt>
-				<dd class="text-body">{post.meta.desc}</dd>
+				<dd class="text-body ml-8">{post.meta.desc}</dd>
 			</dl>
 		</a>
 	{/each}

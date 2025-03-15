@@ -7,9 +7,7 @@
 	<meta name="description" content="Personal website of Sourav Singh." />
 </svelte:head>
 
-<div
-	class="prose-a:text-anchor prose-a:underline-offset-4 prose-a:decoration-1 prose-a:hover:no-underline"
->
+<div>
 	<!--
 
      /$$   /$$

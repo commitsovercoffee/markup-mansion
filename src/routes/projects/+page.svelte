@@ -59,14 +59,14 @@
 						{#if project.demo}
 							<a
 								target="_blank"
-								class="text-secondary bg-bg border-panel hover:border-secondary rounded-xl border-2 px-2 py-1 no-underline transition-all duration-200 ease-in"
+								class="not-prose text-secondary bg-bg border-panel hover:border-secondary rounded-xl border-2 px-2 py-1 no-underline transition-all duration-200 ease-in"
 								href="https://{project.repo}.commitsovercoffee.com">demo</a
 							>
 						{/if}
 
 						<a
 							target="_blank"
-							class="text-highlight bg-bg border-panel hover:border-highlight rounded-xl border-2 px-2 py-1 no-underline transition-all duration-200 ease-in"
+							class="not-prose text-highlight bg-bg border-panel hover:border-highlight rounded-xl border-2 px-2 py-1 no-underline transition-all duration-200 ease-in"
 							href="https://github.com/commitsovercoffee/{project.repo}">source</a
 						>
 					</div>

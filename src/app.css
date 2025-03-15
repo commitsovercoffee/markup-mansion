@@ -19,26 +19,58 @@
 }
 
 @utility prose {
-	code {
-		&::before,
-		&::after {
-			content: none;
+	.blog {
+		a {
+			color: var(--anchor);
+			a:hover {
+				text-decoration: underline;
+				text-underline-offset: 6px;
+			}
 		}
-	}
 
-	blockquote {
-		font-weight: 400;
-		font-style: normal;
-		border: solid 2px var(--secondary);
-
-		/* Disable adding quote marks to block-quotes: https://github.com/tailwindlabs/tailwindcss-typography/issues/66 */
-		p {
-			color: var(--secondary);
-
-			&:first-of-type::before,
-			&:last-of-type::after {
+		blockquote {
+			border-left: solid 2px var(--secondary);
+			p {
+				font-weight: 300;
+				color: var(--secondary);
+			}
+			p:first-of-type::before,
+			p:last-of-type::after {
 				content: none;
 			}
+		}
+
+		code {
+			background-color: var(--panel);
+			color: var(--body);
+			font-weight: 400;
+			padding: 4px;
+			border-radius: 8px;
+			&::before,
+			&::after {
+				content: none;
+			}
+		}
+
+		hr {
+			border: 2px solid var(--panel);
+		}
+
+		p,
+		em,
+		strong {
+			color: var(--body);
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: var(--fg);
+			font-weight: 500;
+			text-decoration: none;
 		}
 	}
 }

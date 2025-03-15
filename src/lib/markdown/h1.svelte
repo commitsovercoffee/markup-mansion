@@ -3,8 +3,8 @@
 </script>
 
 <section id={data?.innerText.replaceAll(' ', '-')}>
-	<a class="no-underline" href="#{data?.innerText.replaceAll(' ', '-')}">
-		<h1 bind:this={data} class="text-fg flex gap-2 font-light">
+	<a href="#{data?.innerText.replaceAll(' ', '-')}">
+		<h1 bind:this={data}>
 			<slot />
 		</h1>
 	</a>

@@ -2,22 +2,22 @@
 layout: default
 title: Daily Rituals
 desc: How I spend my days & nights.
-date: 2025-02-23
+date: 2025-02-15
 tags:
-  - about
+  - personal
 published: true
 ---
 
 Some time back I read this book named _Daily Rituals_ by **Mason Curry**, which offers
 a glimpse into the daily routines of creatives from various fields and how these
-individuals structured their days to nuture creativity.
+individuals structured their days to nurture creativity.
 
 As someone who has tried to relentlessly live up to the idea of "a good routine"
 from an early age. The book was peculiar to me, as it showed me a plethora of habits
-and associated personalities. Something I ccould look up to or look in contrast
+and associated personalities. Something I could look up to or look in contrast
 with my own ways.
 
-The books has covered daily routines of over 160 individuals including figures like
+The book has covered daily routines of over 160 individuals including figures like
 Charles Darwin, Virginia Woolf (One of my favorite writer), Pablo Picasso & so on.
 Which makes it a good sample of habits, to cherry pick and include in your own lives.
 
@@ -40,7 +40,7 @@ But before that I'd like to share one quote :
 
 Let's get started ...
 
-## How did I come up with my routine ?
+## How did I come up with my routine?
 
 They say health is wealth. So I started exactly there. I have two habits which I
 prioritize (mostly) over anything else. They are :
@@ -63,7 +63,7 @@ and not a hack.
 
 > Balance is Key. - A tightrope walker (probably)
 
-## A day in the life of - yours truly
+## A Day in the Life of - Yours Truly
 
 ### Booting Up
 
@@ -88,7 +88,7 @@ to start my day with the most daunting chunk of work that needs attention. And
 I work straight out non-stop until lunch while munching fruits in-between
 if I feel like.
 
-### Eating with my mouth shut
+### Lunch
 
 I have lunch at around 14:00. Lunch is a special time and it is a strict rule to
 have my lunch without doing anything else at all. I despise any kind of input
@@ -100,59 +100,57 @@ organize all my thoughts in the background without any intentional effort. How
 I should respond to a mail, approach my next task or the bug at hand, this buffer
 time helps me connect the dots and return to work with more clarity.
 
-### Round II
+### Getting Things Done
 
 After lunch, I either try to close what I was working on in the morning or if
 there are some small tasks I can finish off I prioritize them. Second half
 is also when I prefer to schedule meetings. And my workday ends with me
 scheduling replies to be sent next morning for any mails that I need to respond to.
 
-### All work & some play
+### Work Out
 
-After work, I typically take my bicycle out for a spin. I cycle to this park
-4 kms away where I either then walk or shoot hoops (if the stars align), before
-spending some time at the open gym and heading back home. My cycling is accompanied
-usually by music or a podcast. And this is my exclusive time for podcasts.
-This time is also when I listen to any podcasts while pedalling. After I come
-home, I take a shower.
+After work, I typically take my bicycle out for a spin. I cycle to a park
+4 kms away where I either walk or shoot hoops, before spending some time at the
+open gym and heading back home. My cycling is accompanied usually by music or
+a podcast. And after I return home, I take a hot/cold shower depending on my mood.
 
 Post this, is unassigned time which is mostly spent running errands, doing
-some household work or with family or friends. Then I have dinner at around 21:00
+some household work or with family & friends. Then I have dinner at around 21:00
 mostly while watching a movie, show or youtube.
 
-### After Dark
+### Graceful Shutdown
 
 After dinner, I do whatever I feel like before dozing off as my eyes suggest.
-As much as I'd like to sound it cool, this time is usually spend on my computer
-working on sideprojects, lurking on the web , reading, writing or getting lost
-in thoughts while tryinig to decide what I should do as my body resists to do the
-thing cmputing the amount of effort required. Yeah I day dream at night :)
+As much as I'd like it to sound cool, this time is usually spend on my computer
+working on sideprojects, lurking on the web , reading, writing or simply getting lost
+in thought.
 
 ---
 
-## Weekends
+## Special Days
 
-Weekends are more relaxed than normal days, I can sleep bit more, skip workout,
-or do nothing all day (which rarely happens). I enjoy weekends cause we have a
-tradition at home to cook nonveg on weekends, and because I theme my weekends
-like below :
+Weekends are more laid-back than workdays, I can sleep in, skip workouts,
+or do absolutely nothing, but only if I stick to these rituals :
 
-- Monthly second saturdays : Video game Sprint, if there is nothing burning, I can spend the day binging video games.
-- Monthly on third monday, I take a haircut, because monday nights baber shops tend to be empty.
-- Monthly on third Saturday : Dance with Finance, here I do a thorough checkup of my finances. This includes approving any major shoppping/spendings.
-- moonthly on last sunday : is dedicated to clean the house.
+- First Saturday : Dance with Finance - Review finances & approve major purchases.
+- Second Friday : Gaming Night - Inspired by _The Big Bang Theory_.
+- Third Tuesday: Grooming Day - Trip to the barber since it's less crowded.
+- Last Saturday : Cleaning Day - Dedicated to tidying up the house.
 
-All of the above are on my calendar. So again I dont need to recall these. I get reminded.
-Time blocking is such a good technique !
+> "Time blocking works wonders!" - People who use time blocking.
 
-## Closing Hot Takes
+## Closing Suggestions
 
-Your routine should not be timebound. It should be guiding. Bargain a routine with yourself, dont throw one on your face.
+Thanks to my obsessive nature, I’ve spent years refining and perfecting my routine,
+always striving for order. And here's the insight I've gained :
 
-- View your progress as a graph and not a streak. It does not have to be a streak. A monthly graph better conveys, maybe you missed few days, but even if achieive 60% given that life happen that month, Isn't it okay ?
-- Doing something is equally important as not doing something. Choose wisely. Atleast pick habits you enjoy, and not loathe doing and then feel bad afterwards.
-- If a thign will help you, get it. wind glasses so cycling isnt harsh to your eyes, yep. Better shoes for running, yup. All these are investments.
-- Like a compass you should know hwat direction you are heading, you dont need to know what exactly you did when. But atleast if you do, dont make it should be done in the background, or an insignificant activity.
-- Give yourself room to breathe.
+- When creating a routine, have an honest conversation with yourself. Set realistic
+  expectations and understand that life can throw curveballs, if you only manage to
+  hit 60% in a busy month, that’s okay.
 
-Without that, wish you have happy daily rituals, live long & prosper.
+- Invest in tools or resources that make it easier for you to stick to your routine,
+  whether it's better gear or time-saving strategies. Make your routine work for you,
+  not the other way around.
+
+With that said, I'll take my leave.
+Wish you have happy daily rituals, live long & prosper.

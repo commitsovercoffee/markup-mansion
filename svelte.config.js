@@ -6,7 +6,7 @@ import adapter from '@sveltejs/adapter-static';
 const theme = 'catppuccin-mocha';
 const highlighter = await createHighlighter({
 	themes: [theme],
-	langs: ['javascript', 'typescript', 'go', 'bash']
+	langs: ['javascript', 'typescript', 'go', 'bash', 'json']
 });
 
 /** @type {import('mdsvex').MdsvexOptions} */

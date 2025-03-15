@@ -25,7 +25,7 @@
 			<Hero
 				first="Hello Folks,"
 				second="I am Sourav."
-				desc="Welcome to my corner of the internet. I'm glad you're here. Would you like some tea ? "
+				desc="Welcome to my corner of the internet. I'm glad you're here. Would you like some tea? "
 			/>
 		</div>
 		<div class="order-1 md:order-2">
@@ -123,8 +123,8 @@
 				Book : Crime & Punishment. 🪓 <br />
 				Game : God of War Ragnarok. ❄️<br />
 				Movie : Mission Impossible. ⌚<br />
-				Music : Classic/Psychedelic Rock. 🥁<br />
-				TV Show : Modern Family. 🏡 <br />
+				Music : Rock/Alternative. 🥁<br />
+				TV Show : The Office. 🏆 <br />
 				Food : Mutton Biryani. 🥩 <br />
 			</p>
 		</div>

@@ -28,6 +28,24 @@
 			}
 		}
 
+		table {
+			border-collapse: collapse; /* Ensure borders collapse into single lines */
+			width: 100%;
+
+			th {
+				color: var(--primary);
+			}
+
+			td,
+			th {
+				border-bottom: 2px solid var(--panel); /* Change the color of row separators */
+			}
+
+			tr:last-child td {
+				border-bottom: none; /* Remove the border from the last row */
+			}
+		}
+
 		blockquote {
 			border-left: solid 2px var(--secondary);
 			p {

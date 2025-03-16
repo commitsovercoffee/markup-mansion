@@ -122,7 +122,7 @@ mostly while watching a movie, show or youtube.
 
 After dinner, I do whatever I feel like before dozing off as my eyes suggest.
 As much as I'd like it to sound cool, this time is usually spend on my computer
-working on sideprojects, lurking on the web , reading, writing or simply getting lost
+working on side projects, lurking on the web , reading, writing or simply getting lost
 in thought.
 
 ---
@@ -152,5 +152,4 @@ always striving for order. And here's the insight I've gained :
   whether it's better gear or time-saving strategies. Make your routine work for you,
   not the other way around.
 
-With that said, I'll take my leave.
-Wish you have happy daily rituals, live long & prosper.
+## That's all. See ya.

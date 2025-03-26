@@ -41,7 +41,7 @@
 			<button
 				class=" {selectedTags.has(tag)
 					? 'text-panel bg-primary'
-					: 'text-fg bg-panel'} cursor-pointer rounded-xl px-4 py-1 transition-all duration-200 active:translate-y-2"
+					: 'text-fg bg-panel'} cursor-pointer rounded-xl p-2 transition-all duration-200 active:translate-y-2"
 				onclick={() => {
 					selectedTags.has(tag) ? selectedTags.delete(tag) : selectedTags.add(tag);
 					filteredPosts = data.posts.filter((post) => {

@@ -1,7 +1,6 @@
 <script>
 	// assets
 	import '../app.css';
-	import '@fontsource-variable/overpass'; // 100-900
 	import { Coffee, Moon, SunMedium, LoaderPinwheel } from 'lucide-svelte';
 
 	// components

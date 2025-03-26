@@ -3,10 +3,10 @@ import { createHighlighter } from 'shiki';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import adapter from '@sveltejs/adapter-static';
 
-const theme = 'catppuccin-mocha';
+const theme = 'andromeeda';
 const highlighter = await createHighlighter({
 	themes: [theme],
-	langs: ['javascript', 'typescript', 'go', 'bash', 'json']
+	langs: ['javascript', 'typescript', 'go', 'bash', 'json', 'svelte', 'diff', 'md']
 });
 
 /** @type {import('mdsvex').MdsvexOptions} */

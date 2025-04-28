@@ -8,14 +8,6 @@ tags:
 published: true
 ---
 
-### Table of Contents
-
-- [God of War](/writings/games#God-of-War)
-- [God of War Ragnarok](/writings/games#God-of-War-Ragnarok)
-- [Spiderman Remastered](/writings/games#Spiderman-Remastered)
-- [Far Cry Primal](/writings/games#Far-Cry-Primal)
-- [Portal 2](/writings/games#Portal-2)
-
 ## God of War
 
 By Santa Monica Studios

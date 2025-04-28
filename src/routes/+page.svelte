@@ -73,12 +73,12 @@
 			</p>
 
 			<p>
-				What I'm upto <strong class="text-body">Now</strong> ?
+				What I'm up to <strong class="text-body">Now</strong> ?
 			</p>
 
 			<p>
 				- Learning <a target="_blank" href="https://svelte.dev/">svelte</a>. 💖<br />
-				- Convincing myself to do youtube. 🍰<br />
+				- Exploring content creation. 🍿<br />
 			</p>
 		</div>
 		<!--
@@ -131,7 +131,7 @@
 	</div>
 	<p class="mt-0">
 		🫂 Feel free to reach out. You can text me on
-		<a href="https://bsky.app/profile/commitsovercoffee.com">bsky </a> or shoot me a
+		<a href="https://bsky.app/profile/commitsovercoffee.com">bluesky</a> or shoot me a
 		<a href="mailto:commitsovercoffee@gmail.com">mail</a>.
 	</p>
 </div>

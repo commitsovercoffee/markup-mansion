@@ -2,7 +2,7 @@
 layout: default
 title: List 100
 desc: Things I want to do before I become worm food.
-date: 2025-01-01
+date: 0000-00-04
 tags:
   - personal
 published: true

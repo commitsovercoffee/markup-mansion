@@ -7,7 +7,7 @@
 	<meta name="description" content={data.desc} />
 </svelte:head>
 
-<div class="blog">
+<div class="blog mb-20">
 	<div class="flex flex-row flex-wrap gap-x-2">
 		{#each data.tags as tag}
 			<span class="text-tertiary">#{tag}</span>

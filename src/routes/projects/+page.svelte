@@ -41,7 +41,7 @@
 <article>
 	<Hero first="Maker's" second="Sanctuary" desc="... built one project at a time." />
 
-	<div class="grid grid-cols-1 gap-4 text-pretty break-words md:grid-cols-2">
+	<div class="mb-20 grid grid-cols-1 gap-4 text-pretty break-words md:grid-cols-2">
 		{#each projects as project}
 			<div class="bg-panel flex flex-col gap-4 rounded-lg p-4">
 				<dl class="not-prose">

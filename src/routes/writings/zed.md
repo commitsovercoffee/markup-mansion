@@ -206,8 +206,6 @@ Feel free to use [my keymaps.json](https://github.com/commitsovercoffee/hope/blo
 
 ## Closing
 
-For now, I’m sticking with it. If it keeps serving me well, it might just become
+For now, I’m sticking with Zed. If it keeps serving me well, it might just become
 my new default. In the end, it’s just an editor. But when it works this well, you
-kinda want to talk about it.
-
-P.S I still use neovim here and there for quick edits :)
+kinda want to talk about it. And if you're wondering... yes, I ofcourse use vim motions with Zed :)

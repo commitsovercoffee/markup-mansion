@@ -36,7 +36,7 @@
                   \______/
 
 -->
-	<div class="mb-12 flex flex-wrap gap-2">
+	<div class="mb-6 flex flex-wrap gap-2">
 		{#each tags as tag}
 			<button
 				class=" {selectedTags.has(tag)
@@ -66,7 +66,7 @@
 
 -->
 	{#each filteredPosts as post}
-		<a class="not-prose group" href={post.path}>
+		<a class="not-prose group m-16" href={post.path}>
 			<dl class="" transition:fade={{ duration: 300 }}>
 				<dt class="text-fg py-2 font-bold">
 					{post.meta.title}
@@ -74,7 +74,7 @@
 						class="bg-primary block h-0.5 max-w-16 transition-all duration-300 group-hover:max-w-sm"
 					></span>
 				</dt>
-				<dd class="text-body ml-8">{post.meta.desc}</dd>
+				<dd class="text-body">{post.meta.desc}</dd>
 			</dl>
 		</a>
 	{/each}

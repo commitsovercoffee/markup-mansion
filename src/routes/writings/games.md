@@ -24,9 +24,8 @@ As soon as you begin, the game pulls you in. It’s not just another story, it�
 story. The voice acting, the visuals, the emotional depth. They all come together
 to make you feel like you’re living Kratos’ journey. The characters around you play
 a huge role in keeping the game world alive. Mimir’s constant commentary is clever,
-insightful, and often hilarious. He’s not just a talking head, he’s one of the best
-companions in gaming. The dwarven brothers, Brok and Sindri, add another layer of
-charm with their banter, upgrades, and totally opposite personalities. Whether
+insightful, and often hilarious. The dwarven brothers, Brok and Sindri, add another
+layer of charm with their banter, upgrades, and totally opposite personalities. Whether
 you’re solving a puzzle, exploring a realm, or just traveling by boat, these
 characters make every moment engaging and never let the game feel quiet or empty.
 
@@ -50,14 +49,13 @@ By Santa Monica Studios
 
 ![God of War Ragnarok](https://storage.googleapis.com/markup-mansion-assets/gowr.jpg)
 
-As a longtime fan of God of War, I went into Ragnarok with cautious excitement.
-I wasn’t expecting too much since sequels don’t always hit the mark. But this
-one didn’t just meet expectations, it blew past them. From the very beginning,
-Ragnarok builds on everything that made the previous game great and takes it up
-a notch. The combat feels even tighter, the characters are more layered, and
-the world is bigger and richer. And man, that spear… I can still hear its sound
-in my head. The boss fight with Heimdall? One of the most memorable in the whole
-series.
+I went into Ragnarok with cautious excitement. I wasn’t expecting too much since
+sequels don’t always hit the mark. But this one didn’t just meet expectations,
+it blew past them. From the very beginning, Ragnarok builds on everything that
+made the previous game great and takes it up a notch. The combat feels even tighter,
+the characters are more layered, and the world is bigger and richer. And man, that
+spear… I can still hear its sound in my head. The boss fight with Heimdall? One
+of the most memorable in the whole series.
 
 What stood out the most to me, though, was how Ragnarok manages to balance everything
 so smoothly. The gameplay, the mechanics, the character development, it all just clicks.
@@ -166,6 +164,10 @@ It’s a long game with an environment that feels genuinely alive. Whether it's
 crafting tools, hunting at night, or sending your pet bear into battle, it
 constantly gives you reasons to stay engaged. There aren’t many games like this,
 set in such a unique time period, with this level of immersion.
+
+There’s a stillness in Primal. For once, it’s not about guns or cars. It’s about you,
+the wild, and the silence between survival and extinction. Primal captures that
+solitude beautifully.
 
 ---
 

@@ -15,20 +15,6 @@
 			desc: 'pre-patched dwm. ✨',
 			lang: 'C',
 			color: 'stroke-[#555555] fill-[#555555]'
-		},
-		{
-			repo: 'markup-mansion',
-			desc: 'source of this website. 🏠',
-			lang: 'Svelte',
-			color: 'stroke-[#ff3e00] fill-[#ff3e00]'
-		},
-
-		{
-			repo: 'jason',
-			desc: 'JSON based resume builder. 📃',
-			demo: true,
-			lang: 'Svelte',
-			color: 'stroke-[#ff3e00] fill-[#ff3e00]'
 		}
 	];
 </script>

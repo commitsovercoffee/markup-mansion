@@ -171,6 +171,87 @@ solitude beautifully.
 
 ---
 
+## Party Hard 2
+
+By Pinokl Games
+
+![Party Hard 2](https://storage.googleapis.com/markup-mansion-assets/ph2.jpg)
+
+The premise is simple, absurd, and instantly relatable. It’s 3 a.m., the neighbors
+are throwing another soul-killing party, and you’ve had enough. So, you do what
+every functioning adult with zero patience and no moral compass does. You crash
+the party and start killing people. Not necessarily everyone, but enough to make
+a point.
+
+That’s the entire premise of Party Hard 2, and somehow, it works incredibly well.
+The game blends stealth, strategy, and chaos into something that shouldn’t be this fun,
+but absolutely is. There are a little over 10 levels, each with a different environment,
+set of characters, and a ton of interactive elements. You can set traps, start fires,
+spike drinks, blow things up, or just sneak around like a ghost. It's a playground
+of destruction, and the freedom it gives you makes every run feel different.
+
+Visually, it stands out. It’s pixel art, but with a faux-3D layer and lighting
+effects that make the world pop. Everything looks alive and overly colorful,
+which creates a great contrast against the game's dark concept. The lighting is
+especially good ~ neon glows, sharp shadows, and flashy effects that somehow don’t
+get in the way.
+
+The gameplay demands patience, though. Go in too loud, and the cops will show up
+fast. They’re not dumb either, you’ll need to plan exits, blend in with crowds,
+or time things perfectly. It’s got just enough stealth to keep you thinking,
+but never so much that it slows down the chaos. The audio holds up too. The music
+is appropriately intense and synthetic, and the environmental sounds are clear and functional.
+
+In short, Party Hard 2 is stylish, self-aware, and way more strategic than its
+premise suggests. It doesn’t try to be deep. It just wants you to have a good time
+ruining someone else’s, and it gives you the tools to do that beautifully. So,
+if the concept doesn’t turn you off, feel free to give it a shot.
+
+---
+
+## Crysis 2
+
+By Crytek
+
+![Crysis 2](https://storage.googleapis.com/markup-mansion-assets/c2.jpg)
+
+Crysis 2 Remastered isn’t just a facelift, it’s a return to a shooter that dared
+to do things differently. Released in an era dominated by military shooters like
+_Modern Warfare_, _Crysis 2_ stood out by not trying to be realistic. It went sci-fi.
+
+At the heart of the game is the Nanosuit, and that’s what changes everything. This
+isn’t your standard FPS where you run and gun down a corridor. The suit gives you
+tactical tools ~ stealth, armor, enhanced mobility. But it all runs on energy. You
+can’t just spam invisibility or tank hits endlessly, you have to think. That creates
+a constant push-pull during combat. When to sneak. When to sprint. When to engage.
+It forces a level of engagement most shooters just don’t ask for.
+
+And the enemies push back. Especially the aliens, they’re fast, aggressive, and mobile.
+They don’t just absorb bullets, they make you earn your shots. Gunplay here is solid,
+but it’s the way the suit interacts with every fight that keeps things interesting.
+You’re not reacting, you’re adapting, adjusting on the fly. You’re in control,
+but never fully comfortable.
+
+The level design supports this too. While it’s not an open world, the environments
+often give you multiple paths, different angles, and options depending on how you
+want to approach a situation. Do you sneak past using stealth ? Do you go loud with
+armor and heavy firepower? The game gives you the tools, but it doesn’t tell you
+how to use them.
+
+The remastered version polishes up the visuals, better textures, lighting, and
+performance but the core of the game is what holds up. It’s not just about how
+it looks. It’s about how it plays.
+
+Sure, the story is forgettable and the AI can show its age. But none of that really
+drags the experience down. What Crysis 2 nailed back then, and still delivers now is
+the feeling of being in control of a dynamic, tactical combat loop that rewards
+smart play.
+
+This isn’t just nostalgia. In a sea of shooters trying to be more cinematic, Crysis 2
+was one of the few that asked you to play smarter, not just shoot faster.
+
+---
+
 ## Portal 2
 
 By Valve

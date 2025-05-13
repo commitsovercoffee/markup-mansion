@@ -4,7 +4,7 @@ title: Neovim to Zed
 desc: I changed my text editor. Here's how it went.
 date: 0000-00-03
 tags:
-  - personal
+  - workflow
 published: true
 ---
 
@@ -67,8 +67,7 @@ Yep, just that one plugin. But that’s a nitpick right?
 ## By Developers, For Developers
 
 It’s clear the people behind Zed are power users. The keyboard-first design, the
-snappy command palette, the smart defaults, everything feels intentional. You don’t
-have to fight the editor to be productive, and that’s a huge win.
+snappy command palette, the smart defaults, everything feels intentional.
 
 Zed is built with a strong opinion on how coding should feel. That’s no surprise,
 considering its creators also helped shape Atom and Tree-sitter. They’ve clearly
@@ -78,7 +77,7 @@ and more focused.
 From the ground up, Zed is designed for developers who live in their editor all day.
 The keyboard-first navigation is thoughtfully crafted. Every action, from file switching
 to running commands, can be done without leaving the keyboard. The command palette is
-clean, fast, and actually useful, not just an afterthought.
+clean, fast, and actually useful.
 
 You also notice the attention to detail in things like split panes, tab management,
 and project navigation. Zed doesn’t drown you in features, it just gives you exactly
@@ -117,7 +116,7 @@ to figure out where each option belongs and how to use them.
 For example, If I run the command `workspace:new terminal` from the command palette.
 It will open up a new terminal instance, which you will see popping up at the
 bottom of your screen. Similarly, running `editor:toggle comments` will convert
-the current line under your cursor into a comment in your buffer.
+the current line under your cursor into a comment.
 
 ### Settings
 

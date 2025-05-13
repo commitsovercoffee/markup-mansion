@@ -1,7 +1,7 @@
 ---
 layout: default
 title: What I Use
-desc: Tools of Trade
+desc: Tools of Trade.
 date: 0000-00-01
 tags:
   - workflow

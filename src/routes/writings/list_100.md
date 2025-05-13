@@ -8,7 +8,7 @@ tags:
 published: true
 ---
 
-I stumbled upon a list like [this](https://huyenchip.com/list-100/) on Chip Huyen’s personal website and thought it would be fun to make my own. So here it is, in no particular order. Please let me know if you have any recommendations.
+I had stumbled upon a list like this on someone's personal website and thought it would be fun to make my own. So here it is, in no particular order. Please let me know if you have any recommendations.
 
 1. ~ Be kind.
 2. ✗ Design & publish a game.

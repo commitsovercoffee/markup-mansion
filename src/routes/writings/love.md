@@ -11,7 +11,7 @@ published: true
 That John Mayer song always gets me thinking ~ [You love who, who you love](https://www.youtube.com/watch?v=nSRCpertZn8).
 
 But if that were the whole story, this wouldn't need saying, not everyone we love
-is good for us. We as human love making simple things... complicated. Especially love.
+is good for us. We as humans, love making simple things... complicated. Especially love.
 So let’s dissect the standard modern romantic arc.
 
 - First, there's that spark. You know the one. A quick glance, a funny comment, a
@@ -56,7 +56,7 @@ and instead stay open for the one that just might be worth going all-in on.
 
 ---
 
-## Spotting Those Red Flags
+## Spot Red Flags
 
 #### The Wallet Test
 
@@ -94,14 +94,14 @@ and instead stay open for the one that just might be worth going all-in on.
 
 #### Emotional Dysregulation
 
-- Clinging to validation like it's air? You are not their babysitter or therapist.
+- Clinging to validation like it's air. You are not their babysitter or therapist.
   If they can’t self-soothe, you’ll burn out being their emotional juice box.
 
 - Is impulsive or can’t delay gratification. If they need everything now, they’ll
   have nothing later, and drag you with them.
 
 - Walking on eggshells around their moods? Bail. You're not responsible for their
-  emotional state; they are.
+  emotional state, they are.
 
 #### Social Dance
 
@@ -142,9 +142,7 @@ Some are glaringly obvious, while others are cleverly disguised by charm and
 confidence. Let's dive into how to spot them more clearly before they catch you
 completely off guard.
 
----
-
-## Creating Ground to Spot Red Flags
+## Ground Work for Red Flags
 
 One of the biggest mistakes I think we make is automatically assuming someone
 is a "catch." It's backwards! We get attached too quickly, only to realize way
@@ -174,8 +172,6 @@ regulation, and general temperament tend to be pretty consistent and will surfac
 eventually. So, if a couple of months in, you notice significant deviations from
 that initial baseline, that's likely not just a "phase." That's probably who they
 really are.
-
----
 
 ## Make the Green Flags Pop
 
@@ -283,8 +279,6 @@ in a shared challenge, even pixelated, says a lot about how they’ll show up in
 real world when the stakes are higher. If you can laugh, strategize, lose, and
 keep going as a team, that’s a kind of intimacy that counts.
 
----
-
 ## Know Thyself (Seriously)
 
 Before you can truly see someone else clearly, you've got to be brutally honest
@@ -300,8 +294,6 @@ with authenticity. The right person won't be scared off by your clarity. They'll
 be drawn to it because it shows them you're not playing games. You're serious
 about building something that lasts.
 
----
-
 ## You Love Who You Love
 
 Remember, you won't find someone perfect. You'll find someone _real_. Someone with flaws,
@@ -312,3 +304,18 @@ its challenges.
 When you meet them, you won’t feel fireworks. You’ll feel calm. Like, “This makes sense.”
 And it will. So don’t wait for love to arrive gift-wrapped. Put yourself out there.
 Ask questions. Offer a genuine compliment. Smile. Flirt a little. Mess up. Try again.
+
+## Author's Note
+
+Some friends have pointed out that this blog kind of gives people a cheat sheet to
+who I am. And yeah, I get it, if someone really read through all this, they'd probably
+learn a lot about how I think, what I value, and how I approach relationships. Honestly?
+If someone puts in that much effort, I guess they deserve a date just on commitment alone.
+
+But here’s the thing, as much as this might look like a manual, you can’t fake most
+of what I’ve written about. You can try to tick the boxes, sure, but showing up with
+real emotional maturity, self-awareness, and consistency? That stuff reveals itself
+over time. There’s no shortcut.
+
+So, yeah. Maybe this blog is part reminder, part filter, part therapy. I don’t know.
+But I do know it helps me make sense of things. And I hope it helps someone else too.

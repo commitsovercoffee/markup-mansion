@@ -28,7 +28,7 @@
 </script>
 
 <div
-	class="bedrock {theme} font-overpass bg-bg selection:bg-primary selection:text-bg min-h-screen px-4 transition-colors duration-200 ease-in"
+	class="bedrock {theme} bg-bg selection:bg-primary selection:text-bg min-h-screen px-4 transition-colors duration-200 ease-in"
 >
 	<main
 		class="

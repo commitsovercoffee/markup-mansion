@@ -36,7 +36,6 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
-		"@fontsource-variable/overpass": "^5.1.2",
 		"@unpic/svelte": "^1.0.0",
 		"feed": "^4.2.2",
 		"lucide-svelte": "^0.476.0",

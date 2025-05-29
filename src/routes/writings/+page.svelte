@@ -40,8 +40,8 @@
 		{#each tags as tag}
 			<button
 				class=" {selectedTags.has(tag)
-					? 'text-panel bg-primary'
-					: 'text-fg bg-panel'} cursor-pointer rounded-xl px-4 py-2 transition-all duration-200 active:translate-y-2"
+					? 'text-panel bg-anchor'
+					: 'text-fg bg-panel hover:bg-primary hover:text-panel'} cursor-pointer rounded-2xl px-4 py-1 transition-all duration-200 active:translate-y-2"
 				onclick={() => {
 					selectedTags.has(tag) ? selectedTags.delete(tag) : selectedTags.add(tag);
 					filteredPosts = data.posts.filter((post) => {
@@ -74,7 +74,7 @@
 						class="bg-primary block h-0.5 max-w-16 transition-all duration-300 group-hover:max-w-sm"
 					></span>
 				</dt>
-				<dd class="text-body">{post.meta.desc}</dd>
+				<dd class="text-body ml-4">{post.meta.desc}</dd>
 			</dl>
 		</a>
 	{/each}

@@ -20,7 +20,7 @@
 	let theme = $state('dark');
 
 	// nav
-	const links = ['/writings', '/projects', '/rss'];
+	const links = ['/projects', '/writings', '/rss'];
 	onMount(() => {
 		theme = localStorage.getItem('theme') === null ? 'dark' : localStorage.getItem('theme');
 		console.log(theme);
@@ -50,25 +50,27 @@
 
 -->
 		<div>
-			<nav class="flex flex-col items-start gap-4 py-10">
+			<nav class="flex flex-col items-start gap-4 py-16">
 				<a href="/" class="not-prose group flex items-center">
 					<Coffee
-						size={28}
-						strokeWidth={1.8}
-						class="stroke-fg rotate- mx-2 -rotate-12 transition-all duration-200 ease-in group-hover:rotate-0"
+						size={32}
+						strokeWidth={1.2}
+						class="stroke-fg mx-2 transition-all duration-200 ease-in group-hover:rotate-0"
 					/>
-					<span class="text-fg decoration-none text-xl"> CommitsOverCoffee </span>
+					<span class="text-fg decoration-none text-2xl font-semibold"> CommitsOverCoffee </span>
 				</a>
 
-				<div class="flex flex-row items-center gap-4">
-					{#each links as link}
-						<a
-							class=" {page.url.pathname == link
-								? 'text-secondary underline underline-offset-8'
-								: 'text-body'} not-prose hover:text-secondary transition-color no-underline duration-100 ease-out"
-							href={link}>{link}</a
-						>
-					{/each}
+				<div class="flex w-full justify-between">
+					<div class="flex flex-row gap-4">
+						{#each links as link}
+							<a
+								class=" {page.url.pathname == link
+									? 'text-secondary underline underline-offset-8'
+									: 'text-body'} not-prose hover:text-secondary no-underline transition-all duration-300 ease-in"
+								href={link}>{link}</a
+							>
+						{/each}
+					</div>
 					<div class="h-[28px] w-[28px]">
 						{#if theme == 'light'}
 							<div
@@ -144,6 +146,7 @@
 				<div
 					in:fly={{ easing: cubicOut, y: 30, duration: 300, delay: 100 }}
 					out:fly={{ easing: cubicIn, y: -30, duration: 300 }}
+					class="mb-8"
 				>
 					{@render children()}
 				</div>

@@ -1,5 +1,6 @@
 <script>
-	import Hero from '$lib/Hero.svelte';
+	import Thoughts from '$lib/Thoughts.svelte';
+	import { BriefcaseBusiness, Coffee, IdCard, Joystick, Mail, MapPin } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -8,130 +9,92 @@
 </svelte:head>
 
 <div>
-	<!--
-
-     /$$   /$$
-    | $$  | $$
-    | $$  | $$  /$$$$$$   /$$$$$$   /$$$$$$
-    | $$$$$$$$ /$$__  $$ /$$__  $$ /$$__  $$
-    | $$__  $$| $$$$$$$$| $$  \__/| $$  \ $$
-    | $$  | $$| $$_____/| $$      | $$  | $$
-    | $$  | $$|  $$$$$$$| $$      |  $$$$$$/
-    |__/  |__/ \_______/|__/       \______/
-
- -->
-	<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-		<div class="order-2 md:order-1">
-			<Hero
-				first="Hello Folks,"
-				second="I am Sourav."
-				desc="Welcome to my corner of the internet. I'm glad you're here. Would you like some tea? "
-			/>
-		</div>
-		<div class="order-1 md:order-2">
-			<img
-				src="profile.webp"
-				class="not-prose border-fg border4 h-48 w-48 rounded-full object-cover"
-				alt=""
-			/>
-		</div>
+	<div class="order-2 mb-4 md:order-1">
+		<h1 class="text-primary mb-0">
+			Hello
+			<span class="text-fg">Beautiful.</span>
+		</h1>
+		<Thoughts />
 	</div>
 
-	<div class="grid grid-cols-1 gap-6 md:mt-6 md:grid-cols-2">
-		<div class="row-span-2">
-			<h2 class="text-secondary mt-0">About</h2>
-			<!--
-
-  /$$$$$$  /$$                             /$$
- /$$__  $$| $$                            | $$
-| $$  \ $$| $$$$$$$   /$$$$$$  /$$   /$$ /$$$$$$
-| $$$$$$$$| $$__  $$ /$$__  $$| $$  | $$|_  $$_/
-| $$__  $$| $$  \ $$| $$  \ $$| $$  | $$  | $$
-| $$  | $$| $$  | $$| $$  | $$| $$  | $$  | $$ /$$
-| $$  | $$| $$$$$$$/|  $$$$$$/|  $$$$$$/  |  $$$$/
-|__/  |__/|_______/  \______/  \______/    \___/
-
--->
-			<p>
-				I'm an independent software developer based in Ranchi, India. 🌏 I primarily design and
-				build things for the web. 💼
-			</p>
-
-			<p>
-				Currently, I work at Quest Alliance as a consultant where I focus on solutioning,
-				development and support. You can find my <a
-					target="_blank"
-					href="https://youtu.be/dQw4w9WgXcQ">resume</a
-				>
-				here. 🎯
-			</p>
-
-			<p>
-				When I’m not glued to the screen, I’m usually cycling around town, shooting hoops 🏀 (if the
-				stars align ✨ ), reading, <a href="/writings">writing</a> or tinkering with
-				<a href="/projects">side projects</a>. 🪛
-			</p>
-
-			<p>
-				What I'm up to <strong class="text-body">Now</strong> ?
-			</p>
-
-			<p>
-				- Learning <a target="_blank" href="https://svelte.dev/">svelte</a>. 💖<br />
-				- Exploring content creation. 🍿<br />
+	<div class="blog flex flex-col gap-4">
+		<div class="flex flex-row items-start gap-4">
+			<div>
+				<IdCard
+					size={32}
+					strokeWidth={1}
+					class="stroke-secondary mx-2 transition-all duration-200 ease-in"
+				/>
+			</div>
+			<p class="mt-0">
+				<span class="text-fg">I'm Sourav Singh.</span> I go by
+				<span class="text-fg">@commitsovercoffee</span> on the web. I code for a living, and for
+				better or worse it is both my profession and my pastime, which means I'm always tinkering
+				with side <a href="/projects">projects</a>.
 			</p>
 		</div>
-		<!--
 
- /$$$$$$$$                   /$$
-| $$_____/                  | $$
-| $$    /$$$$$$   /$$$$$$$ /$$$$$$   /$$$$$$$
-| $$$$$|____  $$ /$$_____/|_  $$_/  /$$_____/
-| $$__/ /$$$$$$$| $$        | $$   |  $$$$$$
-| $$   /$$__  $$| $$        | $$ /$$\____  $$
-| $$  |  $$$$$$$|  $$$$$$$  |  $$$$//$$$$$$$/
-|__/   \_______/ \_______/   \___/ |_______/
-
--->
-		<div>
-			<h2 class="text-tertiary mt-0">Random Facts</h2>
-			<p>
-				I work remotely from my batcave. 📍<br />
-				I use fast silver switches on my keeb. 🪶<br />
-				I prefer cargo pants over jeans. 🩳<br />
-				I’m a connoisseur of obscure snacks. 🍕<br />
-				I can quote The Office in my sleep. 💤<br />
-				I despise short form content. 🚮<br />
-				No. I can't fix your printer. 🖨️<br />
+		<div class="flex flex-row items-start gap-4">
+			<div>
+				<BriefcaseBusiness
+					size={32}
+					strokeWidth={1}
+					class="stroke-primary mx-2 transition-all duration-200 ease-in"
+				/>
+			</div>
+			<p class="mt-0">
+				I currently work at Quest Alliance, a non profit working in the education space. I mainly
+				focus on design, development ( <span class="text-fg">
+					mostly frontend, sometimes backend
+				</span>) and support.
 			</p>
 		</div>
-		<!--
 
- /$$$$$$$$                                /$$  /$$
-| $$_____/                               |__/ | $$
-| $$   /$$$$$$ /$$    /$$/$$$$$$  /$$$$$$ /$$/$$$$$$   /$$$$$$  /$$$$$$$
-| $$$$|____  $|  $$  /$$/$$__  $$/$$__  $| $|_  $$_/  /$$__  $$/$$_____/
-| $$__//$$$$$$$\  $$/$$| $$  \ $| $$  \__| $$ | $$   | $$$$$$$|  $$$$$$
-| $$  /$$__  $$ \  $$$/| $$  | $| $$     | $$ | $$ /$| $$_____/\____  $$
-| $$ |  $$$$$$$  \  $/ |  $$$$$$| $$     | $$ |  $$$$|  $$$$$$$/$$$$$$$/
-|__/  \_______/   \_/   \______/|__/     |__/  \___/  \_______|_______/
+		<div class="flex flex-row items-start gap-4">
+			<div>
+				<Joystick
+					size={32}
+					strokeWidth={1}
+					class="stroke-tertiary mx-2 transition-all duration-200 ease-in"
+				/>
+			</div>
+			<p class="mt-0">
+				<span class="text-fg"> I like cycling and reading </span> in my leisure time. I also
+				<a href="/writings">write</a> sometimes to clear my head. Recently, I have also started
+				blabbering on <a href="https://www.youtube.com/@commitsovercoffee">Youtube</a>. And ofcourse
+				I play video games.
+			</p>
+		</div>
 
--->
-		<div>
-			<h2 class="text-highlight mt-0">Favorites</h2>
-			<p>
-				Book : Crime & Punishment. 🪓 <br />
-				Game : God of War Ragnarok. ❄️<br />
-				Movie : Mission Impossible. ⌚<br />
-				Music : Rock/Alternative. 🥁<br />
-				TV Show : The Office. 🏆 <br />
-				Food : Mutton Biryani. 🥩 <br />
+		<div class="flex flex-row items-start gap-4">
+			<div>
+				<MapPin
+					size={32}
+					strokeWidth={1}
+					class="stroke-highlight mx-2 transition-all duration-200 ease-in"
+				/>
+			</div>
+			<p class="mt-0">
+				<span class="text-fg">I live in Ranchi</span>, a quiet city in eastern India surrounded by
+				waterfalls and greenery. I work remotely,
+				<span class="text-fg">but every few months I travel </span> for meetups, workshops or just a
+				change of pace.
+			</p>
+		</div>
+
+		<div class="flex flex-row items-start gap-4">
+			<div>
+				<Mail
+					size={32}
+					strokeWidth={1}
+					class="stroke-anchor mx-2 transition-all duration-200 ease-in"
+				/>
+			</div>
+			<p class="mt-0">
+				<span class="text-fg"> Feel free to reach out. </span> I’d love to meet and chat. You can
+				text me on <a href="https://bsky.app/profile/commitsovercoffee.com">bluesky</a> or send me a
+				mail.
 			</p>
 		</div>
 	</div>
-	<p class="mt-0">
-		🫂 Feel free to reach out. You can text me on
-		<a href="https://bsky.app/profile/commitsovercoffee.com">bluesky</a> or shoot me a
-		<a href="mailto:commitsovercoffee@gmail.com">mail</a>.
-	</p>
 </div>

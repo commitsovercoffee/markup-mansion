@@ -2,7 +2,7 @@
 	<div class="flex justify-between gap-2 p-2">
 		<span>Built with ❤️ & svelte.</span>
 		<div class="flex items-center gap-2 md:gap-4">
-			<a aria-label="Github" href="https://github.com/commitsovercoffee">
+			<a target="_blank" aria-label="Github" href="https://github.com/commitsovercoffee">
 				<svg width="24" height="24" viewBox="0 -3.1 2490.3 2493"
 					><ellipse cx="1245.2" cy="1243.4" fill="#202127" rx="1217.6" ry="1246.5" /><path
 						fill="#5c6bc0"
@@ -11,7 +11,7 @@
 					/></svg
 				>
 			</a>
-			<a aria-label="Bluesky" href="https://bsky.app/profile/commitsovercoffee.com">
+			<a target="_blank" aria-label="Bluesky" href="https://bsky.app/profile/commitsovercoffee.com">
 				<svg width="24" height="24" viewBox="0 -3.268 64 68.414"
 					><path
 						fill="#0085ff"
@@ -20,7 +20,7 @@
 				>
 			</a>
 
-			<a aria-label="Youtube" href="https://www.youtube.com/@commitsovercoffee">
+			<a target="_blank" aria-label="Youtube" href="https://www.youtube.com/@commitsovercoffee">
 				<svg height="24" width="24" viewBox="5.24 13.434 54.049 37.945"
 					><path
 						d="m41.272 31.81c-4.942-2.641-9.674-5.069-14.511-7.604v15.165c5.09-2.767 10.455-5.301 14.532-7.561z"

@@ -64,7 +64,7 @@
 					<div class="flex flex-row gap-4">
 						{#each links as link}
 							<a
-								class=" {page.url.pathname == link
+								class=" {page.url.pathname.startsWith(link)
 									? 'text-secondary underline underline-offset-8'
 									: 'text-body'} not-prose hover:text-secondary no-underline transition-all duration-300 ease-in"
 								href={link}>{link}</a

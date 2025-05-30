@@ -31,11 +31,11 @@
 	.blog {
 		a {
 			color: var(--anchor);
-			text-decoration: underline;
 			text-underline-offset: 4px;
+			text-decoration: none;
 		}
 		a:hover {
-			text-decoration: none !important;
+			text-decoration: underline;
 		}
 
 		table {

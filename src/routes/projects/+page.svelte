@@ -5,7 +5,7 @@
 		{
 			repo: 'hope',
 			desc: 'arch install script. ⚡',
-			demo: true
+			demo: false
 		},
 
 		{

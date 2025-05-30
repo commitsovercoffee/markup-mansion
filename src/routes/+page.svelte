@@ -43,10 +43,10 @@
 				/>
 			</div>
 			<p class="mt-0">
-				I currently work at Quest Alliance, a non profit working in the education space. I mainly
-				focus on design, development ( <span class="text-fg">
-					mostly frontend, sometimes backend
-				</span>) and support.
+				I currently work at <span class="text-fg">Quest Alliance</span>, a non profit working in the
+				education space. I mainly focus on design, development (<span class="text-fg"
+					>mostly frontend, sometimes backend</span
+				>) and support. We also organise a hackathon every year.
 			</p>
 		</div>
 
@@ -60,9 +60,9 @@
 			</div>
 			<p class="mt-0">
 				<span class="text-fg"> I like cycling and reading </span> in my leisure time. I also
-				<a href="/writings">write</a> sometimes to clear my head. Recently, I have also started
-				blabbering on <a href="https://www.youtube.com/@commitsovercoffee">Youtube</a>. And ofcourse
-				I play video games.
+				<a href="/writings">write</a> sometimes to clear my head. If I really need an escape, I
+				indulge in video games. And recently, I have also started blabbering on
+				<a target="_blank" href="https://www.youtube.com/@commitsovercoffee">Youtube</a>.
 			</p>
 		</div>
 
@@ -91,9 +91,11 @@
 				/>
 			</div>
 			<p class="mt-0">
-				<span class="text-fg"> Feel free to reach out. </span> I’d love to meet and chat. You can
-				text me on <a href="https://bsky.app/profile/commitsovercoffee.com">bluesky</a> or send me a
-				mail.
+				<span class="text-fg">Feel free to reach out.</span>
+				Whether you want to share ideas, talk shop, or just say hello. You can ping me on
+				<a target="_blank" href="https://bsky.app/profile/commitsovercoffee.com">bluesky</a> or drop
+				me a
+				<a target="_blank" href="mailto:commitsovercoffee@gmail.com">mail</a>.
 			</p>
 		</div>
 	</div>
